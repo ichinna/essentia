@@ -1,0 +1,30 @@
+{
+  "range": "Sheet1!B1:B27",
+  "majorDimension": "ROWS",
+  "values": [
+    [
+      "type"
+    ],
+    [
+      "taxid"
+    ],
+    [
+      "taxids"
+    ],
+    [
+      "name"
+    ],
+    [
+      "number"
+    ],
+    [
+      "compound"
+    ],
+    [
+      "updated_min"
+    ],
+    [
+      "updated_max"
+    ]
+  ]
+}

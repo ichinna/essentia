@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Product xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Product.xsd">
+  <SKU>SKU</SKU>
+  <StandardProductID>
+    <Type>ISBN</Type>
+    <Value>Value</Value>
+  </StandardProductID>
+  <GtinExemptionReason>bundle</GtinExemptionReason>
+  <RelatedProductID>
+    <Type>UPC</Type>
+    <Value>Value</Value>
+  </RelatedProductID>
+  <ProductTaxCode>ProductTaxCode</ProductTaxCode>
+  <LaunchDate>2001-12-31T12:00:00</LaunchDate>
+  <DiscontinueDate>2001-12-31T12:00:00</DiscontinueDate>
+  <ReleaseDate>2001-12-31T12:00:00</ReleaseDate>
+  <ExternalProductUrl>http://tempuri.org</ExternalProductUrl>
+  <Condition>
+    <ConditionType>New</ConditionType>
+    <ConditionNote>ConditionNote</ConditionNote>
+  </Condition>
+  <Rebate>
+    <RebateStartDate>2001-12-31T12:00:00</RebateStartDate>
+    <RebateEndDate>2001-12-31T12:00:00</RebateEndDate>
+    <RebateMessage>RebateMessage</RebateMessage>
+    <RebateName>RebateName</RebateName>
+  </Rebate>
+  <ItemPackageQuantity>1</ItemPackageQuantity>
+  <NumberOfItems>1</NumberOfItems>
+  <LiquidVolume unitOfMeasure="cubic-cm">0.0</LiquidVolume>
+  <DescriptionData>
+    <Title>Title</Title>
+    <Brand>Brand</Brand>
+    <Designer>Designer</Designer>
+    <Description>Description</Description>
+    <BulletPoint>BulletPoint</BulletPoint>
+    <ItemDimensions/>
+    <PackageDimensions/>
+    <PackageWeight unitOfMeasure="GR">0.0</PackageWeight>
+    <ShippingWeight unitOfMeasure="GR">0.0</ShippingWeight>
+    <MerchantCatalogNumber>MerchantCatalogNumber</MerchantCatalogNumber>
+    <MSRP currency="USD">0.0</MSRP>
+    <MSRPWithTax currency="USD">0.0</MSRPWithTax>
+    <MaxOrderQuantity>1</MaxOrderQuantity>
+    <SerialNumberRequired>true</SerialNumberRequired>
+    <Prop65>true</Prop65>
+    <CPSIAWarning>choking_hazard_balloon</CPSIAWarning>
+    <CPSIAWarningDescription>CPSIAWarningDescription</CPSIAWarningDescription>
+    <LegalDisclaimer>LegalDisclaimer</LegalDisclaimer>
+    <Manufacturer>Manufacturer</Manufacturer>
+    <MfrPartNumber>MfrPartNumber</MfrPartNumber>
+    <SearchTerms>SearchTerms</SearchTerms>
+    <PlatinumKeywords>PlatinumKeywords</PlatinumKeywords>
+    <Memorabilia>true</Memorabilia>
+    <Autographed>true</Autographed>
+    <UsedFor>UsedFor</UsedFor>
+    <ItemType>ItemType</ItemType>
+    <OtherItemAttributes>OtherItemAttributes</OtherItemAttributes>
+    <TargetAudience>TargetAudience</TargetAudience>
+    <SubjectContent>SubjectContent</SubjectContent>
+    <IsGiftWrapAvailable>true</IsGiftWrapAvailable>
+    <IsGiftMessageAvailable>true</IsGiftMessageAvailable>
+    <PromotionKeywords>PromotionKeywords</PromotionKeywords>
+    <IsDiscontinuedByManufacturer>true</IsDiscontinuedByManufacturer>
+    <DeliveryScheduleGroupID>DeliveryScheduleGroupID</DeliveryScheduleGroupID>
+    <DeliveryChannel>in_store</DeliveryChannel>
+    <ExternalProductInformation>ExternalProductInformation</ExternalProductInformation>
+    <MaxAggregateShipQuantity>1</MaxAggregateShipQuantity>
+    <RecommendedBrowseNode>1</RecommendedBrowseNode>
+    <MerchantShippingGroupName>MerchantShippingGroupName</MerchantShippingGroupName>
+    <FEDAS_ID>FEDAS_ID</FEDAS_ID>
+    <TSDAgeWarning>not_suitable_under_36_months</TSDAgeWarning>
+    <TSDWarning>only_domestic_use</TSDWarning>
+    <TSDLanguage>English</TSDLanguage>
+    <OptionalPaymentTypeExclusion>cash_on_delivery</OptionalPaymentTypeExclusion>
+    <DistributionDesignation>jp_parallel_import</DistributionDesignation>
+    <ExternalTestingCertification>ExternalTestingCertification</ExternalTestingCertification>
+    <Battery/>
+    <BatteryCellType>NiCAD</BatteryCellType>
+    <BatteryWeight unitOfMeasure="GR">0.0</BatteryWeight>
+    <NumberOfLithiumMetalCells>1</NumberOfLithiumMetalCells>
+    <NumberOfLithiumIonCells>1</NumberOfLithiumIonCells>
+    <LithiumBatteryPackaging>batteries_contained_in_equipment</LithiumBatteryPackaging>
+    <LithiumBatteryEnergyContent unitOfMeasure="kilowatt_hours">0.0</LithiumBatteryEnergyContent>
+    <LithiumBatteryWeight unitOfMeasure="GR">0.0</LithiumBatteryWeight>
+    <ItemWeight unitOfMeasure="GR">0.0</ItemWeight>
+    <ItemVolume unitOfMeasure="cubic-cm">0.0</ItemVolume>
+    <FlashPoint>FlashPoint</FlashPoint>
+    <GHSClassificationClass>explosive</GHSClassificationClass>
+    <SupplierDeclaredDGHZRegulation>ghs</SupplierDeclaredDGHZRegulation>
+    <HazmatUnitedNationsRegulatoryID>HazmatUnitedNationsRegulatoryID</HazmatUnitedNationsRegulatoryID>
+    <SafetyDataSheetURL>http://tempuri.org</SafetyDataSheetURL>
+    <CaliforniaProposition65ComplianceType>alcoholic_beverage</CaliforniaProposition65ComplianceType>
+    <CaliforniaProposition65ChemicalNames1>butyl_benzyl_phthalate_bbp_d</CaliforniaProposition65ChemicalNames1>
+    <CaliforniaProposition65ChemicalNames2>butyl_benzyl_phthalate_bbp_d</CaliforniaProposition65ChemicalNames2>
+    <CaliforniaProposition65ChemicalNames3>butyl_benzyl_phthalate_bbp_d</CaliforniaProposition65ChemicalNames3>
+    <CaliforniaProposition65ChemicalNames4>butyl_benzyl_phthalate_bbp_d</CaliforniaProposition65ChemicalNames4>
+    <CaliforniaProposition65ChemicalNames5>butyl_benzyl_phthalate_bbp_d</CaliforniaProposition65ChemicalNames5>
+  </DescriptionData>
+  <DiscoveryData>
+    <Priority>1</Priority>
+    <BrowseExclusion>true</BrowseExclusion>
+    <RecommendationExclusion>true</RecommendationExclusion>
+  </DiscoveryData>
+  <ProductData>
+    <ClothingAccessories>
+      <ClassificationData>
+        <Department>Department</Department>
+      </ClassificationData>
+    </ClothingAccessories>
+  </ProductData>
+  <ShippedByFreight>true</ShippedByFreight>
+  <EnhancedImageURL>http://tempuri.org</EnhancedImageURL>
+  <Amazon-Vendor-Only>
+    <Cost currency="USD">0.0</Cost>
+  </Amazon-Vendor-Only>
+  <Amazon-Only>
+    <Tier>1</Tier>
+    <PurchasingCategory>PurchasingCategory</PurchasingCategory>
+    <PurchasingSubCategory>PurchasingSubCategory</PurchasingSubCategory>
+    <PackagingType>PackagingType</PackagingType>
+    <UnderlyingAvailability>backordered</UnderlyingAvailability>
+    <ReplenishmentCategory>basic-replenishment</ReplenishmentCategory>
+    <DropShipStatus>drop-ship-disabled</DropShipStatus>
+    <OutOfStockWebsiteMessage>email-me-when-available</OutOfStockWebsiteMessage>
+  </Amazon-Only>
+  <RegisteredParameter>PrivateLabel</RegisteredParameter>
+  <NationalStockNumber>NationalStockNumber</NationalStockNumber>
+  <UnspscCode>UnspscCode</UnspscCode>
+</Product>

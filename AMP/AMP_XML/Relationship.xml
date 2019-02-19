@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Relationship xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Relationship.xsd">
+  <ParentSKU>ParentSKU</ParentSKU>
+  <Relation>
+    <SKU>SKU</SKU>
+    <SortHeuristic>1</SortHeuristic>
+    <Quantity>1</Quantity>
+    <ComponentNumber>1</ComponentNumber>
+    <ChildDetailPageDisplay>independently_displayable</ChildDetailPageDisplay>
+    <Type>Variation</Type>
+  </Relation>
+</Relationship>

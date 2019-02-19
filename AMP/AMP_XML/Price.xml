@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Price xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Price.xsd">
+  <SKU>SKU</SKU>
+  <StandardPrice currency="USD" xsi:type="OverrideCurrencyAmount" zero="true">0.0</StandardPrice>
+  <StandardPricePoints>1</StandardPricePoints>
+  <BusinessPrice>0.0</BusinessPrice>
+  <QuantityPriceType>fixed</QuantityPriceType>
+  <QuantityPrice>
+    <QuantityPrice1>0.0</QuantityPrice1>
+    <QuantityLowerBound1>1</QuantityLowerBound1>
+    <QuantityPrice2>0.0</QuantityPrice2>
+    <QuantityLowerBound2>1</QuantityLowerBound2>
+    <QuantityPrice3>0.0</QuantityPrice3>
+    <QuantityLowerBound3>1</QuantityLowerBound3>
+    <QuantityPrice4>0.0</QuantityPrice4>
+    <QuantityLowerBound4>1</QuantityLowerBound4>
+    <QuantityPrice5>0.0</QuantityPrice5>
+    <QuantityLowerBound5>1</QuantityLowerBound5>
+  </QuantityPrice>
+  <MinimumSellerAllowedPrice currency="USD" zero="true">MinimumSellerAllowedPrice</MinimumSellerAllowedPrice>
+  <MaximumSellerAllowedPrice currency="USD" zero="true">MaximumSellerAllowedPrice</MaximumSellerAllowedPrice>
+  <MAP currency="USD" xsi:type="OverrideCurrencyAmount" zero="true">0.0</MAP>
+  <DepositAmount currency="USD" xsi:type="CurrencyAmountWithDefault">0.0</DepositAmount>
+  <Sale>
+    <StartDate>2001-12-31T12:00:00</StartDate>
+    <EndDate>2001-12-31T12:00:00</EndDate>
+    <SalePrice currency="USD" xsi:type="OverrideCurrencyAmount" zero="true">0.0</SalePrice>
+    <SalePricePoints>1</SalePricePoints>
+  </Sale>
+  <CompareAt delete="true">
+    <StartDate>2001-12-31T12:00:00</StartDate>
+    <EndDate>2001-12-31T12:00:00</EndDate>
+    <CompareAtPrice currency="USD">0.0</CompareAtPrice>
+  </CompareAt>
+  <Previous delete="true">
+    <StartDate>2001-12-31T12:00:00</StartDate>
+    <EndDate>2001-12-31T12:00:00</EndDate>
+    <Price currency="USD">0.0</Price>
+    <PreviousPrice currency="USD">0.0</PreviousPrice>
+  </Previous>
+  <Rental_0>
+    <StartDate>2001-12-31T12:00:00</StartDate>
+    <EndDate>2001-12-31T12:00:00</EndDate>
+    <RentalPrice currency="USD" valueWithoutTax="0.0" zero="true">0.0</RentalPrice>
+  </Rental_0>
+  <Rental_1>
+    <StartDate>2001-12-31T12:00:00</StartDate>
+    <EndDate>2001-12-31T12:00:00</EndDate>
+    <RentalPrice currency="USD" valueWithoutTax="0.0" zero="true">0.0</RentalPrice>
+  </Rental_1>
+  <Rental_2>
+    <StartDate>2001-12-31T12:00:00</StartDate>
+    <EndDate>2001-12-31T12:00:00</EndDate>
+    <RentalPrice currency="USD" valueWithoutTax="0.0" zero="true">0.0</RentalPrice>
+  </Rental_2>
+  <Rental_3>
+    <StartDate>2001-12-31T12:00:00</StartDate>
+    <EndDate>2001-12-31T12:00:00</EndDate>
+    <RentalPrice currency="USD" valueWithoutTax="0.0" zero="true">0.0</RentalPrice>
+  </Rental_3>
+  <Rental_4>
+    <StartDate>2001-12-31T12:00:00</StartDate>
+    <EndDate>2001-12-31T12:00:00</EndDate>
+    <RentalPrice currency="USD" valueWithoutTax="0.0" zero="true">0.0</RentalPrice>
+  </Rental_4>
+  <Rental_5>
+    <StartDate>2001-12-31T12:00:00</StartDate>
+    <EndDate>2001-12-31T12:00:00</EndDate>
+    <RentalPrice currency="USD" valueWithoutTax="0.0" zero="true">0.0</RentalPrice>
+  </Rental_5>
+  <Rental_6>
+    <StartDate>2001-12-31T12:00:00</StartDate>
+    <EndDate>2001-12-31T12:00:00</EndDate>
+    <RentalPrice currency="USD" valueWithoutTax="0.0" zero="true">0.0</RentalPrice>
+  </Rental_6>
+  <Rental_7>
+    <StartDate>2001-12-31T12:00:00</StartDate>
+    <EndDate>2001-12-31T12:00:00</EndDate>
+    <RentalPrice currency="USD" valueWithoutTax="0.0" zero="true">0.0</RentalPrice>
+  </Rental_7>
+  <Rental_8>
+    <StartDate>2001-12-31T12:00:00</StartDate>
+    <EndDate>2001-12-31T12:00:00</EndDate>
+    <RentalPrice currency="USD" valueWithoutTax="0.0" zero="true">0.0</RentalPrice>
+  </Rental_8>
+  <Rental_9>
+    <StartDate>2001-12-31T12:00:00</StartDate>
+    <EndDate>2001-12-31T12:00:00</EndDate>
+    <RentalPrice currency="USD" valueWithoutTax="0.0" zero="true">0.0</RentalPrice>
+  </Rental_9>
+  <CostPerClickBidPrice currency="USD" xsi:type="OverrideCurrencyAmount" zero="true">0.0</CostPerClickBidPrice>
+  <MakeAnOfferEligibility>true</MakeAnOfferEligibility>
+  <MinimumAcceptPercentage>0.0</MinimumAcceptPercentage>
+  <MaximumRejectPercentage>0.0</MaximumRejectPercentage>
+  <PricingAction>delete business_price</PricingAction>
+  <MetalStandardPrice>MetalStandardPrice</MetalStandardPrice>
+  <DiamondStandardPrice>DiamondStandardPrice</DiamondStandardPrice>
+  <GemstoneStandardPrice>GemstoneStandardPrice</GemstoneStandardPrice>
+  <MakingChargesStandardPrice>MakingChargesStandardPrice</MakingChargesStandardPrice>
+  <TaxStandardPrice>TaxStandardPrice</TaxStandardPrice>
+  <MetalSalePrice>MetalSalePrice</MetalSalePrice>
+  <DiamondSalePrice>DiamondSalePrice</DiamondSalePrice>
+  <GemstoneSalePrice>GemstoneSalePrice</GemstoneSalePrice>
+  <MakingChargesSalePrice>MakingChargesSalePrice</MakingChargesSalePrice>
+  <TaxSalePrice>TaxSalePrice</TaxSalePrice>
+  <MaximumRetailPrice currency="USD" xsi:type="OverrideCurrencyAmount" zero="true">0.0</MaximumRetailPrice>
+  <IsSourcingOnDemand>yes</IsSourcingOnDemand>
+</Price>

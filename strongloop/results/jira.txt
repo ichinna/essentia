@@ -1,0 +1,16 @@
+GET /attachments/{id}/metadata 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /fields 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /incidents/{incidentId}/attachments 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /incidents/{incidentId}/comments 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /incidents/{incidentId}/history 
+  where not found
+GET /incidents/{incidentId}/properties 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /priorities 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /statuses 
+  pageSize not found, Neither nextPage or page found, where not found

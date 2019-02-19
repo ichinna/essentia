@@ -1,0 +1,2125 @@
+Making a call to http://localhost:8080 for the acton element
+Calling GET http://localhost:8080/elements/api-v2/elements/acton
+Calling GET http://localhost:8080/elements/api-v2/elements/45/lbdocs
+{
+    "ModelSchema": [
+        {
+            "filterSupport": {
+                "supportedFilters": [
+                    "LIMIT",
+                    "TOKEN"
+                ],
+                "queryableFields": [
+                    "__created_date",
+                    "__modified_date"
+                ],
+                "actions": [
+                    "RETRIEVEALL"
+                ]
+            },
+            "name": "lists-listId-contacts",
+            "relations": {
+                "lists": {
+                    "model": "lists",
+                    "type": "belongsTo",
+                    "foreignKey": "listId"
+                },
+                "_contact_id_": {
+                    "model": "lists-listId-contacts",
+                    "type": "referencesMany",
+                    "foreignKey": "_contact_id_"
+                }
+            },
+            "properties": {
+                "listId": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "List id",
+                        "description": "List id",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "lists-listId-contactsId": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Lists - list id - contacts id",
+                        "description": "Lists - list id - contacts id",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "response": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Response",
+                        "description": "Response",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": [
+                        "string"
+                    ],
+                    "required": false
+                },
+                "success": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Success",
+                        "description": "Success",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "boolean",
+                    "required": false
+                },
+                "_contact_id_": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Contact id",
+                        "description": "Contact id",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 1,
+                    "type": "string",
+                    "required": false
+                },
+                "__modified_date": {
+                    "nullable": "true",
+                    "supportedOperators": [
+                        "="
+                    ],
+                    "display": {
+                        "visible": true,
+                        "name": "Modified date",
+                        "description": "Modified date",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "id": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Id",
+                        "description": "Id",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 1,
+                    "type": "string",
+                    "required": false
+                },
+                "message": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Message",
+                        "description": "Message",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "contact_id": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Contact id",
+                        "description": "The recordid of the contact.",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "__created_date": {
+                    "nullable": "true",
+                    "supportedOperators": [
+                        "="
+                    ],
+                    "display": {
+                        "visible": true,
+                        "name": "Created date",
+                        "description": "Created date",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "status": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Status",
+                        "description": "Status",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                }
+            },
+            "interactions": {
+                "DELETEALL": {
+                    "swaggerPaths": [
+                        {
+                            "lists": "/lists/{listId}/contacts/{id}"
+                        }
+                    ],
+                    "filterSupport": {
+                        "queryableFields": [
+                            "listId",
+                            "id"
+                        ],
+                        "mandatory": [
+                            "listId",
+                            "id"
+                        ]
+                    },
+                    "requestProperties": {
+                        "included": [],
+                        "mandatory": []
+                    },
+                    "responseProperties": {
+                        "included": [],
+                        "mandatory": []
+                    },
+                    "type": "actions"
+                },
+                "UPDATE": {
+                    "swaggerPaths": [
+                        {
+                            "lists": "/lists/{listId}/contacts/{id}"
+                        }
+                    ],
+                    "requestProperties": {
+                        "included": [],
+                        "mandatory": []
+                    },
+                    "responseProperties": {
+                        "included": [
+                            "response",
+                            "success",
+                            "id"
+                        ],
+                        "mandatory": []
+                    },
+                    "type": "actions"
+                },
+                "CREATE": {
+                    "swaggerPaths": [
+                        {
+                            "lists": "/lists/{listId}/contacts"
+                        }
+                    ],
+                    "requestProperties": {
+                        "included": [],
+                        "mandatory": []
+                    },
+                    "responseProperties": {
+                        "included": [
+                            "id",
+                            "message",
+                            "contact_id",
+                            "status"
+                        ],
+                        "mandatory": []
+                    },
+                    "type": "actions"
+                },
+                "RETRIEVEALL": {
+                    "swaggerPaths": [
+                        {
+                            "lists": "/lists/{listId}/contacts"
+                        }
+                    ],
+                    "requestProperties": {
+                        "included": [],
+                        "mandatory": []
+                    },
+                    "responseProperties": {
+                        "included": [
+                            "_contact_id_",
+                            "__modified_date",
+                            "__created_date"
+                        ],
+                        "mandatory": []
+                    },
+                    "type": "actions"
+                },
+                "RETRIEVE": {
+                    "swaggerPaths": [
+                        {
+                            "lists": "/lists/{listId}/contacts/{id}"
+                        }
+                    ],
+                    "requestProperties": {
+                        "included": [],
+                        "mandatory": []
+                    },
+                    "responseProperties": {
+                        "included": [
+                            "response",
+                            "success",
+                            "id"
+                        ],
+                        "mandatory": []
+                    },
+                    "type": "actions"
+                }
+            }
+        },
+        {
+            "filterSupport": {
+                "supportedFilters": [
+                    "LIMIT",
+                    "TOKEN"
+                ],
+                "actions": [
+                    "RETRIEVEALL"
+                ]
+            },
+            "name": "optouts",
+            "relations": {},
+            "properties": {
+                "rejectedRecordsUrl": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Rejected records url",
+                        "description": "Rejected records url",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "origin": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Origin",
+                        "description": "Origin",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "message": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Message",
+                        "description": "Message",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "totalCount": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Total count",
+                        "description": "Total count",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "number",
+                    "required": false
+                },
+                "listId": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "List id",
+                        "description": "List id",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "jobId": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Job id",
+                        "description": "Job id",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "file": {
+                    "nullable": "true",
+                    "in": "file",
+                    "display": {
+                        "visible": true,
+                        "name": "File",
+                        "description": "The file of objects to bulk load.",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "type": "string",
+                    "required": false
+                },
+                "folderName": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Folder name",
+                        "description": "Folder name",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "id": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Id",
+                        "description": "Id",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 1,
+                    "type": "number",
+                    "required": false
+                },
+                "listName": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "List name",
+                        "description": "List name",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "emptyRecords": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Empty records",
+                        "description": "Empty records",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "number",
+                    "required": false
+                },
+                "rejectedRecords": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Rejected records",
+                        "description": "Rejected records",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "number",
+                    "required": false
+                },
+                "email": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Email",
+                        "description": "Email",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 1,
+                    "type": "string",
+                    "required": false
+                },
+                "status": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Status",
+                        "description": "Status",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "timestamp": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Timestamp",
+                        "description": "Timestamp",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "number",
+                    "required": false
+                }
+            },
+            "interactions": {
+                "REPLACE": {
+                    "swaggerPaths": [
+                        {
+                            "optouts": "/optouts"
+                        }
+                    ],
+                    "requestProperties": {
+                        "included": [
+                            "file"
+                        ],
+                        "mandatory": []
+                    },
+                    "responseProperties": {
+                        "included": [
+                            "listId",
+                            "jobId",
+                            "rejectedRecordsUrl",
+                            "folderName",
+                            "id",
+                            "listName",
+                            "message",
+                            "totalCount",
+                            "emptyRecords",
+                            "rejectedRecords",
+                            "status"
+                        ],
+                        "mandatory": []
+                    },
+                    "type": "actions"
+                },
+                "RETRIEVEALL": {
+                    "swaggerPaths": [
+                        {
+                            "optouts": "/optouts"
+                        }
+                    ],
+                    "requestProperties": {
+                        "included": [],
+                        "mandatory": []
+                    },
+                    "responseProperties": {
+                        "included": [
+                            "origin",
+                            "email",
+                            "timestamp"
+                        ],
+                        "mandatory": []
+                    },
+                    "type": "actions"
+                }
+            }
+        },
+        {
+            "name": "optin",
+            "relations": {
+                "subscription-types": {
+                    "model": "subscription-types",
+                    "type": "belongsTo",
+                    "foreignKey": "categoryName"
+                }
+            },
+            "properties": {
+                "message": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Message",
+                        "description": "Message",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "categoryName": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Category name",
+                        "description": "Category name",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "status": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Status",
+                        "description": "Status",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                }
+            },
+            "interactions": {
+                "UPDATE": {
+                    "swaggerPaths": [
+                        {
+                            "subscription-types": "/subscription-types/{categoryName}/optin/{email}"
+                        }
+                    ],
+                    "requestProperties": {
+                        "included": [],
+                        "mandatory": []
+                    },
+                    "responseProperties": {
+                        "included": [
+                            "message",
+                            "status"
+                        ],
+                        "mandatory": []
+                    },
+                    "type": "actions"
+                }
+            }
+        },
+        {
+            "name": "optout",
+            "relations": {
+                "subscription-types": {
+                    "model": "subscription-types",
+                    "type": "belongsTo",
+                    "foreignKey": "categoryName"
+                }
+            },
+            "properties": {
+                "message": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Message",
+                        "description": "Message",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "categoryName": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Category name",
+                        "description": "Category name",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "status": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Status",
+                        "description": "Status",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                }
+            },
+            "interactions": {
+                "UPDATE": {
+                    "swaggerPaths": [
+                        {
+                            "subscription-types": "/subscription-types/{categoryName}/optout/{email}"
+                        }
+                    ],
+                    "requestProperties": {
+                        "included": [],
+                        "mandatory": []
+                    },
+                    "responseProperties": {
+                        "included": [
+                            "message",
+                            "status"
+                        ],
+                        "mandatory": []
+                    },
+                    "type": "actions"
+                }
+            }
+        },
+        {
+            "filterSupport": {
+                "supportedFilters": [
+                    "LIMIT",
+                    "TOKEN"
+                ],
+                "actions": [
+                    "RETRIEVEALL"
+                ]
+            },
+            "name": "lists",
+            "relations": {},
+            "properties": {
+                "sourceId": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Source id",
+                        "description": "Source id",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "bIsSL": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "B is sl",
+                        "description": "B is sl",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "boolean",
+                    "required": false
+                },
+                "tsLastCounted": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Ts last counted",
+                        "description": "Ts last counted",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "number",
+                    "required": false
+                },
+                "updateCount": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Update count",
+                        "description": "Update count",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "number",
+                    "required": false
+                },
+                "bIsSforceReport": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "B is sforce report",
+                        "description": "B is sforce report",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "boolean",
+                    "required": false
+                },
+                "bIsList": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "B is list",
+                        "description": "B is list",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "boolean",
+                    "required": false
+                },
+                "description": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Description",
+                        "description": "Description",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "rejectedCount": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Rejected count",
+                        "description": "Rejected count",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "number",
+                    "required": false
+                },
+                "bIsNsuiteAvailable": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "B is nsuite available",
+                        "description": "B is nsuite available",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "boolean",
+                    "required": false
+                },
+                "baseId": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Base id",
+                        "description": "Base id",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "sourceTS": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Source ts",
+                        "description": "Source ts",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "tsSource": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Ts source",
+                        "description": "Ts source",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "number",
+                    "required": false
+                },
+                "listId": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "List id",
+                        "description": "List id",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 1,
+                    "type": "string",
+                    "required": false
+                },
+                "file": {
+                    "nullable": "true",
+                    "in": "file",
+                    "display": {
+                        "visible": true,
+                        "name": "File",
+                        "description": "The file to upload (in CSV format). This is an optional parameter.",
+                        "tags": [
+                            "csv"
+                        ],
+                        "order": 1
+                    },
+                    "type": "string",
+                    "required": false
+                },
+                "appendCount": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Append count",
+                        "description": "Append count",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "number",
+                    "required": false
+                },
+                "id": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Id",
+                        "description": "Id",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 1,
+                    "type": "string",
+                    "required": false
+                },
+                "bIsSforceAvailable": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "B is sforce available",
+                        "description": "B is sforce available",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "boolean",
+                    "required": false
+                },
+                "bIsMSDynAvailable": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "B is ms dyn available",
+                        "description": "B is ms dyn available",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "boolean",
+                    "required": false
+                },
+                "bIsNsuite": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "B is nsuite",
+                        "description": "B is nsuite",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "boolean",
+                    "required": false
+                },
+                "bIsSforce": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "B is sforce",
+                        "description": "B is sforce",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "boolean",
+                    "required": false
+                },
+                "bIsSingleton": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "B is singleton",
+                        "description": "B is singleton",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "boolean",
+                    "required": false
+                },
+                "list": {
+                    "nullable": "true",
+                    "in": "formData",
+                    "display": {
+                        "visible": true,
+                        "name": "List",
+                        "description": "The list object to be created.<br>With the exception of the 'id' field, the required fields indicated in the 'listPost' model are those required to create a new List.",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "type": {
+                        "uploadspecs": {
+                            "nullable": "true",
+                            "display": {
+                                "visible": true,
+                                "name": "Uploadspecs",
+                                "description": "When creating a new list, uploadSpecs is used to describe the structure of the list you are creating in Act-On.",
+                                "tags": [],
+                                "order": 1
+                            },
+                            "id": 0,
+                            "type": [
+                                {
+                                    "columnType": {
+                                        "nullable": "true",
+                                        "display": {
+                                            "visible": true,
+                                            "name": "Column type",
+                                            "description": "This specifies the EMAIL system usage column and will set system field mappings for the other system fields on creation of a new list.",
+                                            "tags": [],
+                                            "order": 1
+                                        },
+                                        "id": 0,
+                                        "type": "string",
+                                        "enum": [
+                                            "EMAIL",
+                                            "FIRSTNAME",
+                                            "LASTNAME",
+                                            "MIDDLENAME",
+                                            "COMPANY",
+                                            "JOBTITLE",
+                                            "DEPT",
+                                            "BIZ_STREET",
+                                            "BIZ_CITY",
+                                            "BIZ_STATE",
+                                            "BIZ_ZIP",
+                                            "BIZ_COUNTRY",
+                                            "HOME_STREET",
+                                            "HOME_CITY",
+                                            "HOME_STATE",
+                                            "HOME_ZIP",
+                                            "HOME_COUNTRY",
+                                            "BIZ_PHONE",
+                                            "BIZ_FAX",
+                                            "HOME_PHONE",
+                                            "HOME_FAX",
+                                            "CELL_PHONE",
+                                            "BIZ_WEB",
+                                            "HOME_WEB"
+                                        ],
+                                        "required": true
+                                    },
+                                    "ignoreColumn": {
+                                        "default": "N",
+                                        "nullable": "true",
+                                        "display": {
+                                            "visible": true,
+                                            "name": "Ignore column",
+                                            "description": "Can either be Y or N. It will specify whether this column should be ignored or not. Defaults to N and any value other than Y will be treated as a N.",
+                                            "tags": [],
+                                            "order": 1
+                                        },
+                                        "id": 0,
+                                        "type": "string",
+                                        "enum": [
+                                            "Y",
+                                            "N"
+                                        ],
+                                        "required": false
+                                    },
+                                    "columnIndex": {
+                                        "nullable": "true",
+                                        "display": {
+                                            "visible": true,
+                                            "name": "Column index",
+                                            "description": "column index within the uploaded file",
+                                            "tags": [],
+                                            "order": 1
+                                        },
+                                        "id": 0,
+                                        "type": "number",
+                                        "required": true
+                                    },
+                                    "columnHeading": {
+                                        "nullable": "true",
+                                        "display": {
+                                            "visible": true,
+                                            "name": "Column heading",
+                                            "description": "display name for column heading",
+                                            "tags": [],
+                                            "order": 1
+                                        },
+                                        "id": 1,
+                                        "type": "string",
+                                        "required": true
+                                    }
+                                }
+                            ],
+                            "required": false
+                        },
+                        "quotecharacter": {
+                            "nullable": "true",
+                            "display": {
+                                "visible": true,
+                                "name": "Quotecharacter",
+                                "description": "Specify the type of quotes used around field names. Valid values: NONE, SINGLE_QUOTE, DOUBLE_QUOTE",
+                                "tags": [],
+                                "order": 1
+                            },
+                            "id": 0,
+                            "type": "string",
+                            "enum": [
+                                "NONE",
+                                "SINGLE_QUOTE",
+                                "DOUBLE_QUOTE"
+                            ],
+                            "required": false
+                        },
+                        "foldername": {
+                            "default": "Default Folder",
+                            "nullable": "true",
+                            "display": {
+                                "visible": true,
+                                "name": "Foldername",
+                                "description": "Name of folder that contains the list. If left blank, the list goes into the Default Folder. If the folder does not exist it will be created.",
+                                "tags": [],
+                                "order": 1
+                            },
+                            "id": 0,
+                            "type": "string",
+                            "required": false
+                        },
+                        "headings": {
+                            "default": "Y",
+                            "nullable": "true",
+                            "display": {
+                                "visible": true,
+                                "name": "Headings",
+                                "description": "Y or N for if the first row of the file are headings. Default value is Y. Any non-null value other than Y will be treated as N.",
+                                "tags": [],
+                                "order": 1
+                            },
+                            "id": 0,
+                            "type": "string",
+                            "enum": [
+                                "Y",
+                                "N"
+                            ],
+                            "required": false
+                        },
+                        "listname": {
+                            "nullable": "true",
+                            "display": {
+                                "visible": true,
+                                "name": "Listname",
+                                "description": "The list name to display in the UI.",
+                                "tags": [],
+                                "order": 1
+                            },
+                            "id": 0,
+                            "type": "string",
+                            "required": false
+                        },
+                        "fieldseparator": {
+                            "nullable": "true",
+                            "display": {
+                                "visible": true,
+                                "name": "Fieldseparator",
+                                "description": "Character used around fields--valid values: COMMA, TAB, SEMI. If not specified then the field separator value is determined by inspecting the file upload data.",
+                                "tags": [],
+                                "order": 1
+                            },
+                            "id": 0,
+                            "type": "string",
+                            "enum": [
+                                "COMMA",
+                                "TAB",
+                                "SEMI"
+                            ],
+                            "required": false
+                        }
+                    },
+                    "required": false
+                },
+                "failedCount": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Failed count",
+                        "description": "Failed count",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "number",
+                    "required": false
+                },
+                "tsLastModified": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Ts last modified",
+                        "description": "Ts last modified",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "number",
+                    "required": false
+                },
+                "bIsSugar": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "B is sugar",
+                        "description": "B is sugar",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "boolean",
+                    "required": false
+                },
+                "name": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Name",
+                        "description": "Name",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "folderName": {
+                    "default": "Default Folder",
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Folder name",
+                        "description": "Folder name",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "sourceName": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Source name",
+                        "description": "Source name",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "bIsMSDyn": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "B is ms dyn",
+                        "description": "B is ms dyn",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "boolean",
+                    "required": false
+                },
+                "bIsSLAvailable": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "B is sl available",
+                        "description": "B is sl available",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "boolean",
+                    "required": false
+                },
+                "bIsSugarAvailable": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "B is sugar available",
+                        "description": "B is sugar available",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "boolean",
+                    "required": false
+                },
+                "sourceSize": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Source size",
+                        "description": "Source size",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "status": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Status",
+                        "description": "Status",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                }
+            },
+            "interactions": {
+                "DELETEALL": {
+                    "swaggerPaths": [
+                        {
+                            "lists": "/lists/{id}"
+                        }
+                    ],
+                    "filterSupport": {
+                        "queryableFields": [
+                            "id"
+                        ],
+                        "mandatory": [
+                            "id"
+                        ]
+                    },
+                    "requestProperties": {
+                        "included": [],
+                        "mandatory": []
+                    },
+                    "responseProperties": {
+                        "included": [],
+                        "mandatory": []
+                    },
+                    "type": "actions"
+                },
+                "UPDATE": {
+                    "swaggerPaths": [
+                        {
+                            "lists": "/lists/{id}"
+                        }
+                    ],
+                    "requestProperties": {
+                        "included": [
+                            "file",
+                            "list.uploadspecs.columnType",
+                            "list.uploadspecs.ignoreColumn",
+                            "list.uploadspecs.columnIndex",
+                            "list.uploadspecs.columnHeading",
+                            "list.putEmptyValues",
+                            "list.quotecharacter",
+                            "list.headings",
+                            "list.fieldseparator",
+                            "list.mergespecs.mergeKeyHeading",
+                            "list.mergespecs.columnMap",
+                            "list.mergespecs.createSegment",
+                            "list.mergespecs.mergeMode",
+                            "list.mergespecs.dstListId"
+                        ],
+                        "mandatory": [
+                            "file",
+                            "list.uploadspecs.columnType",
+                            "list.uploadspecs.columnIndex",
+                            "list.uploadspecs.columnHeading",
+                            "list.mergespecs.columnMap",
+                            "list.mergespecs.mergeMode",
+                            "list.mergespecs.dstListId"
+                        ]
+                    },
+                    "responseProperties": {
+                        "included": [
+                            "listId",
+                            "appendCount",
+                            "failedCount",
+                            "updateCount",
+                            "rejectedCount",
+                            "status"
+                        ],
+                        "mandatory": []
+                    },
+                    "type": "actions"
+                },
+                "CREATE": {
+                    "swaggerPaths": [
+                        {
+                            "lists": "/lists"
+                        }
+                    ],
+                    "requestProperties": {
+                        "included": [
+                            "file",
+                            "list.uploadspecs.columnType",
+                            "list.uploadspecs.ignoreColumn",
+                            "list.uploadspecs.columnIndex",
+                            "list.uploadspecs.columnHeading",
+                            "list.quotecharacter",
+                            "list.foldername",
+                            "list.headings",
+                            "list.listname",
+                            "list.fieldseparator"
+                        ],
+                        "mandatory": [
+                            "list.uploadspecs.columnType",
+                            "list.uploadspecs.columnIndex",
+                            "list.uploadspecs.columnHeading",
+                            "list.listname"
+                        ]
+                    },
+                    "responseProperties": {
+                        "included": [
+                            "sourceId",
+                            "bIsSL",
+                            "tsLastCounted",
+                            "bIsSforceReport",
+                            "bIsList",
+                            "description",
+                            "bIsNsuiteAvailable",
+                            "baseId",
+                            "sourceTS",
+                            "tsSource",
+                            "id",
+                            "bIsSforceAvailable",
+                            "bIsMSDynAvailable",
+                            "bIsNsuite",
+                            "bIsSforce",
+                            "bIsSingleton",
+                            "tsLastModified",
+                            "bIsSugar",
+                            "name",
+                            "folderName",
+                            "sourceName",
+                            "bIsMSDyn",
+                            "bIsSLAvailable",
+                            "bIsSugarAvailable",
+                            "sourceSize"
+                        ],
+                        "mandatory": []
+                    },
+                    "type": "actions"
+                },
+                "RETRIEVEALL": {
+                    "swaggerPaths": [
+                        {
+                            "lists": "/lists"
+                        }
+                    ],
+                    "requestProperties": {
+                        "included": [],
+                        "mandatory": []
+                    },
+                    "responseProperties": {
+                        "included": [
+                            "sourceId",
+                            "bIsSL",
+                            "tsLastCounted",
+                            "bIsSforceReport",
+                            "bIsList",
+                            "description",
+                            "bIsNsuiteAvailable",
+                            "baseId",
+                            "sourceTS",
+                            "tsSource",
+                            "id",
+                            "bIsSforceAvailable",
+                            "bIsMSDynAvailable",
+                            "bIsNsuite",
+                            "bIsSforce",
+                            "bIsSingleton",
+                            "tsLastModified",
+                            "bIsSugar",
+                            "name",
+                            "folderName",
+                            "sourceName",
+                            "bIsMSDyn",
+                            "bIsSLAvailable",
+                            "bIsSugarAvailable",
+                            "sourceSize"
+                        ],
+                        "mandatory": []
+                    },
+                    "type": "actions"
+                },
+                "RETRIEVE": {
+                    "swaggerPaths": [
+                        {
+                            "lists": "/lists/{id}"
+                        }
+                    ],
+                    "requestProperties": {
+                        "included": [],
+                        "mandatory": []
+                    },
+                    "responseProperties": {
+                        "included": [
+                            "sourceId",
+                            "bIsSL",
+                            "tsLastCounted",
+                            "bIsSforceReport",
+                            "bIsList",
+                            "description",
+                            "bIsNsuiteAvailable",
+                            "baseId",
+                            "sourceTS",
+                            "tsSource",
+                            "id",
+                            "bIsSforceAvailable",
+                            "bIsMSDynAvailable",
+                            "bIsNsuite",
+                            "bIsSforce",
+                            "bIsSingleton",
+                            "tsLastModified",
+                            "bIsSugar",
+                            "name",
+                            "folderName",
+                            "sourceName",
+                            "bIsMSDyn",
+                            "bIsSLAvailable",
+                            "bIsSugarAvailable",
+                            "sourceSize"
+                        ],
+                        "mandatory": []
+                    },
+                    "type": "actions"
+                }
+            }
+        },
+        {
+            "name": "subscription-types",
+            "relations": {},
+            "properties": {
+                "headername": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Headername",
+                        "description": "Headername",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "name": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Name",
+                        "description": "Name",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "description": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Description",
+                        "description": "Description",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "id": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Id",
+                        "description": "Id",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 1,
+                    "type": "string",
+                    "required": false
+                },
+                "headerid": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Headerid",
+                        "description": "Headerid",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                }
+            },
+            "interactions": {
+                "RETRIEVEALL": {
+                    "swaggerPaths": [
+                        {
+                            "subscription-types": "/subscription-types"
+                        }
+                    ],
+                    "requestProperties": {
+                        "included": [],
+                        "mandatory": []
+                    },
+                    "responseProperties": {
+                        "included": [
+                            "headername",
+                            "name",
+                            "description",
+                            "id",
+                            "headerid"
+                        ],
+                        "mandatory": []
+                    },
+                    "type": "actions"
+                }
+            }
+        },
+        {
+            "filterSupport": {
+                "supportedFilters": [
+                    "LIMIT",
+                    "TOKEN"
+                ],
+                "queryableFields": [
+                    "__created_date",
+                    "__modified_date"
+                ],
+                "actions": [
+                    "RETRIEVEALL"
+                ]
+            },
+            "name": "contacts",
+            "relations": {
+                "_contact_id_": {
+                    "model": "lists-listId-contacts",
+                    "type": "referencesMany",
+                    "foreignKey": "_contact_id_"
+                }
+            },
+            "properties": {
+                "listId": {
+                    "nullable": "true",
+                    "in": "query",
+                    "display": {
+                        "visible": true,
+                        "name": "List id",
+                        "description": "The list Id from whihc to retreive all contacts",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "type": "string",
+                    "required": false
+                },
+                "lists-listId-contactsId": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Lists - list id - contacts id",
+                        "description": "Lists - list id - contacts id",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "_contact_id_": {
+                    "nullable": "true",
+                    "display": {
+                        "visible": true,
+                        "name": "Contact id",
+                        "description": "Contact id",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 1,
+                    "type": "string",
+                    "required": false
+                },
+                "__modified_date": {
+                    "nullable": "true",
+                    "supportedOperators": [
+                        "="
+                    ],
+                    "display": {
+                        "visible": true,
+                        "name": "Modified date",
+                        "description": "Modified date",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                },
+                "__created_date": {
+                    "nullable": "true",
+                    "supportedOperators": [
+                        "="
+                    ],
+                    "display": {
+                        "visible": true,
+                        "name": "Created date",
+                        "description": "Created date",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "id": 0,
+                    "type": "string",
+                    "required": false
+                }
+            },
+            "interactions": {
+                "RETRIEVEALL": {
+                    "swaggerPaths": [
+                        {
+                            "contacts": "/contacts"
+                        }
+                    ],
+                    "requestProperties": {
+                        "included": [
+                            "listId"
+                        ],
+                        "mandatory": [
+                            "listId"
+                        ]
+                    },
+                    "responseProperties": {
+                        "included": [
+                            "_contact_id_",
+                            "__modified_date",
+                            "__created_date"
+                        ],
+                        "mandatory": []
+                    },
+                    "type": "actions"
+                }
+            }
+        }
+    ],
+    "Version": "v16.0",
+    "ModelDefinitions": [
+        {
+            "display": {
+                "visible": true,
+                "name": "Contacts",
+                "description": "Lists - list id - contacts",
+                "tags": [],
+                "order": 1
+            },
+            "resourcePath": "/lists-listId-contacts",
+            "name": "lists-listId-contacts",
+            "interactions": {
+                "DELETEALL": {
+                    "swaggerPaths": [
+                        {
+                            "lists": "/lists/{listId}/contacts/{id}"
+                        }
+                    ],
+                    "display": {
+                        "visible": true,
+                        "name": "Delete lists contact by id",
+                        "description": "Delete lists contact by id",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "type": "actions"
+                },
+                "CREATE": {
+                    "swaggerPaths": [
+                        {
+                            "lists": "/lists/{listId}/contacts"
+                        }
+                    ],
+                    "display": {
+                        "visible": true,
+                        "name": "Create list record",
+                        "description": "Create list record",
+                        "tags": [
+                            "native:/api/1/list/{listId}/record"
+                        ],
+                        "order": 1
+                    },
+                    "type": "actions"
+                },
+                "RETRIEVEALL": {
+                    "swaggerPaths": [
+                        {
+                            "lists": "/lists/{listId}/contacts"
+                        }
+                    ],
+                    "display": {
+                        "visible": true,
+                        "name": "Retrieve all list record",
+                        "description": "Retrieve all list record",
+                        "tags": [
+                            "native:/api/1/list/{listId}/record"
+                        ],
+                        "order": 1
+                    },
+                    "type": "actions"
+                },
+                "RETRIEVE": {
+                    "swaggerPaths": [
+                        {
+                            "lists": "/lists/{listId}/contacts/{id}"
+                        }
+                    ],
+                    "display": {
+                        "visible": true,
+                        "name": "Retrieve list record by id",
+                        "description": "Retrieve list record by id",
+                        "tags": [
+                            "native:/api/1/list/{listId}/record/{recordId}"
+                        ],
+                        "order": 1
+                    },
+                    "type": "actions"
+                },
+                "UPDATE": {
+                    "swaggerPaths": [
+                        {
+                            "lists": "/lists/{listId}/contacts/{id}"
+                        }
+                    ],
+                    "display": {
+                        "visible": true,
+                        "name": "Update list record by id",
+                        "description": "Update list record by id",
+                        "tags": [
+                            "native:/api/1/list/{listId}/record/{recordId}"
+                        ],
+                        "order": 1
+                    },
+                    "type": "actions"
+                }
+            }
+        },
+        {
+            "display": {
+                "visible": true,
+                "name": "Optout",
+                "description": "Optouts",
+                "tags": [],
+                "order": 1
+            },
+            "resourcePath": "/optouts",
+            "name": "optouts",
+            "interactions": {
+                "RETRIEVEALL": {
+                    "swaggerPaths": [
+                        {
+                            "optouts": "/optouts"
+                        }
+                    ],
+                    "display": {
+                        "visible": true,
+                        "name": "Retrieve all list optout",
+                        "description": "Retrieve all list optout",
+                        "tags": [
+                            "native:/api/1/list/optout"
+                        ],
+                        "order": 1
+                    },
+                    "type": "actions"
+                },
+                "REPLACE": {
+                    "swaggerPaths": [
+                        {
+                            "optouts": "/optouts"
+                        }
+                    ],
+                    "display": {
+                        "visible": true,
+                        "name": "Replace list optout by id",
+                        "description": "Replace list optout by id",
+                        "tags": [
+                            "native:/api/1/list/optout"
+                        ],
+                        "order": 1
+                    },
+                    "type": "actions"
+                }
+            }
+        },
+        {
+            "display": {
+                "visible": true,
+                "name": "Optout",
+                "description": "Subscription - types - category name - optin",
+                "tags": [],
+                "order": 1
+            },
+            "resourcePath": "/optin",
+            "name": "optin",
+            "interactions": {
+                "UPDATE": {
+                    "swaggerPaths": [
+                        {
+                            "subscription-types": "/subscription-types/{categoryName}/optin/{email}"
+                        }
+                    ],
+                    "display": {
+                        "visible": true,
+                        "name": "Update subscription message send by id",
+                        "description": "Update subscription message send by id",
+                        "tags": [
+                            "native:/api/1/subscription/message/{id}/send/{email}"
+                        ],
+                        "order": 1
+                    },
+                    "type": "actions"
+                }
+            }
+        },
+        {
+            "display": {
+                "visible": true,
+                "name": "Optout",
+                "description": "Subscription - types - category name - optout",
+                "tags": [],
+                "order": 1
+            },
+            "resourcePath": "/optout",
+            "name": "optout",
+            "interactions": {
+                "UPDATE": {
+                    "swaggerPaths": [
+                        {
+                            "subscription-types": "/subscription-types/{categoryName}/optout/{email}"
+                        }
+                    ],
+                    "display": {
+                        "visible": true,
+                        "name": "Update subscription message send by id",
+                        "description": "Update subscription message send by id",
+                        "tags": [
+                            "native:/api/1/subscription/message/{id}/send/{email}"
+                        ],
+                        "order": 1
+                    },
+                    "type": "actions"
+                }
+            }
+        },
+        {
+            "display": {
+                "visible": true,
+                "name": "List",
+                "description": "Lists",
+                "tags": [],
+                "order": 1
+            },
+            "resourcePath": "/lists",
+            "name": "lists",
+            "interactions": {
+                "DELETEALL": {
+                    "swaggerPaths": [
+                        {
+                            "lists": "/lists/{id}"
+                        }
+                    ],
+                    "display": {
+                        "visible": true,
+                        "name": "Delete list by id",
+                        "description": "Delete list by id",
+                        "tags": [],
+                        "order": 1
+                    },
+                    "type": "actions"
+                },
+                "CREATE": {
+                    "swaggerPaths": [
+                        {
+                            "lists": "/lists"
+                        }
+                    ],
+                    "display": {
+                        "visible": true,
+                        "name": "Create list",
+                        "description": "Create list",
+                        "tags": [
+                            "native:/api/1/list"
+                        ],
+                        "order": 1
+                    },
+                    "type": "actions"
+                },
+                "RETRIEVEALL": {
+                    "swaggerPaths": [
+                        {
+                            "lists": "/lists"
+                        }
+                    ],
+                    "display": {
+                        "visible": true,
+                        "name": "Retrieve all list",
+                        "description": "Retrieve all list",
+                        "tags": [
+                            "native:/api/1/list"
+                        ],
+                        "order": 1
+                    },
+                    "type": "actions"
+                },
+                "RETRIEVE": {
+                    "swaggerPaths": [
+                        {
+                            "lists": "/lists/{id}"
+                        }
+                    ],
+                    "display": {
+                        "visible": true,
+                        "name": "Retrieve list by id",
+                        "description": "Retrieve list by id",
+                        "tags": [
+                            "native:/api/1/list/{listId}"
+                        ],
+                        "order": 1
+                    },
+                    "type": "actions"
+                },
+                "UPDATE": {
+                    "swaggerPaths": [
+                        {
+                            "lists": "/lists/{id}"
+                        }
+                    ],
+                    "display": {
+                        "visible": true,
+                        "name": "Update list by id",
+                        "description": "Update list by id",
+                        "tags": [
+                            "native:/api/1/list/{listId}"
+                        ],
+                        "order": 1
+                    },
+                    "type": "actions"
+                }
+            }
+        },
+        {
+            "display": {
+                "visible": true,
+                "name": "Subscription Categories",
+                "description": "Subscription - types",
+                "tags": [],
+                "order": 1
+            },
+            "resourcePath": "/subscription-types",
+            "name": "subscription-types",
+            "interactions": {
+                "RETRIEVEALL": {
+                    "swaggerPaths": [
+                        {
+                            "subscription-types": "/subscription-types"
+                        }
+                    ],
+                    "display": {
+                        "visible": true,
+                        "name": "Retrieve all subscription category",
+                        "description": "Retrieve all subscription category",
+                        "tags": [
+                            "native:/api/1/subscription/category"
+                        ],
+                        "order": 1
+                    },
+                    "type": "actions"
+                }
+            }
+        },
+        {
+            "display": {
+                "visible": true,
+                "name": "Contacts",
+                "description": "Contacts",
+                "tags": [],
+                "order": 1
+            },
+            "resourcePath": "/contacts",
+            "name": "contacts",
+            "interactions": {
+                "RETRIEVEALL": {
+                    "swaggerPaths": [
+                        {
+                            "contacts": "/contacts"
+                        }
+                    ],
+                    "display": {
+                        "visible": true,
+                        "name": "Retrieve all account",
+                        "description": "Retrieve all account",
+                        "tags": [
+                            "native:/api/1/account"
+                        ],
+                        "order": 1
+                    },
+                    "type": "actions"
+                }
+            }
+        }
+    ],
+    "ModifiedDate": "2018-01-25"
+}

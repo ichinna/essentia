@@ -1,0 +1,1978 @@
+GET/{id}
+{
+  "discount_total": {
+    "x-has-customfields": false,
+    "type": "object",
+    "title": "discount_total",
+    "properties": {
+      "amount": {
+        "x-samplevalue": "0.00",
+        "type": "string"
+      },
+      "code": {
+        "x-samplevalue": "USD",
+        "type": "string"
+      }
+    }
+  },
+  "amount": {
+    "x-has-customfields": false,
+    "type": "object",
+    "title": "amount",
+    "properties": {
+      "amount": {
+        "x-samplevalue": "800.00",
+        "type": "string"
+      },
+      "code": {
+        "x-samplevalue": "USD",
+        "type": "string"
+      }
+    }
+  },
+  "outstanding": {
+    "x-has-customfields": false,
+    "type": "object",
+    "title": "outstanding",
+    "properties": {
+      "amount": {
+        "x-samplevalue": "800.00",
+        "type": "string"
+      },
+      "code": {
+        "x-samplevalue": "USD",
+        "type": "string"
+      }
+    }
+  },
+  "invoices": {
+    "x-has-customfields": false,
+    "title": "invoices",
+    "properties": {
+      "parent": {
+        "x-samplevalue": 0,
+        "format": "int32",
+        "type": "integer"
+      },
+      "country": {
+        "x-samplevalue": "United States",
+        "type": "string"
+      },
+      "due_offset_days": {
+        "x-samplevalue": 30,
+        "format": "int32",
+        "type": "integer"
+      },
+      "notes": {
+        "x-samplevalue": "The value for notes",
+        "type": "string"
+      },
+      "vat_number": {
+        "x-samplevalue": "The value for vat_number",
+        "type": "string"
+      },
+      "vat_name": {
+        "x-samplevalue": "The value for vat_name",
+        "type": "string"
+      },
+      "ext_archive": {
+        "x-samplevalue": 0,
+        "format": "int32",
+        "type": "integer"
+      },
+      "language": {
+        "x-samplevalue": "en",
+        "type": "string"
+      },
+      "accountid": {
+        "x-samplevalue": "KAG77",
+        "type": "string"
+      },
+      "province": {
+        "x-samplevalue": "The value for province",
+        "type": "string"
+      },
+      "terms": {
+        "x-samplevalue": "The value for terms",
+        "type": "string"
+      },
+      "date_paid": {
+        "x-samplevalue": "The value for date_paid",
+        "type": "string"
+      },
+      "id": {
+        "x-samplevalue": 2201278,
+        "format": "int32",
+        "type": "integer",
+        "x-readOnly": true
+      },
+      "create_date": {
+        "x-samplevalue": "2016-09-09",
+        "x-mask": "yyyy-MM-dd",
+        "format": "date",
+        "type": "string",
+        "x-readOnly": true
+      },
+      "invoice_number": {
+        "x-samplevalue": "0000003",
+        "type": "string"
+      },
+      "fname": {
+        "x-samplevalue": "Test",
+        "type": "string"
+      },
+      "ownerid": {
+        "x-samplevalue": 1,
+        "format": "int32",
+        "type": "integer"
+      },
+      "dispute_status": {
+        "x-samplevalue": "The value for dispute_status",
+        "type": "string"
+      },
+      "sentid": {
+        "x-samplevalue": 1,
+        "format": "int32",
+        "type": "integer"
+      },
+      "autobill_status": {
+        "x-samplevalue": "The value for autobill_status",
+        "type": "string"
+      },
+      "deposit_status": {
+        "x-samplevalue": "none",
+        "type": "string"
+      },
+      "customerid": {
+        "x-samplevalue": 2185379,
+        "format": "int32",
+        "type": "integer"
+      },
+      "last_order_status": {
+        "x-samplevalue": "The value for last_order_status",
+        "type": "string"
+      },
+      "updated": {
+        "x-samplevalue": "2016-09-09 16:04:42",
+        "x-mask": "yyyy-MM-dd HH:mm:ss",
+        "format": "date-time",
+        "type": "string",
+        "x-readOnly": true
+      },
+      "status": {
+        "x-samplevalue": 2,
+        "format": "int32",
+        "type": "integer"
+      },
+      "gmail": {
+        "x-samplevalue": false,
+        "type": "boolean"
+      },
+      "template": {
+        "x-samplevalue": "clean-grouped",
+        "type": "string"
+      },
+      "discount_total": {
+        "type": "discount_total"
+      },
+      "code": {
+        "x-samplevalue": "The value for code",
+        "type": "string"
+      },
+      "city": {
+        "x-samplevalue": "The value for city",
+        "type": "string"
+      },
+      "vis_state": {
+        "x-samplevalue": 0,
+        "format": "int32",
+        "type": "integer"
+      },
+      "description": {
+        "x-samplevalue": "The value for description",
+        "type": "string"
+      },
+      "created_at": {
+        "x-samplevalue": "2016-09-09 14:37:59",
+        "x-mask": "yyyy-MM-dd HH:mm:ss",
+        "format": "date-time",
+        "type": "string",
+        "x-readOnly": true
+      },
+      "accounting_systemid": {
+        "x-samplevalue": "KAG77",
+        "type": "string"
+      },
+      "currency_code": {
+        "x-samplevalue": "USD",
+        "type": "string"
+      },
+      "v3_status": {
+        "x-samplevalue": "sent",
+        "type": "string"
+      },
+      "lname": {
+        "x-samplevalue": "Client",
+        "type": "string"
+      },
+      "po_number": {
+        "x-samplevalue": "The value for po_number",
+        "type": "string"
+      },
+      "generation_date": {
+        "x-samplevalue": "The value for generation_date",
+        "type": "string"
+      },
+      "street": {
+        "x-samplevalue": "The value for street",
+        "type": "string"
+      },
+      "discount_description": {
+        "x-samplevalue": "The value for discount_description",
+        "type": "string"
+      },
+      "invoiceid": {
+        "x-samplevalue": 2201278,
+        "format": "int32",
+        "type": "integer",
+        "x-readOnly": true
+      },
+      "street2": {
+        "x-samplevalue": "The value for street2",
+        "type": "string"
+      },
+      "display_status": {
+        "x-samplevalue": "sent",
+        "type": "string"
+      },
+      "deposit_amount": {
+        "x-samplevalue": "The value for deposit_amount",
+        "type": "string"
+      },
+      "amount": {
+        "type": "amount"
+      },
+      "outstanding": {
+        "type": "outstanding"
+      },
+      "address": {
+        "x-samplevalue": "The value for address",
+        "type": "string"
+      },
+      "deposit_percentage": {
+        "x-samplevalue": "The value for deposit_percentage",
+        "type": "string"
+      },
+      "return_uri": {
+        "x-samplevalue": "The value for return_uri",
+        "type": "string"
+      },
+      "payment_status": {
+        "x-samplevalue": "unpaid",
+        "type": "string"
+      },
+      "due_date": {
+        "x-samplevalue": "2016-10-09",
+        "x-mask": "yyyy-MM-dd",
+        "format": "date",
+        "type": "string"
+      },
+      "discount_value": {
+        "x-samplevalue": "0",
+        "type": "string"
+      },
+      "auto_bill": {
+        "x-samplevalue": false,
+        "type": "boolean"
+      },
+      "basecampid": {
+        "x-samplevalue": 0,
+        "format": "int32",
+        "type": "integer"
+      },
+      "current_organization": {
+        "x-samplevalue": "Test Client",
+        "type": "string"
+      },
+      "show_attachments": {
+        "x-samplevalue": true,
+        "type": "boolean"
+      },
+      "organization": {
+        "x-samplevalue": "Test Client",
+        "type": "string"
+      },
+      "estimateid": {
+        "x-samplevalue": 0,
+        "format": "int32",
+        "type": "integer"
+      },
+      "paid": {
+        "type": "paid"
+      }
+    },
+    "x-primary-key": [
+      "id"
+    ],
+    "x-vendor-objectname": "invoices"
+  },
+  "paid": {
+    "x-has-customfields": false,
+    "type": "object",
+    "title": "paid",
+    "properties": {
+      "amount": {
+        "x-samplevalue": "0.00",
+        "type": "string"
+      },
+      "code": {
+        "x-samplevalue": "USD",
+        "type": "string"
+      }
+    }
+  }
+}
+
+GET:
+
+{
+    "amount": {
+        "properties": {
+            "amount": {
+                "type": "string",
+                "x-samplevalue": "800.00"
+            },
+            "code": {
+                "type": "string",
+                "x-samplevalue": "USD"
+            }
+        },
+        "title": "amount",
+        "type": "object",
+        "x-has-customfields": false
+    },
+    "discount_total": {
+        "properties": {
+            "amount": {
+                "type": "string",
+                "x-samplevalue": "0.00"
+            },
+            "code": {
+                "type": "string",
+                "x-samplevalue": "USD"
+            }
+        },
+        "title": "discount_total",
+        "type": "object",
+        "x-has-customfields": false
+    },
+    "outstanding": {
+        "properties": {
+            "amount": {
+                "type": "string",
+                "x-samplevalue": "800.00"
+            },
+            "code": {
+                "type": "string",
+                "x-samplevalue": "USD"
+            }
+        },
+        "title": "outstanding",
+        "type": "object",
+        "x-has-customfields": false
+    },
+    "invoicesListObject": {
+        "id": "invoicesListObject",
+        "properties": {
+            "properties": {
+                "accountid": {
+                    "type": "string",
+                    "x-samplevalue": "KAG77"
+                },
+                "accounting_systemid": {
+                    "type": "string",
+                    "x-samplevalue": "KAG77"
+                },
+                "address": {
+                    "type": "string",
+                    "x-samplevalue": "The value for address"
+                },
+                "amount": {
+                    "type": "amount"
+                },
+                "auto_bill": {
+                    "type": "boolean",
+                    "x-samplevalue": false
+                },
+                "autobill_status": {
+                    "type": "string",
+                    "x-samplevalue": "The value for autobill_status"
+                },
+                "basecampid": {
+                    "format": "int32",
+                    "type": "integer",
+                    "x-samplevalue": 0
+                },
+                "city": {
+                    "type": "string",
+                    "x-samplevalue": "The value for city"
+                },
+                "code": {
+                    "type": "string",
+                    "x-samplevalue": "The value for code"
+                },
+                "country": {
+                    "type": "string",
+                    "x-samplevalue": "United States"
+                },
+                "create_date": {
+                    "format": "date",
+                    "type": "string",
+                    "x-mask": "yyyy-MM-dd",
+                    "x-readOnly": true,
+                    "x-samplevalue": "2016-09-09"
+                },
+                "created_at": {
+                    "format": "date-time",
+                    "type": "string",
+                    "x-mask": "yyyy-MM-dd HH:mm:ss",
+                    "x-readOnly": true,
+                    "x-samplevalue": "2016-09-09 14:37:59"
+                },
+                "currency_code": {
+                    "type": "string",
+                    "x-samplevalue": "USD"
+                },
+                "current_organization": {
+                    "type": "string",
+                    "x-samplevalue": "Test Client"
+                },
+                "customerid": {
+                    "format": "int32",
+                    "type": "integer",
+                    "x-samplevalue": 2185379
+                },
+                "date_paid": {
+                    "type": "string",
+                    "x-samplevalue": "The value for date_paid"
+                },
+                "deposit_amount": {
+                    "type": "string",
+                    "x-samplevalue": "The value for deposit_amount"
+                },
+                "deposit_percentage": {
+                    "type": "string",
+                    "x-samplevalue": "The value for deposit_percentage"
+                },
+                "deposit_status": {
+                    "type": "string",
+                    "x-samplevalue": "none"
+                },
+                "description": {
+                    "type": "string",
+                    "x-samplevalue": "The value for description"
+                },
+                "discount_description": {
+                    "type": "string",
+                    "x-samplevalue": "The value for discount_description"
+                },
+                "discount_total": {
+                    "type": "discount_total"
+                },
+                "discount_value": {
+                    "type": "string",
+                    "x-samplevalue": "0"
+                },
+                "display_status": {
+                    "type": "string",
+                    "x-samplevalue": "sent"
+                },
+                "dispute_status": {
+                    "type": "string",
+                    "x-samplevalue": "The value for dispute_status"
+                },
+                "due_date": {
+                    "format": "date",
+                    "type": "string",
+                    "x-mask": "yyyy-MM-dd",
+                    "x-samplevalue": "2016-10-09"
+                },
+                "due_offset_days": {
+                    "format": "int32",
+                    "type": "integer",
+                    "x-samplevalue": 30
+                },
+                "estimateid": {
+                    "format": "int32",
+                    "type": "integer",
+                    "x-samplevalue": 0
+                },
+                "ext_archive": {
+                    "format": "int32",
+                    "type": "integer",
+                    "x-samplevalue": 0
+                },
+                "fname": {
+                    "type": "string",
+                    "x-samplevalue": "Test"
+                },
+                "generation_date": {
+                    "type": "string",
+                    "x-samplevalue": "The value for generation_date"
+                },
+                "gmail": {
+                    "type": "boolean",
+                    "x-samplevalue": false
+                },
+                "id": {
+                    "format": "int32",
+                    "type": "integer",
+                    "x-readOnly": true,
+                    "x-samplevalue": 2201278
+                },
+                "invoice_number": {
+                    "type": "string",
+                    "x-samplevalue": "0000003"
+                },
+                "invoiceid": {
+                    "format": "int32",
+                    "type": "integer",
+                    "x-readOnly": true,
+                    "x-samplevalue": 2201278
+                },
+                "language": {
+                    "type": "string",
+                    "x-samplevalue": "en"
+                },
+                "last_order_status": {
+                    "type": "string",
+                    "x-samplevalue": "The value for last_order_status"
+                },
+                "lname": {
+                    "type": "string",
+                    "x-samplevalue": "Client"
+                },
+                "notes": {
+                    "type": "string",
+                    "x-samplevalue": "The value for notes"
+                },
+                "organization": {
+                    "type": "string",
+                    "x-samplevalue": "Test Client"
+                },
+                "outstanding": {
+                    "type": "outstanding"
+                },
+                "ownerid": {
+                    "format": "int32",
+                    "type": "integer",
+                    "x-samplevalue": 1
+                },
+                "paid": {
+                    "type": "paid"
+                },
+                "parent": {
+                    "format": "int32",
+                    "type": "integer",
+                    "x-samplevalue": 0
+                },
+                "payment_status": {
+                    "type": "string",
+                    "x-samplevalue": "unpaid"
+                },
+                "po_number": {
+                    "type": "string",
+                    "x-samplevalue": "The value for po_number"
+                },
+                "province": {
+                    "type": "string",
+                    "x-samplevalue": "The value for province"
+                },
+                "return_uri": {
+                    "type": "string",
+                    "x-samplevalue": "The value for return_uri"
+                },
+                "sentid": {
+                    "format": "int32",
+                    "type": "integer",
+                    "x-samplevalue": 1
+                },
+                "show_attachments": {
+                    "type": "boolean",
+                    "x-samplevalue": true
+                },
+                "status": {
+                    "format": "int32",
+                    "type": "integer",
+                    "x-samplevalue": 2
+                },
+                "street": {
+                    "type": "string",
+                    "x-samplevalue": "The value for street"
+                },
+                "street2": {
+                    "type": "string",
+                    "x-samplevalue": "The value for street2"
+                },
+                "template": {
+                    "type": "string",
+                    "x-samplevalue": "clean-grouped"
+                },
+                "terms": {
+                    "type": "string",
+                    "x-samplevalue": "The value for terms"
+                },
+                "updated": {
+                    "format": "date-time",
+                    "type": "string",
+                    "x-mask": "yyyy-MM-dd HH:mm:ss",
+                    "x-readOnly": true,
+                    "x-samplevalue": "2016-09-09 16:04:42"
+                },
+                "v3_status": {
+                    "type": "string",
+                    "x-samplevalue": "sent"
+                },
+                "vat_name": {
+                    "type": "string",
+                    "x-samplevalue": "The value for vat_name"
+                },
+                "vat_number": {
+                    "type": "string",
+                    "x-samplevalue": "The value for vat_number"
+                },
+                "vis_state": {
+                    "format": "int32",
+                    "type": "integer",
+                    "x-samplevalue": 0
+                }
+            },
+            "title": "invoices",
+            "x-has-customfields": false,
+            "x-primary-key": [
+                "id"
+            ],
+            "x-vendor-objectname": "invoices"
+        },
+        "x-primary-key": [
+      "id"
+    ],
+    "x-vendor-objectname": "invoices"
+    },
+    "paid": {
+        "properties": {
+            "amount": {
+                "type": "string",
+                "x-samplevalue": "0.00"
+            },
+            "code": {
+                "type": "string",
+                "x-samplevalue": "USD"
+            }
+        },
+        "title": "paid",
+        "type": "object",
+        "x-has-customfields": false
+    },
+    "invoicesList": {
+        "id": "invoicesList",
+        "items": {
+            "$ref": "invoicesListObject"
+        },
+        "type": "array"
+    }
+}
+
+
+POST:
+RBS:
+{
+    "createInvoice": {
+        "id": "createInvoice",
+        "properties": {
+            "accountid": {
+                "type": "string",
+                "x-samplevalue": "KAG77"
+            },
+            "accounting_systemid": {
+                "type": "string",
+                "x-samplevalue": "KAG77"
+            },
+            "address": {
+                "type": "string",
+                "x-samplevalue": "The value for address"
+            },
+            "amount": {
+                "type": "amount"
+            },
+            "auto_bill": {
+                "type": "boolean",
+                "x-samplevalue": false
+            },
+            "autobill_status": {
+                "type": "string",
+                "x-samplevalue": "The value for autobill_status"
+            },
+            "basecampid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            },
+            "city": {
+                "type": "string",
+                "x-samplevalue": "The value for city"
+            },
+            "code": {
+                "type": "string",
+                "x-samplevalue": "The value for code"
+            },
+            "country": {
+                "type": "string",
+                "x-samplevalue": "United States"
+            },
+            "create_date": {
+                "format": "date",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd",
+                "x-readOnly": true,
+                "x-samplevalue": "2016-09-09"
+            },
+            "created_at": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2016-09-09 14:37:59"
+            },
+            "currency_code": {
+                "type": "string",
+                "x-samplevalue": "USD"
+            },
+            "current_organization": {
+                "type": "string",
+                "x-samplevalue": "Test Client"
+            },
+            "customerid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 2185379
+            },
+            "date_paid": {
+                "type": "string",
+                "x-samplevalue": "The value for date_paid"
+            },
+            "deposit_amount": {
+                "type": "string",
+                "x-samplevalue": "The value for deposit_amount"
+            },
+            "deposit_percentage": {
+                "type": "string",
+                "x-samplevalue": "The value for deposit_percentage"
+            },
+            "deposit_status": {
+                "type": "string",
+                "x-samplevalue": "none"
+            },
+            "description": {
+                "type": "string",
+                "x-samplevalue": "The value for description"
+            },
+            "discount_description": {
+                "type": "string",
+                "x-samplevalue": "The value for discount_description"
+            },
+            "discount_total": {
+                "type": "discount_total"
+            },
+            "discount_value": {
+                "type": "string",
+                "x-samplevalue": "0"
+            },
+            "display_status": {
+                "type": "string",
+                "x-samplevalue": "sent"
+            },
+            "dispute_status": {
+                "type": "string",
+                "x-samplevalue": "The value for dispute_status"
+            },
+            "due_date": {
+                "format": "date",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd",
+                "x-samplevalue": "2016-10-09"
+            },
+            "due_offset_days": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 30
+            },
+            "estimateid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            },
+            "ext_archive": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            },
+            "fname": {
+                "type": "string",
+                "x-samplevalue": "Test"
+            },
+            "generation_date": {
+                "type": "string",
+                "x-samplevalue": "The value for generation_date"
+            },
+            "gmail": {
+                "type": "boolean",
+                "x-samplevalue": false
+            },
+            "id": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 2201278
+            },
+            "invoice_number": {
+                "type": "string",
+                "x-samplevalue": "0000003"
+            },
+            "invoiceid": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 2201278
+            },
+            "language": {
+                "type": "string",
+                "x-samplevalue": "en"
+            },
+            "last_order_status": {
+                "type": "string",
+                "x-samplevalue": "The value for last_order_status"
+            },
+            "lname": {
+                "type": "string",
+                "x-samplevalue": "Client"
+            },
+            "notes": {
+                "type": "string",
+                "x-samplevalue": "The value for notes"
+            },
+            "organization": {
+                "type": "string",
+                "x-samplevalue": "Test Client"
+            },
+            "outstanding": {
+                "type": "outstanding"
+            },
+            "ownerid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 1
+            },
+            "paid": {
+                "type": "paid"
+            },
+            "parent": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            },
+            "payment_status": {
+                "type": "string",
+                "x-samplevalue": "unpaid"
+            },
+            "po_number": {
+                "type": "string",
+                "x-samplevalue": "The value for po_number"
+            },
+            "province": {
+                "type": "string",
+                "x-samplevalue": "The value for province"
+            },
+            "return_uri": {
+                "type": "string",
+                "x-samplevalue": "The value for return_uri"
+            },
+            "sentid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 1
+            },
+            "show_attachments": {
+                "type": "boolean",
+                "x-samplevalue": true
+            },
+            "status": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 2
+            },
+            "street": {
+                "type": "string",
+                "x-samplevalue": "The value for street"
+            },
+            "street2": {
+                "type": "string",
+                "x-samplevalue": "The value for street2"
+            },
+            "template": {
+                "type": "string",
+                "x-samplevalue": "clean-grouped"
+            },
+            "terms": {
+                "type": "string",
+                "x-samplevalue": "The value for terms"
+            },
+            "updated": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2016-09-09 16:04:42"
+            },
+            "v3_status": {
+                "type": "string",
+                "x-samplevalue": "sent"
+            },
+            "vat_name": {
+                "type": "string",
+                "x-samplevalue": "The value for vat_name"
+            },
+            "vat_number": {
+                "type": "string",
+                "x-samplevalue": "The value for vat_number"
+            },
+            "vis_state": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            }
+        },
+        "required": [
+            "email",
+            "customerid",
+            "create_date"
+        ],
+        "x-primary-key": [
+            "id"
+        ],
+        "x-vendor-objectname": "invoices"
+    },
+    "amount": {
+        "properties": {
+            "amount": {
+                "type": "string",
+                "x-samplevalue": "800.00"
+            },
+            "code": {
+                "type": "string",
+                "x-samplevalue": "USD"
+            }
+        },
+        "title": "amount",
+        "type": "object",
+        "x-has-customfields": false
+    },
+    "discount_total": {
+        "properties": {
+            "amount": {
+                "type": "string",
+                "x-samplevalue": "0.00"
+            },
+            "code": {
+                "type": "string",
+                "x-samplevalue": "USD"
+            }
+        },
+        "title": "discount_total",
+        "type": "object",
+        "x-has-customfields": false
+    },
+    "outstanding": {
+        "properties": {
+            "amount": {
+                "type": "string",
+                "x-samplevalue": "800.00"
+            },
+            "code": {
+                "type": "string",
+                "x-samplevalue": "USD"
+            }
+        },
+        "title": "outstanding",
+        "type": "object",
+        "x-has-customfields": false
+    },
+    "paid": {
+        "properties": {
+            "amount": {
+                "type": "string",
+                "x-samplevalue": "0.00"
+            },
+            "code": {
+                "type": "string",
+                "x-samplevalue": "USD"
+            }
+        },
+        "title": "paid",
+        "type": "object",
+        "x-has-customfields": false
+    }
+}
+
+SWAGGER:
+
+{
+    "amount": {
+        "properties": {
+            "amount": {
+                "type": "string",
+                "x-samplevalue": "800.00"
+            },
+            "code": {
+                "type": "string",
+                "x-samplevalue": "USD"
+            }
+        },
+        "title": "amount",
+        "type": "object",
+        "x-has-customfields": false
+    },
+    "discount_total": {
+        "properties": {
+            "amount": {
+                "type": "string",
+                "x-samplevalue": "0.00"
+            },
+            "code": {
+                "type": "string",
+                "x-samplevalue": "USD"
+            }
+        },
+        "title": "discount_total",
+        "type": "object",
+        "x-has-customfields": false
+    },
+    "outstanding": {
+        "properties": {
+            "amount": {
+                "type": "string",
+                "x-samplevalue": "800.00"
+            },
+            "code": {
+                "type": "string",
+                "x-samplevalue": "USD"
+            }
+        },
+        "title": "outstanding",
+        "type": "object",
+        "x-has-customfields": false
+    },
+    "invoices": {
+        "properties": {
+            "accountid": {
+                "type": "string",
+                "x-samplevalue": "KAG77"
+            },
+            "accounting_systemid": {
+                "type": "string",
+                "x-samplevalue": "KAG77"
+            },
+            "address": {
+                "type": "string",
+                "x-samplevalue": "The value for address"
+            },
+            "amount": {
+                "type": "amount"
+            },
+            "auto_bill": {
+                "type": "boolean",
+                "x-samplevalue": false
+            },
+            "autobill_status": {
+                "type": "string",
+                "x-samplevalue": "The value for autobill_status"
+            },
+            "basecampid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            },
+            "city": {
+                "type": "string",
+                "x-samplevalue": "The value for city"
+            },
+            "code": {
+                "type": "string",
+                "x-samplevalue": "The value for code"
+            },
+            "country": {
+                "type": "string",
+                "x-samplevalue": "United States"
+            },
+            "create_date": {
+                "format": "date",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd",
+                "x-readOnly": true,
+                "x-samplevalue": "2016-09-09"
+            },
+            "created_at": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2016-09-09 14:37:59"
+            },
+            "currency_code": {
+                "type": "string",
+                "x-samplevalue": "USD"
+            },
+            "current_organization": {
+                "type": "string",
+                "x-samplevalue": "Test Client"
+            },
+            "customerid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 2185379
+            },
+            "date_paid": {
+                "type": "string",
+                "x-samplevalue": "The value for date_paid"
+            },
+            "deposit_amount": {
+                "type": "string",
+                "x-samplevalue": "The value for deposit_amount"
+            },
+            "deposit_percentage": {
+                "type": "string",
+                "x-samplevalue": "The value for deposit_percentage"
+            },
+            "deposit_status": {
+                "type": "string",
+                "x-samplevalue": "none"
+            },
+            "description": {
+                "type": "string",
+                "x-samplevalue": "The value for description"
+            },
+            "discount_description": {
+                "type": "string",
+                "x-samplevalue": "The value for discount_description"
+            },
+            "discount_total": {
+                "type": "discount_total"
+            },
+            "discount_value": {
+                "type": "string",
+                "x-samplevalue": "0"
+            },
+            "display_status": {
+                "type": "string",
+                "x-samplevalue": "sent"
+            },
+            "dispute_status": {
+                "type": "string",
+                "x-samplevalue": "The value for dispute_status"
+            },
+            "due_date": {
+                "format": "date",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd",
+                "x-samplevalue": "2016-10-09"
+            },
+            "due_offset_days": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 30
+            },
+            "estimateid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            },
+            "ext_archive": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            },
+            "fname": {
+                "type": "string",
+                "x-samplevalue": "Test"
+            },
+            "generation_date": {
+                "type": "string",
+                "x-samplevalue": "The value for generation_date"
+            },
+            "gmail": {
+                "type": "boolean",
+                "x-samplevalue": false
+            },
+            "id": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 2201278
+            },
+            "invoice_number": {
+                "type": "string",
+                "x-samplevalue": "0000003"
+            },
+            "invoiceid": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 2201278
+            },
+            "language": {
+                "type": "string",
+                "x-samplevalue": "en"
+            },
+            "last_order_status": {
+                "type": "string",
+                "x-samplevalue": "The value for last_order_status"
+            },
+            "lname": {
+                "type": "string",
+                "x-samplevalue": "Client"
+            },
+            "notes": {
+                "type": "string",
+                "x-samplevalue": "The value for notes"
+            },
+            "organization": {
+                "type": "string",
+                "x-samplevalue": "Test Client"
+            },
+            "outstanding": {
+                "type": "outstanding"
+            },
+            "ownerid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 1
+            },
+            "paid": {
+                "type": "paid"
+            },
+            "parent": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            },
+            "payment_status": {
+                "type": "string",
+                "x-samplevalue": "unpaid"
+            },
+            "po_number": {
+                "type": "string",
+                "x-samplevalue": "The value for po_number"
+            },
+            "province": {
+                "type": "string",
+                "x-samplevalue": "The value for province"
+            },
+            "return_uri": {
+                "type": "string",
+                "x-samplevalue": "The value for return_uri"
+            },
+            "sentid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 1
+            },
+            "show_attachments": {
+                "type": "boolean",
+                "x-samplevalue": true
+            },
+            "status": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 2
+            },
+            "street": {
+                "type": "string",
+                "x-samplevalue": "The value for street"
+            },
+            "street2": {
+                "type": "string",
+                "x-samplevalue": "The value for street2"
+            },
+            "template": {
+                "type": "string",
+                "x-samplevalue": "clean-grouped"
+            },
+            "terms": {
+                "type": "string",
+                "x-samplevalue": "The value for terms"
+            },
+            "updated": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2016-09-09 16:04:42"
+            },
+            "v3_status": {
+                "type": "string",
+                "x-samplevalue": "sent"
+            },
+            "vat_name": {
+                "type": "string",
+                "x-samplevalue": "The value for vat_name"
+            },
+            "vat_number": {
+                "type": "string",
+                "x-samplevalue": "The value for vat_number"
+            },
+            "vis_state": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            }
+        },
+        "title": "invoices",
+        "x-has-customfields": false,
+        "x-primary-key": [
+            "id"
+        ],
+        "x-vendor-objectname": "invoices"
+    },
+    "paid": {
+        "properties": {
+            "amount": {
+                "type": "string",
+                "x-samplevalue": "0.00"
+            },
+            "code": {
+                "type": "string",
+                "x-samplevalue": "USD"
+            }
+        },
+        "title": "paid",
+        "type": "object",
+        "x-has-customfields": false
+    }
+}
+
+
+PATCH:
+RBS:
+{
+    "updateInvoice": {
+        "id": "updateInvoice",
+        "properties": {
+            "accountid": {
+                "type": "string",
+                "x-samplevalue": "KAG77"
+            },
+            "accounting_systemid": {
+                "type": "string",
+                "x-samplevalue": "KAG77"
+            },
+            "address": {
+                "type": "string",
+                "x-samplevalue": "The value for address"
+            },
+            "amount": {
+                "type": "amount"
+            },
+            "auto_bill": {
+                "type": "boolean",
+                "x-samplevalue": false
+            },
+            "autobill_status": {
+                "type": "string",
+                "x-samplevalue": "The value for autobill_status"
+            },
+            "basecampid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            },
+            "city": {
+                "type": "string",
+                "x-samplevalue": "The value for city"
+            },
+            "code": {
+                "type": "string",
+                "x-samplevalue": "The value for code"
+            },
+            "country": {
+                "type": "string",
+                "x-samplevalue": "United States"
+            },
+            "create_date": {
+                "format": "date",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd",
+                "x-readOnly": true,
+                "x-samplevalue": "2016-09-09"
+            },
+            "created_at": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2016-09-09 14:37:59"
+            },
+            "currency_code": {
+                "type": "string",
+                "x-samplevalue": "USD"
+            },
+            "current_organization": {
+                "type": "string",
+                "x-samplevalue": "Test Client"
+            },
+            "customerid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 2185379
+            },
+            "date_paid": {
+                "type": "string",
+                "x-samplevalue": "The value for date_paid"
+            },
+            "deposit_amount": {
+                "type": "string",
+                "x-samplevalue": "The value for deposit_amount"
+            },
+            "deposit_percentage": {
+                "type": "string",
+                "x-samplevalue": "The value for deposit_percentage"
+            },
+            "deposit_status": {
+                "type": "string",
+                "x-samplevalue": "none"
+            },
+            "description": {
+                "type": "string",
+                "x-samplevalue": "The value for description"
+            },
+            "discount_description": {
+                "type": "string",
+                "x-samplevalue": "The value for discount_description"
+            },
+            "discount_total": {
+                "type": "discount_total"
+            },
+            "discount_value": {
+                "type": "string",
+                "x-samplevalue": "0"
+            },
+            "display_status": {
+                "type": "string",
+                "x-samplevalue": "sent"
+            },
+            "dispute_status": {
+                "type": "string",
+                "x-samplevalue": "The value for dispute_status"
+            },
+            "due_date": {
+                "format": "date",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd",
+                "x-samplevalue": "2016-10-09"
+            },
+            "due_offset_days": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 30
+            },
+            "estimateid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            },
+            "ext_archive": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            },
+            "fname": {
+                "type": "string",
+                "x-samplevalue": "Test"
+            },
+            "generation_date": {
+                "type": "string",
+                "x-samplevalue": "The value for generation_date"
+            },
+            "gmail": {
+                "type": "boolean",
+                "x-samplevalue": false
+            },
+            "id": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 2201278
+            },
+            "invoice_number": {
+                "type": "string",
+                "x-samplevalue": "0000003"
+            },
+            "invoiceid": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 2201278
+            },
+            "language": {
+                "type": "string",
+                "x-samplevalue": "en"
+            },
+            "last_order_status": {
+                "type": "string",
+                "x-samplevalue": "The value for last_order_status"
+            },
+            "lname": {
+                "type": "string",
+                "x-samplevalue": "Client"
+            },
+            "notes": {
+                "type": "string",
+                "x-samplevalue": "The value for notes"
+            },
+            "organization": {
+                "type": "string",
+                "x-samplevalue": "Test Client"
+            },
+            "outstanding": {
+                "type": "outstanding"
+            },
+            "ownerid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 1
+            },
+            "paid": {
+                "type": "paid"
+            },
+            "parent": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            },
+            "payment_status": {
+                "type": "string",
+                "x-samplevalue": "unpaid"
+            },
+            "po_number": {
+                "type": "string",
+                "x-samplevalue": "The value for po_number"
+            },
+            "province": {
+                "type": "string",
+                "x-samplevalue": "The value for province"
+            },
+            "return_uri": {
+                "type": "string",
+                "x-samplevalue": "The value for return_uri"
+            },
+            "sentid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 1
+            },
+            "show_attachments": {
+                "type": "boolean",
+                "x-samplevalue": true
+            },
+            "status": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 2
+            },
+            "street": {
+                "type": "string",
+                "x-samplevalue": "The value for street"
+            },
+            "street2": {
+                "type": "string",
+                "x-samplevalue": "The value for street2"
+            },
+            "template": {
+                "type": "string",
+                "x-samplevalue": "clean-grouped"
+            },
+            "terms": {
+                "type": "string",
+                "x-samplevalue": "The value for terms"
+            },
+            "updated": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2016-09-09 16:04:42"
+            },
+            "v3_status": {
+                "type": "string",
+                "x-samplevalue": "sent"
+            },
+            "vat_name": {
+                "type": "string",
+                "x-samplevalue": "The value for vat_name"
+            },
+            "vat_number": {
+                "type": "string",
+                "x-samplevalue": "The value for vat_number"
+            },
+            "vis_state": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            }
+        },
+        "required": [
+            "email",
+            "customerid",
+            "create_date"
+        ],
+        "x-primary-key": [
+            "id"
+        ],
+        "x-vendor-objectname": "invoices"
+    }
+}
+
+SWAGGER:
+
+{
+    "amount": {
+        "properties": {
+            "amount": {
+                "type": "string",
+                "x-samplevalue": "800.00"
+            },
+            "code": {
+                "type": "string",
+                "x-samplevalue": "USD"
+            }
+        },
+        "title": "amount",
+        "type": "object",
+        "x-has-customfields": false
+    },
+    "discount_total": {
+        "properties": {
+            "amount": {
+                "type": "string",
+                "x-samplevalue": "0.00"
+            },
+            "code": {
+                "type": "string",
+                "x-samplevalue": "USD"
+            }
+        },
+        "title": "discount_total",
+        "type": "object",
+        "x-has-customfields": false
+    },
+    "outstanding": {
+        "properties": {
+            "amount": {
+                "type": "string",
+                "x-samplevalue": "800.00"
+            },
+            "code": {
+                "type": "string",
+                "x-samplevalue": "USD"
+            }
+        },
+        "title": "outstanding",
+        "type": "object",
+        "x-has-customfields": false
+    },
+    "invoices": {
+        "properties": {
+            "accountid": {
+                "type": "string",
+                "x-samplevalue": "KAG77"
+            },
+            "accounting_systemid": {
+                "type": "string",
+                "x-samplevalue": "KAG77"
+            },
+            "address": {
+                "type": "string",
+                "x-samplevalue": "The value for address"
+            },
+            "amount": {
+                "type": "amount"
+            },
+            "auto_bill": {
+                "type": "boolean",
+                "x-samplevalue": false
+            },
+            "autobill_status": {
+                "type": "string",
+                "x-samplevalue": "The value for autobill_status"
+            },
+            "basecampid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            },
+            "city": {
+                "type": "string",
+                "x-samplevalue": "The value for city"
+            },
+            "code": {
+                "type": "string",
+                "x-samplevalue": "The value for code"
+            },
+            "country": {
+                "type": "string",
+                "x-samplevalue": "United States"
+            },
+            "create_date": {
+                "format": "date",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd",
+                "x-readOnly": true,
+                "x-samplevalue": "2016-09-09"
+            },
+            "created_at": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2016-09-09 14:37:59"
+            },
+            "currency_code": {
+                "type": "string",
+                "x-samplevalue": "USD"
+            },
+            "current_organization": {
+                "type": "string",
+                "x-samplevalue": "Test Client"
+            },
+            "customerid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 2185379
+            },
+            "date_paid": {
+                "type": "string",
+                "x-samplevalue": "The value for date_paid"
+            },
+            "deposit_amount": {
+                "type": "string",
+                "x-samplevalue": "The value for deposit_amount"
+            },
+            "deposit_percentage": {
+                "type": "string",
+                "x-samplevalue": "The value for deposit_percentage"
+            },
+            "deposit_status": {
+                "type": "string",
+                "x-samplevalue": "none"
+            },
+            "description": {
+                "type": "string",
+                "x-samplevalue": "The value for description"
+            },
+            "discount_description": {
+                "type": "string",
+                "x-samplevalue": "The value for discount_description"
+            },
+            "discount_total": {
+                "type": "discount_total"
+            },
+            "discount_value": {
+                "type": "string",
+                "x-samplevalue": "0"
+            },
+            "display_status": {
+                "type": "string",
+                "x-samplevalue": "sent"
+            },
+            "dispute_status": {
+                "type": "string",
+                "x-samplevalue": "The value for dispute_status"
+            },
+            "due_date": {
+                "format": "date",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd",
+                "x-samplevalue": "2016-10-09"
+            },
+            "due_offset_days": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 30
+            },
+            "estimateid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            },
+            "ext_archive": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            },
+            "fname": {
+                "type": "string",
+                "x-samplevalue": "Test"
+            },
+            "generation_date": {
+                "type": "string",
+                "x-samplevalue": "The value for generation_date"
+            },
+            "gmail": {
+                "type": "boolean",
+                "x-samplevalue": false
+            },
+            "id": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 2201278
+            },
+            "invoice_number": {
+                "type": "string",
+                "x-samplevalue": "0000003"
+            },
+            "invoiceid": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 2201278
+            },
+            "language": {
+                "type": "string",
+                "x-samplevalue": "en"
+            },
+            "last_order_status": {
+                "type": "string",
+                "x-samplevalue": "The value for last_order_status"
+            },
+            "lname": {
+                "type": "string",
+                "x-samplevalue": "Client"
+            },
+            "notes": {
+                "type": "string",
+                "x-samplevalue": "The value for notes"
+            },
+            "organization": {
+                "type": "string",
+                "x-samplevalue": "Test Client"
+            },
+            "outstanding": {
+                "type": "outstanding"
+            },
+            "ownerid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 1
+            },
+            "paid": {
+                "type": "paid"
+            },
+            "parent": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            },
+            "payment_status": {
+                "type": "string",
+                "x-samplevalue": "unpaid"
+            },
+            "po_number": {
+                "type": "string",
+                "x-samplevalue": "The value for po_number"
+            },
+            "province": {
+                "type": "string",
+                "x-samplevalue": "The value for province"
+            },
+            "return_uri": {
+                "type": "string",
+                "x-samplevalue": "The value for return_uri"
+            },
+            "sentid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 1
+            },
+            "show_attachments": {
+                "type": "boolean",
+                "x-samplevalue": true
+            },
+            "status": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 2
+            },
+            "street": {
+                "type": "string",
+                "x-samplevalue": "The value for street"
+            },
+            "street2": {
+                "type": "string",
+                "x-samplevalue": "The value for street2"
+            },
+            "template": {
+                "type": "string",
+                "x-samplevalue": "clean-grouped"
+            },
+            "terms": {
+                "type": "string",
+                "x-samplevalue": "The value for terms"
+            },
+            "updated": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2016-09-09 16:04:42"
+            },
+            "v3_status": {
+                "type": "string",
+                "x-samplevalue": "sent"
+            },
+            "vat_name": {
+                "type": "string",
+                "x-samplevalue": "The value for vat_name"
+            },
+            "vat_number": {
+                "type": "string",
+                "x-samplevalue": "The value for vat_number"
+            },
+            "vis_state": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            }
+        },
+        "title": "invoices",
+        "x-has-customfields": false,
+        "x-primary-key": [
+            "id"
+        ],
+        "x-vendor-objectname": "invoices"
+    },
+    "paid": {
+        "properties": {
+            "amount": {
+                "type": "string",
+                "x-samplevalue": "0.00"
+            },
+            "code": {
+                "type": "string",
+                "x-samplevalue": "USD"
+            }
+        },
+        "title": "paid",
+        "type": "object",
+        "x-has-customfields": false
+    }
+}

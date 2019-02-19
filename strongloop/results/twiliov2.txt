@@ -1,0 +1,4 @@
+GET /countryCodes 
+  where not found
+GET /messages/{messageId}/media 
+  pageSize not found, Neither nextPage or page found, where not found

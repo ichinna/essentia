@@ -1,0 +1,4 @@
+GET /accounts 
+  where not found
+GET /contacts/{contactId}/activities 
+  pageSize not found, Neither nextPage or page found, where not found

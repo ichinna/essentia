@@ -1,0 +1,11 @@
+{
+  "name": "testaa",
+  "version": "1.0.0",
+  "description": "Chinna's JS test for elements and others and so on",
+  "main": "fileReader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CB",
+  "license": "ISC"
+}

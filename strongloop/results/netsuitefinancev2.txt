@@ -1,0 +1,14 @@
+GET /custom-fields 
+  where not found
+GET /custom-record-types 
+  where not found
+GET /custom-record-types/{typeId}/custom-record-fields 
+  where not found
+GET /folders/{id}/files 
+  where not found
+GET /folders/{id}/folders 
+  where not found
+GET /saved-searches 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /transaction-summaries 
+  pageSize not found

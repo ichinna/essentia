@@ -1,0 +1,6 @@
+GET /customers/{customerId}/payment-methods 
+  where not found
+GET /customers/{customerId}/subscriptions 
+  where not found
+GET /refunds 
+  where not found

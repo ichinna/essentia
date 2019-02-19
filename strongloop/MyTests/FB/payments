@@ -1,0 +1,454 @@
+GET
+
+{
+    "amount": {
+        "properties": {
+            "amount": {
+                "type": "string",
+                "x-samplevalue": "10.00"
+            },
+            "code": {
+                "type": "string",
+                "x-samplevalue": "USD"
+            }
+        },
+        "title": "amount",
+        "type": "object",
+        "x-has-customfields": false
+    },
+    "paymentsList": {
+        "id": "paymentsList",
+        "items": {
+            "$ref": "paymentsListObject"
+        },
+        "type": "array"
+    },
+    "paymentsListObject": {
+        "id": "paymentsListObject",
+        "properties": {
+            "accounting_systemid": {
+                "type": "string",
+                "x-samplevalue": "zDmNq"
+            },
+            "amount": {
+                "type": "amount"
+            },
+            "clientid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 1758507
+            },
+            "creditid": {
+                "type": "string",
+                "x-samplevalue": "545454"
+            },
+            "date": {
+                "format": "date",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd",
+                "x-samplevalue": "2013-12-10"
+            },
+            "from_credit": {
+                "type": "boolean",
+                "x-samplevalue": false
+            },
+            "gateway": {
+                "type": "string",
+                "x-samplevalue": "The payment processor used if any"
+            },
+            "id": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 10865326
+            },
+            "invoiceid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 2010190
+            },
+            "logid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 10865326
+            },
+            "note": {
+                "type": "string",
+                "x-samplevalue": "This is note"
+            },
+            "orderid": {
+                "type": "string",
+                "x-samplevalue": "454455"
+            },
+            "overpaymentid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 545
+            },
+            "transactionid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 54545
+            },
+            "type": {
+                "type": "string",
+                "x-samplevalue": "Check"
+            },
+            "updated": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2016-09-28 21:00:46"
+            },
+            "vis_state": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 1
+            }
+        },
+        "x-has-customfields": false,
+        "x-primary-key": [
+            "id"
+        ],
+        "x-vendor-objectname": "payments"
+    }
+}
+
+GET/id
+
+{
+    "amount": {
+        "properties": {
+            "amount": {
+                "type": "string",
+                "x-samplevalue": "10.00"
+            },
+            "code": {
+                "type": "string",
+                "x-samplevalue": "USD"
+            }
+        },
+        "title": "amount",
+        "type": "object",
+        "x-has-customfields": false
+    },
+    "payments": {
+        "properties": {
+            "accounting_systemid": {
+                "type": "string",
+                "x-samplevalue": "zDmNq"
+            },
+            "amount": {
+                "type": "amount"
+            },
+            "clientid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 1758507
+            },
+            "creditid": {
+                "type": "string",
+                "x-samplevalue": "545454"
+            },
+            "date": {
+                "format": "date",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd",
+                "x-samplevalue": "2013-12-10"
+            },
+            "from_credit": {
+                "type": "boolean",
+                "x-samplevalue": false
+            },
+            "gateway": {
+                "type": "string",
+                "x-samplevalue": "The payment processor used if any"
+            },
+            "id": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 10865326
+            },
+            "invoiceid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 2010190
+            },
+            "logid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 10865326
+            },
+            "note": {
+                "type": "string",
+                "x-samplevalue": "This is note"
+            },
+            "orderid": {
+                "type": "string",
+                "x-samplevalue": "454455"
+            },
+            "overpaymentid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 545
+            },
+            "transactionid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 54545
+            },
+            "type": {
+                "type": "string",
+                "x-samplevalue": "Check"
+            },
+            "updated": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2016-09-28 21:00:46"
+            },
+            "vis_state": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 1
+            }
+        },
+        "title": "payments",
+        "x-has-customfields": false,
+        "x-primary-key": [
+            "id"
+        ],
+        "x-vendor-objectname": "payments"
+    }
+}
+
+POST
+RBS
+
+{
+    "amount": {
+        "properties": {
+            "amount": {
+                "type": "string",
+                "x-samplevalue": "10.00"
+            },
+            "code": {
+                "type": "string",
+                "x-samplevalue": "USD"
+            }
+        },
+        "title": "amount",
+        "type": "object",
+        "x-has-customfields": false
+    },
+    "createPayment": {
+        "id": "createPayment",
+        "properties": {
+            "accounting_systemid": {
+                "type": "string",
+                "x-samplevalue": "zDmNq"
+            },
+            "amount": {
+                "type": "amount"
+            },
+            "clientid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 1758507
+            },
+            "creditid": {
+                "type": "string",
+                "x-samplevalue": "545454"
+            },
+            "date": {
+                "format": "date",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd",
+                "x-samplevalue": "2013-12-10"
+            },
+            "from_credit": {
+                "type": "boolean",
+                "x-samplevalue": false
+            },
+            "gateway": {
+                "type": "string",
+                "x-samplevalue": "The payment processor used if any"
+            },
+            "id": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 10865326
+            },
+            "invoiceid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 2010190
+            },
+            "logid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 10865326
+            },
+            "note": {
+                "type": "string",
+                "x-samplevalue": "This is note"
+            },
+            "orderid": {
+                "type": "string",
+                "x-samplevalue": "454455"
+            },
+            "overpaymentid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 545
+            },
+            "transactionid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 54545
+            },
+            "type": {
+                "type": "string",
+                "x-samplevalue": "Check"
+            },
+            "updated": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2016-09-28 21:00:46"
+            },
+            "vis_state": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 1
+            }
+        },
+        "required": [
+            "type",
+            "amount",
+            "date",
+            "invoiceid"
+        ],
+        "x-has-customfields": false,
+        "x-primary-key": [
+            "id"
+        ],
+        "x-vendor-objectname": "payments"
+    }
+}
+
+
+PATCH
+RBS
+{
+    "amount": {
+        "properties": {
+            "amount": {
+                "type": "string",
+                "x-samplevalue": "10.00"
+            },
+            "code": {
+                "type": "string",
+                "x-samplevalue": "USD"
+            }
+        },
+        "title": "amount",
+        "type": "object",
+        "x-has-customfields": false
+    },
+    "updatePayment": {
+        "id": "updatePayment",
+        "properties": {
+            "accounting_systemid": {
+                "type": "string",
+                "x-samplevalue": "zDmNq"
+            },
+            "amount": {
+                "type": "amount"
+            },
+            "clientid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 1758507
+            },
+            "creditid": {
+                "type": "string",
+                "x-samplevalue": "545454"
+            },
+            "date": {
+                "format": "date",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd",
+                "x-samplevalue": "2013-12-10"
+            },
+            "from_credit": {
+                "type": "boolean",
+                "x-samplevalue": false
+            },
+            "gateway": {
+                "type": "string",
+                "x-samplevalue": "The payment processor used if any"
+            },
+            "id": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 10865326
+            },
+            "invoiceid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 2010190
+            },
+            "logid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 10865326
+            },
+            "note": {
+                "type": "string",
+                "x-samplevalue": "This is note"
+            },
+            "orderid": {
+                "type": "string",
+                "x-samplevalue": "454455"
+            },
+            "overpaymentid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 545
+            },
+            "transactionid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 54545
+            },
+            "type": {
+                "type": "string",
+                "x-samplevalue": "Check"
+            },
+            "updated": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2016-09-28 21:00:46"
+            },
+            "vis_state": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 1
+            }
+        },
+        "x-has-customfields": false,
+        "x-primary-key": [
+            "id"
+        ],
+        "x-vendor-objectname": "payments"
+    }
+}

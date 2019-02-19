@@ -1,0 +1,1269 @@
+GET/{id}
+{
+  "customers": {
+    "x-has-customfields": false,
+    "title": "customers",
+    "properties": {
+      "note": {
+        "x-samplevalue": "The value for note",
+        "type": "string"
+      },
+      "vat_number": {
+        "x-samplevalue": "The value for vat_number",
+        "type": "string"
+      },
+      "vat_name": {
+        "x-samplevalue": "The value for vat_name",
+        "type": "string"
+      },
+      "vis_state": {
+        "x-samplevalue": 0,
+        "format": "int32",
+        "type": "integer"
+      },
+      "language": {
+        "x-samplevalue": "en",
+        "type": "string"
+      },
+      "pref_email": {
+        "x-samplevalue": true,
+        "type": "boolean"
+      },
+      "accounting_systemid": {
+        "x-samplevalue": "zDmNq",
+        "type": "string"
+      },
+      "userid": {
+        "x-samplevalue": 1831231,
+        "format": "int32",
+        "type": "integer",
+        "x-readOnly": true
+      },
+      "currency_code": {
+        "x-samplevalue": "USD",
+        "type": "string"
+      },
+      "mob_phone": {
+        "x-samplevalue": "The value for mob_phone",
+        "type": "string"
+      },
+      "p_country": {
+        "x-samplevalue": "The value for p_country",
+        "type": "string"
+      },
+      "s_city": {
+        "x-samplevalue": "The value for s_city",
+        "type": "string"
+      },
+      "lname": {
+        "x-samplevalue": "The value for lname",
+        "type": "string"
+      },
+      "statement_token": {
+        "x-samplevalue": "The value for statement_token",
+        "type": "string"
+      },
+      "p_city": {
+        "x-samplevalue": "The value for p_city",
+        "type": "string"
+      },
+      "signup_date": {
+        "x-samplevalue": "2016-03-09 17:42:11",
+        "x-mask": "yyyy-MM-dd HH:mm:ss",
+        "format": "date-time",
+        "type": "string"
+      },
+      "last_activity": {
+        "x-samplevalue": "The value for last_activity",
+        "type": "string"
+      },
+      "p_code": {
+        "x-samplevalue": "2011",
+        "type": "string"
+      },
+      "p_street2": {
+        "x-samplevalue": "The value for p_street2",
+        "type": "string"
+      },
+      "id": {
+        "x-samplevalue": 1831231,
+        "format": "int32",
+        "type": "integer",
+        "x-readOnly": true
+      },
+      "fax": {
+        "x-samplevalue": "The value for fax",
+        "type": "string"
+      },
+      "email": {
+        "x-samplevalue": "john.doe@abcorp.com",
+        "type": "string"
+      },
+      "s_code": {
+        "x-samplevalue": "The value for s_code",
+        "type": "string"
+      },
+      "s_street2": {
+        "x-samplevalue": "The value for s_street2",
+        "type": "string"
+      },
+      "home_phone": {
+        "x-samplevalue": "The value for home_phone",
+        "type": "string"
+      },
+      "fname": {
+        "x-samplevalue": "The value for fname",
+        "type": "string"
+      },
+      "direct_link_token": {
+        "x-samplevalue": "The value for direct_link_token",
+        "type": "string"
+      },
+      "s_street": {
+        "x-samplevalue": "The value for s_street",
+        "type": "string"
+      },
+      "level": {
+        "x-samplevalue": 0,
+        "format": "int32",
+        "type": "integer"
+      },
+      "last_login": {
+        "x-samplevalue": "The value for last_login",
+        "type": "string"
+      },
+      "notified": {
+        "x-samplevalue": false,
+        "type": "boolean"
+      },
+      "allow_late_notifications": {
+        "x-samplevalue": true,
+        "type": "boolean"
+      },
+      "allow_late_fees": {
+        "x-samplevalue": true,
+        "type": "boolean"
+      },
+      "pref_gmail": {
+        "x-samplevalue": false,
+        "type": "boolean"
+      },
+      "s_country": {
+        "x-samplevalue": "The value for s_country",
+        "type": "string"
+      },
+      "bus_phone": {
+        "x-samplevalue": "The value for bus_phone",
+        "type": "string"
+      },
+      "company_industry": {
+        "x-samplevalue": "The value for company_industry",
+        "type": "string"
+      },
+      "p_province": {
+        "x-samplevalue": "The value for p_province",
+        "type": "string"
+      },
+      "organization": {
+        "x-samplevalue": "The value for organization",
+        "type": "string"
+      },
+      "subdomain": {
+        "x-samplevalue": "The value for subdomain",
+        "type": "string"
+      },
+      "p_street": {
+        "x-samplevalue": "The value for p_street",
+        "type": "string"
+      },
+      "s_province": {
+        "x-samplevalue": "The value for s_province",
+        "type": "string"
+      },
+      "updated": {
+        "x-samplevalue": "2016-08-12 14:54:15",
+        "x-mask": "yyyy-MM-dd HH:mm:ss",
+        "format": "date-time",
+        "type": "string",
+        "x-readOnly": true
+      },
+      "num_logins": {
+        "x-samplevalue": 0,
+        "format": "int32",
+        "type": "integer"
+      },
+      "username": {
+        "x-samplevalue": "aclient",
+        "type": "string"
+      },
+      "company_size": {
+        "x-samplevalue": "The value for company_size",
+        "type": "string"
+      }
+    },
+    "x-primary-key": [
+      "id"
+    ],
+    "x-vendor-objectname": "clients"
+  }
+}
+
+GET:
+
+{
+    "customersList": {
+        "id": "customersList",
+        "items": {
+            "$ref": "customersListObject"
+        },
+        "type": "array"
+    },
+    "customersListObject": {
+        "id": "customersListObject",
+        "properties": {
+      "note": {
+        "x-samplevalue": "The value for note",
+        "type": "string"
+      },
+      "vat_number": {
+        "x-samplevalue": "The value for vat_number",
+        "type": "string"
+      },
+      "vat_name": {
+        "x-samplevalue": "The value for vat_name",
+        "type": "string"
+      },
+      "vis_state": {
+        "x-samplevalue": 0,
+        "format": "int32",
+        "type": "integer"
+      },
+      "language": {
+        "x-samplevalue": "en",
+        "type": "string"
+      },
+      "pref_email": {
+        "x-samplevalue": true,
+        "type": "boolean"
+      },
+      "accounting_systemid": {
+        "x-samplevalue": "zDmNq",
+        "type": "string"
+      },
+      "userid": {
+        "x-samplevalue": 1831231,
+        "format": "int32",
+        "type": "integer",
+        "x-readOnly": true
+      },
+      "currency_code": {
+        "x-samplevalue": "USD",
+        "type": "string"
+      },
+      "mob_phone": {
+        "x-samplevalue": "The value for mob_phone",
+        "type": "string"
+      },
+      "p_country": {
+        "x-samplevalue": "The value for p_country",
+        "type": "string"
+      },
+      "s_city": {
+        "x-samplevalue": "The value for s_city",
+        "type": "string"
+      },
+      "lname": {
+        "x-samplevalue": "The value for lname",
+        "type": "string"
+      },
+      "statement_token": {
+        "x-samplevalue": "The value for statement_token",
+        "type": "string"
+      },
+      "p_city": {
+        "x-samplevalue": "The value for p_city",
+        "type": "string"
+      },
+      "signup_date": {
+        "x-samplevalue": "2016-03-09 17:42:11",
+        "x-mask": "yyyy-MM-dd HH:mm:ss",
+        "format": "date-time",
+        "type": "string"
+      },
+      "last_activity": {
+        "x-samplevalue": "The value for last_activity",
+        "type": "string"
+      },
+      "p_code": {
+        "x-samplevalue": "2011",
+        "type": "string"
+      },
+      "p_street2": {
+        "x-samplevalue": "The value for p_street2",
+        "type": "string"
+      },
+      "id": {
+        "x-samplevalue": 1831231,
+        "format": "int32",
+        "type": "integer",
+        "x-readOnly": true
+      },
+      "fax": {
+        "x-samplevalue": "The value for fax",
+        "type": "string"
+      },
+      "email": {
+        "x-samplevalue": "john.doe@abcorp.com",
+        "type": "string"
+      },
+      "s_code": {
+        "x-samplevalue": "The value for s_code",
+        "type": "string"
+      },
+      "s_street2": {
+        "x-samplevalue": "The value for s_street2",
+        "type": "string"
+      },
+      "home_phone": {
+        "x-samplevalue": "The value for home_phone",
+        "type": "string"
+      },
+      "fname": {
+        "x-samplevalue": "The value for fname",
+        "type": "string"
+      },
+      "direct_link_token": {
+        "x-samplevalue": "The value for direct_link_token",
+        "type": "string"
+      },
+      "s_street": {
+        "x-samplevalue": "The value for s_street",
+        "type": "string"
+      },
+      "level": {
+        "x-samplevalue": 0,
+        "format": "int32",
+        "type": "integer"
+      },
+      "last_login": {
+        "x-samplevalue": "The value for last_login",
+        "type": "string"
+      },
+      "notified": {
+        "x-samplevalue": false,
+        "type": "boolean"
+      },
+      "allow_late_notifications": {
+        "x-samplevalue": true,
+        "type": "boolean"
+      },
+      "allow_late_fees": {
+        "x-samplevalue": true,
+        "type": "boolean"
+      },
+      "pref_gmail": {
+        "x-samplevalue": false,
+        "type": "boolean"
+      },
+      "s_country": {
+        "x-samplevalue": "The value for s_country",
+        "type": "string"
+      },
+      "bus_phone": {
+        "x-samplevalue": "The value for bus_phone",
+        "type": "string"
+      },
+      "company_industry": {
+        "x-samplevalue": "The value for company_industry",
+        "type": "string"
+      },
+      "p_province": {
+        "x-samplevalue": "The value for p_province",
+        "type": "string"
+      },
+      "organization": {
+        "x-samplevalue": "The value for organization",
+        "type": "string"
+      },
+      "subdomain": {
+        "x-samplevalue": "The value for subdomain",
+        "type": "string"
+      },
+      "p_street": {
+        "x-samplevalue": "The value for p_street",
+        "type": "string"
+      },
+      "s_province": {
+        "x-samplevalue": "The value for s_province",
+        "type": "string"
+      },
+      "updated": {
+        "x-samplevalue": "2016-08-12 14:54:15",
+        "x-mask": "yyyy-MM-dd HH:mm:ss",
+        "format": "date-time",
+        "type": "string",
+        "x-readOnly": true
+      },
+      "num_logins": {
+        "x-samplevalue": 0,
+        "format": "int32",
+        "type": "integer"
+      },
+      "username": {
+        "x-samplevalue": "aclient",
+        "type": "string"
+      },
+      "company_size": {
+        "x-samplevalue": "The value for company_size",
+        "type": "string"
+      }
+    },
+    "x-primary-key": [
+      "id"
+    ],
+    "x-has-customfields": false,
+    "x-vendor-objectname": "clients"
+    }
+}
+
+POST:
+RBS:
+
+{
+    "createCustomer": {
+        "id": "createCustomer",
+        "properties": {
+            "accounting_systemid": {
+                "type": "string",
+                "x-samplevalue": "zDmNq"
+            },
+            "allow_late_fees": {
+                "type": "boolean",
+                "x-samplevalue": true
+            },
+            "allow_late_notifications": {
+                "type": "boolean",
+                "x-samplevalue": true
+            },
+            "bus_phone": {
+                "type": "string",
+                "x-samplevalue": "The value for bus_phone"
+            },
+            "company_industry": {
+                "type": "string",
+                "x-samplevalue": "The value for company_industry"
+            },
+            "company_size": {
+                "type": "string",
+                "x-samplevalue": "The value for company_size"
+            },
+            "currency_code": {
+                "type": "string",
+                "x-samplevalue": "USD"
+            },
+            "direct_link_token": {
+                "type": "string",
+                "x-samplevalue": "The value for direct_link_token"
+            },
+            "email": {
+                "type": "string",
+                "x-samplevalue": "john.doe@abcorp.com"
+            },
+            "fax": {
+                "type": "string",
+                "x-samplevalue": "The value for fax"
+            },
+            "fname": {
+                "type": "string",
+                "x-samplevalue": "The value for fname"
+            },
+            "home_phone": {
+                "type": "string",
+                "x-samplevalue": "The value for home_phone"
+            },
+            "id": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 1831231
+            },
+            "language": {
+                "type": "string",
+                "x-samplevalue": "en"
+            },
+            "last_activity": {
+                "type": "string",
+                "x-samplevalue": "The value for last_activity"
+            },
+            "last_login": {
+                "type": "string",
+                "x-samplevalue": "The value for last_login"
+            },
+            "level": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            },
+            "lname": {
+                "type": "string",
+                "x-samplevalue": "The value for lname"
+            },
+            "mob_phone": {
+                "type": "string",
+                "x-samplevalue": "The value for mob_phone"
+            },
+            "note": {
+                "type": "string",
+                "x-samplevalue": "The value for note"
+            },
+            "notified": {
+                "type": "boolean",
+                "x-samplevalue": false
+            },
+            "num_logins": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            },
+            "organization": {
+                "type": "string",
+                "x-samplevalue": "The value for organization"
+            },
+            "p_city": {
+                "type": "string",
+                "x-samplevalue": "The value for p_city"
+            },
+            "p_code": {
+                "type": "string",
+                "x-samplevalue": "2011"
+            },
+            "p_country": {
+                "type": "string",
+                "x-samplevalue": "The value for p_country"
+            },
+            "p_province": {
+                "type": "string",
+                "x-samplevalue": "The value for p_province"
+            },
+            "p_street": {
+                "type": "string",
+                "x-samplevalue": "The value for p_street"
+            },
+            "p_street2": {
+                "type": "string",
+                "x-samplevalue": "The value for p_street2"
+            },
+            "pref_email": {
+                "type": "boolean",
+                "x-samplevalue": true
+            },
+            "pref_gmail": {
+                "type": "boolean",
+                "x-samplevalue": false
+            },
+            "s_city": {
+                "type": "string",
+                "x-samplevalue": "The value for s_city"
+            },
+            "s_code": {
+                "type": "string",
+                "x-samplevalue": "The value for s_code"
+            },
+            "s_country": {
+                "type": "string",
+                "x-samplevalue": "The value for s_country"
+            },
+            "s_province": {
+                "type": "string",
+                "x-samplevalue": "The value for s_province"
+            },
+            "s_street": {
+                "type": "string",
+                "x-samplevalue": "The value for s_street"
+            },
+            "s_street2": {
+                "type": "string",
+                "x-samplevalue": "The value for s_street2"
+            },
+            "signup_date": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-samplevalue": "2016-03-09 17:42:11"
+            },
+            "statement_token": {
+                "type": "string",
+                "x-samplevalue": "The value for statement_token"
+            },
+            "subdomain": {
+                "type": "string",
+                "x-samplevalue": "The value for subdomain"
+            },
+            "updated": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2016-08-12 14:54:15"
+            },
+            "userid": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 1831231
+            },
+            "username": {
+                "type": "string",
+                "x-samplevalue": "aclient"
+            },
+            "vat_name": {
+                "type": "string",
+                "x-samplevalue": "The value for vat_name"
+            },
+            "vat_number": {
+                "type": "string",
+                "x-samplevalue": "The value for vat_number"
+            },
+            "vis_state": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            }
+        },
+        "x-has-customfields": false,
+        "x-primary-key": [
+            "id"
+        ],
+        "x-vendor-objectname": "clients"
+    }
+}
+
+Swagger:
+{
+    "customers": {
+        "id": "customers",
+        "properties": {
+            "accounting_systemid": {
+                "type": "string",
+                "x-samplevalue": "zDmNq"
+            },
+            "allow_late_fees": {
+                "type": "boolean",
+                "x-samplevalue": true
+            },
+            "allow_late_notifications": {
+                "type": "boolean",
+                "x-samplevalue": true
+            },
+            "bus_phone": {
+                "type": "string",
+                "x-samplevalue": "The value for bus_phone"
+            },
+            "company_industry": {
+                "type": "string",
+                "x-samplevalue": "The value for company_industry"
+            },
+            "company_size": {
+                "type": "string",
+                "x-samplevalue": "The value for company_size"
+            },
+            "currency_code": {
+                "type": "string",
+                "x-samplevalue": "USD"
+            },
+            "direct_link_token": {
+                "type": "string",
+                "x-samplevalue": "The value for direct_link_token"
+            },
+            "email": {
+                "type": "string",
+                "x-samplevalue": "john.doe@abcorp.com"
+            },
+            "fax": {
+                "type": "string",
+                "x-samplevalue": "The value for fax"
+            },
+            "fname": {
+                "type": "string",
+                "x-samplevalue": "The value for fname"
+            },
+            "home_phone": {
+                "type": "string",
+                "x-samplevalue": "The value for home_phone"
+            },
+            "id": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 1831231
+            },
+            "language": {
+                "type": "string",
+                "x-samplevalue": "en"
+            },
+            "last_activity": {
+                "type": "string",
+                "x-samplevalue": "The value for last_activity"
+            },
+            "last_login": {
+                "type": "string",
+                "x-samplevalue": "The value for last_login"
+            },
+            "level": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            },
+            "lname": {
+                "type": "string",
+                "x-samplevalue": "The value for lname"
+            },
+            "mob_phone": {
+                "type": "string",
+                "x-samplevalue": "The value for mob_phone"
+            },
+            "note": {
+                "type": "string",
+                "x-samplevalue": "The value for note"
+            },
+            "notified": {
+                "type": "boolean",
+                "x-samplevalue": false
+            },
+            "num_logins": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            },
+            "organization": {
+                "type": "string",
+                "x-samplevalue": "The value for organization"
+            },
+            "p_city": {
+                "type": "string",
+                "x-samplevalue": "The value for p_city"
+            },
+            "p_code": {
+                "type": "string",
+                "x-samplevalue": "2011"
+            },
+            "p_country": {
+                "type": "string",
+                "x-samplevalue": "The value for p_country"
+            },
+            "p_province": {
+                "type": "string",
+                "x-samplevalue": "The value for p_province"
+            },
+            "p_street": {
+                "type": "string",
+                "x-samplevalue": "The value for p_street"
+            },
+            "p_street2": {
+                "type": "string",
+                "x-samplevalue": "The value for p_street2"
+            },
+            "pref_email": {
+                "type": "boolean",
+                "x-samplevalue": true
+            },
+            "pref_gmail": {
+                "type": "boolean",
+                "x-samplevalue": false
+            },
+            "s_city": {
+                "type": "string",
+                "x-samplevalue": "The value for s_city"
+            },
+            "s_code": {
+                "type": "string",
+                "x-samplevalue": "The value for s_code"
+            },
+            "s_country": {
+                "type": "string",
+                "x-samplevalue": "The value for s_country"
+            },
+            "s_province": {
+                "type": "string",
+                "x-samplevalue": "The value for s_province"
+            },
+            "s_street": {
+                "type": "string",
+                "x-samplevalue": "The value for s_street"
+            },
+            "s_street2": {
+                "type": "string",
+                "x-samplevalue": "The value for s_street2"
+            },
+            "signup_date": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-samplevalue": "2016-03-09 17:42:11"
+            },
+            "statement_token": {
+                "type": "string",
+                "x-samplevalue": "The value for statement_token"
+            },
+            "subdomain": {
+                "type": "string",
+                "x-samplevalue": "The value for subdomain"
+            },
+            "updated": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2016-08-12 14:54:15"
+            },
+            "userid": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 1831231
+            },
+            "username": {
+                "type": "string",
+                "x-samplevalue": "aclient"
+            },
+            "vat_name": {
+                "type": "string",
+                "x-samplevalue": "The value for vat_name"
+            },
+            "vat_number": {
+                "type": "string",
+                "x-samplevalue": "The value for vat_number"
+            },
+            "vis_state": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            }
+        },
+        "x-has-customfields": false,
+        "x-primary-key": [
+            "id"
+        ],
+        "x-vendor-objectname": "clients"
+    }
+}
+
+PATCH:
+RBS:
+{
+    "updateCustomer": {
+        "id": "updateCustomer",
+        "properties": {
+            "accounting_systemid": {
+                "type": "string",
+                "x-samplevalue": "zDmNq"
+            },
+            "allow_late_fees": {
+                "type": "boolean",
+                "x-samplevalue": true
+            },
+            "allow_late_notifications": {
+                "type": "boolean",
+                "x-samplevalue": true
+            },
+            "bus_phone": {
+                "type": "string",
+                "x-samplevalue": "The value for bus_phone"
+            },
+            "company_industry": {
+                "type": "string",
+                "x-samplevalue": "The value for company_industry"
+            },
+            "company_size": {
+                "type": "string",
+                "x-samplevalue": "The value for company_size"
+            },
+            "currency_code": {
+                "type": "string",
+                "x-samplevalue": "USD"
+            },
+            "direct_link_token": {
+                "type": "string",
+                "x-samplevalue": "The value for direct_link_token"
+            },
+            "email": {
+                "type": "string",
+                "x-samplevalue": "john.doe@abcorp.com"
+            },
+            "fax": {
+                "type": "string",
+                "x-samplevalue": "The value for fax"
+            },
+            "fname": {
+                "type": "string",
+                "x-samplevalue": "The value for fname"
+            },
+            "home_phone": {
+                "type": "string",
+                "x-samplevalue": "The value for home_phone"
+            },
+            "id": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 1831231
+            },
+            "language": {
+                "type": "string",
+                "x-samplevalue": "en"
+            },
+            "last_activity": {
+                "type": "string",
+                "x-samplevalue": "The value for last_activity"
+            },
+            "last_login": {
+                "type": "string",
+                "x-samplevalue": "The value for last_login"
+            },
+            "level": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            },
+            "lname": {
+                "type": "string",
+                "x-samplevalue": "The value for lname"
+            },
+            "mob_phone": {
+                "type": "string",
+                "x-samplevalue": "The value for mob_phone"
+            },
+            "note": {
+                "type": "string",
+                "x-samplevalue": "The value for note"
+            },
+            "notified": {
+                "type": "boolean",
+                "x-samplevalue": false
+            },
+            "num_logins": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            },
+            "organization": {
+                "type": "string",
+                "x-samplevalue": "The value for organization"
+            },
+            "p_city": {
+                "type": "string",
+                "x-samplevalue": "The value for p_city"
+            },
+            "p_code": {
+                "type": "string",
+                "x-samplevalue": "2011"
+            },
+            "p_country": {
+                "type": "string",
+                "x-samplevalue": "The value for p_country"
+            },
+            "p_province": {
+                "type": "string",
+                "x-samplevalue": "The value for p_province"
+            },
+            "p_street": {
+                "type": "string",
+                "x-samplevalue": "The value for p_street"
+            },
+            "p_street2": {
+                "type": "string",
+                "x-samplevalue": "The value for p_street2"
+            },
+            "pref_email": {
+                "type": "boolean",
+                "x-samplevalue": true
+            },
+            "pref_gmail": {
+                "type": "boolean",
+                "x-samplevalue": false
+            },
+            "s_city": {
+                "type": "string",
+                "x-samplevalue": "The value for s_city"
+            },
+            "s_code": {
+                "type": "string",
+                "x-samplevalue": "The value for s_code"
+            },
+            "s_country": {
+                "type": "string",
+                "x-samplevalue": "The value for s_country"
+            },
+            "s_province": {
+                "type": "string",
+                "x-samplevalue": "The value for s_province"
+            },
+            "s_street": {
+                "type": "string",
+                "x-samplevalue": "The value for s_street"
+            },
+            "s_street2": {
+                "type": "string",
+                "x-samplevalue": "The value for s_street2"
+            },
+            "signup_date": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-samplevalue": "2016-03-09 17:42:11"
+            },
+            "statement_token": {
+                "type": "string",
+                "x-samplevalue": "The value for statement_token"
+            },
+            "subdomain": {
+                "type": "string",
+                "x-samplevalue": "The value for subdomain"
+            },
+            "updated": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2016-08-12 14:54:15"
+            },
+            "userid": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 1831231
+            },
+            "username": {
+                "type": "string",
+                "x-samplevalue": "aclient"
+            },
+            "vat_name": {
+                "type": "string",
+                "x-samplevalue": "The value for vat_name"
+            },
+            "vat_number": {
+                "type": "string",
+                "x-samplevalue": "The value for vat_number"
+            },
+            "vis_state": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            }
+        },
+        "x-has-customfields": false,
+        "x-primary-key": [
+            "id"
+        ],
+        "x-vendor-objectname": "clients"
+    }
+}
+SWAGGER:
+{
+    "customers": {
+        "id": "customers",
+        "properties": {
+            "accounting_systemid": {
+                "type": "string",
+                "x-samplevalue": "zDmNq"
+            },
+            "allow_late_fees": {
+                "type": "boolean",
+                "x-samplevalue": true
+            },
+            "allow_late_notifications": {
+                "type": "boolean",
+                "x-samplevalue": true
+            },
+            "bus_phone": {
+                "type": "string",
+                "x-samplevalue": "The value for bus_phone"
+            },
+            "company_industry": {
+                "type": "string",
+                "x-samplevalue": "The value for company_industry"
+            },
+            "company_size": {
+                "type": "string",
+                "x-samplevalue": "The value for company_size"
+            },
+            "currency_code": {
+                "type": "string",
+                "x-samplevalue": "USD"
+            },
+            "direct_link_token": {
+                "type": "string",
+                "x-samplevalue": "The value for direct_link_token"
+            },
+            "email": {
+                "type": "string",
+                "x-samplevalue": "john.doe@abcorp.com"
+            },
+            "fax": {
+                "type": "string",
+                "x-samplevalue": "The value for fax"
+            },
+            "fname": {
+                "type": "string",
+                "x-samplevalue": "The value for fname"
+            },
+            "home_phone": {
+                "type": "string",
+                "x-samplevalue": "The value for home_phone"
+            },
+            "id": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 1831231
+            },
+            "language": {
+                "type": "string",
+                "x-samplevalue": "en"
+            },
+            "last_activity": {
+                "type": "string",
+                "x-samplevalue": "The value for last_activity"
+            },
+            "last_login": {
+                "type": "string",
+                "x-samplevalue": "The value for last_login"
+            },
+            "level": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            },
+            "lname": {
+                "type": "string",
+                "x-samplevalue": "The value for lname"
+            },
+            "mob_phone": {
+                "type": "string",
+                "x-samplevalue": "The value for mob_phone"
+            },
+            "note": {
+                "type": "string",
+                "x-samplevalue": "The value for note"
+            },
+            "notified": {
+                "type": "boolean",
+                "x-samplevalue": false
+            },
+            "num_logins": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            },
+            "organization": {
+                "type": "string",
+                "x-samplevalue": "The value for organization"
+            },
+            "p_city": {
+                "type": "string",
+                "x-samplevalue": "The value for p_city"
+            },
+            "p_code": {
+                "type": "string",
+                "x-samplevalue": "2011"
+            },
+            "p_country": {
+                "type": "string",
+                "x-samplevalue": "The value for p_country"
+            },
+            "p_province": {
+                "type": "string",
+                "x-samplevalue": "The value for p_province"
+            },
+            "p_street": {
+                "type": "string",
+                "x-samplevalue": "The value for p_street"
+            },
+            "p_street2": {
+                "type": "string",
+                "x-samplevalue": "The value for p_street2"
+            },
+            "pref_email": {
+                "type": "boolean",
+                "x-samplevalue": true
+            },
+            "pref_gmail": {
+                "type": "boolean",
+                "x-samplevalue": false
+            },
+            "s_city": {
+                "type": "string",
+                "x-samplevalue": "The value for s_city"
+            },
+            "s_code": {
+                "type": "string",
+                "x-samplevalue": "The value for s_code"
+            },
+            "s_country": {
+                "type": "string",
+                "x-samplevalue": "The value for s_country"
+            },
+            "s_province": {
+                "type": "string",
+                "x-samplevalue": "The value for s_province"
+            },
+            "s_street": {
+                "type": "string",
+                "x-samplevalue": "The value for s_street"
+            },
+            "s_street2": {
+                "type": "string",
+                "x-samplevalue": "The value for s_street2"
+            },
+            "signup_date": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-samplevalue": "2016-03-09 17:42:11"
+            },
+            "statement_token": {
+                "type": "string",
+                "x-samplevalue": "The value for statement_token"
+            },
+            "subdomain": {
+                "type": "string",
+                "x-samplevalue": "The value for subdomain"
+            },
+            "updated": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2016-08-12 14:54:15"
+            },
+            "userid": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 1831231
+            },
+            "username": {
+                "type": "string",
+                "x-samplevalue": "aclient"
+            },
+            "vat_name": {
+                "type": "string",
+                "x-samplevalue": "The value for vat_name"
+            },
+            "vat_number": {
+                "type": "string",
+                "x-samplevalue": "The value for vat_number"
+            },
+            "vis_state": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            }
+        },
+        "x-has-customfields": false,
+        "x-primary-key": [
+            "id"
+        ],
+        "x-vendor-objectname": "clients"
+    }
+}

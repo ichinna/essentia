@@ -1,0 +1,22 @@
+GET /pages 
+  where not found
+GET /pages/{pageId}/page-access-token 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /search/group 
+  where not found
+GET /search/page 
+  where not found
+GET /search/user 
+  where not found
+GET /status 
+  where not found
+GET /user/me 
+  pageSize not found, Neither nextPage or page found
+GET /user/me/friends 
+  pageSize not found, Neither nextPage or page found
+GET /user/me/permissions 
+  pageSize not found, Neither nextPage or page found
+GET /user/{id}/accounts 
+  pageSize not found, Neither nextPage or page found
+GET /user/{id}/friends 
+  pageSize not found, Neither nextPage or page found

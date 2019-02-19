@@ -1,0 +1,8 @@
+GET /accounts/{accountId}/activities 
+  where not found
+GET /activities 
+  where not found
+GET /contacts/{contactId}/activities 
+  where not found
+GET /incidents/{incidentId}/notes/{noteId}/attachments 
+  pageSize not found, Neither nextPage or page found, where not found

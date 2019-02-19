@@ -1,0 +1,8 @@
+GET /brands 
+  where not found
+GET /groups 
+  where not found
+GET /slaPolicies 
+  where not found
+GET /users/{id}/groups 
+  where not found

@@ -1,0 +1,6 @@
+GET /payment-methods 
+  Neither nextPage or page found
+GET /preferences 
+  where not found
+GET /reports/metadata 
+  pageSize not found, Neither nextPage or page found, where not found

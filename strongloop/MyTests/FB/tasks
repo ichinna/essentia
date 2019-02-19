@@ -1,0 +1,424 @@
+GET
+
+{
+    "rate": {
+        "properties": {
+            "amount": {
+                "type": "string",
+                "x-samplevalue": "100.00"
+            },
+            "code": {
+                "type": "string",
+                "x-samplevalue": "CAD"
+            }
+        },
+        "title": "rate",
+        "type": "object",
+        "x-has-customfields": false
+    },
+    "tasksList": {
+        "properties": {
+            "billable": {
+                "type": "boolean",
+                "x-samplevalue": true
+            },
+            "description": {
+                "type": "string",
+                "x-samplevalue": "This is taks description"
+            },
+            "id": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 159361
+            },
+            "name": {
+                "type": "string",
+                "x-samplevalue": "Piloting"
+            },
+            "rate": {
+                "type": "rate"
+            },
+            "taskid": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 159361
+            },
+            "tdesc": {
+                "type": "string",
+                "x-samplevalue": ""
+            },
+            "tname": {
+                "type": "string",
+                "x-samplevalue": "Piloting"
+            },
+            "updated": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2017-07-24 09:39:21"
+            },
+            "vis_state": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            }
+        },
+        "title": "tasksList",
+        "x-has-customfields": false,
+        "x-primary-key": [
+            "id"
+        ],
+        "x-vendor-objectname": "tasks"
+    }
+}
+
+GET/id
+
+{
+    "rate": {
+        "id": "rate",
+        "properties": {
+            "amount": {
+                "type": "string"
+            },
+            "code": {
+                "type": "string"
+            }
+        }
+    },
+    "tasks": {
+        "id": "tasks",
+        "properties": {
+            "billable": {
+                "type": "boolean",
+                "x-samplevalue": true
+            },
+            "description": {
+                "type": "string",
+                "x-samplevalue": "This is taks description"
+            },
+            "id": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 159361
+            },
+            "name": {
+                "type": "string",
+                "x-samplevalue": "Piloting"
+            },
+            "rate": {
+                "type": "rate"
+            },
+            "taskid": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 159361
+            },
+            "tdesc": {
+                "type": "string",
+                "x-samplevalue": ""
+            },
+            "tname": {
+                "type": "string",
+                "x-samplevalue": "Piloting"
+            },
+            "updated": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2017-07-24 09:39:21"
+            },
+            "vis_state": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            }
+        },
+        "x-has-customfields": false,
+        "x-primary-key": [
+            "id"
+        ],
+        "x-vendor-objectname": "tasks"
+    }
+}
+
+POST
+RBS
+
+{
+    "createTask": {
+        "id": "createTask",
+        "properties": {
+            "billable": {
+                "type": "boolean",
+                "x-samplevalue": true
+            },
+            "description": {
+                "type": "string",
+                "x-samplevalue": "This is taks description"
+            },
+            "id": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 159361
+            },
+            "name": {
+                "type": "string",
+                "x-samplevalue": "Piloting"
+            },
+            "rate": {
+                "type": "rate"
+            },
+            "taskid": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 159361
+            },
+            "tdesc": {
+                "type": "string",
+                "x-samplevalue": ""
+            },
+            "tname": {
+                "type": "string",
+                "x-samplevalue": "Piloting"
+            },
+            "updated": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2017-07-24 09:39:21"
+            },
+            "vis_state": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            }
+        },
+        "required": [
+            "name"
+        ],
+        "x-has-customfields": false,
+        "x-primary-key": [
+            "id"
+        ],
+        "x-vendor-objectname": "tasks"
+    }
+}
+
+SWAGGER
+
+{
+    "rate": {
+        "id": "rate",
+        "properties": {
+            "amount": {
+                "type": "string"
+            },
+            "code": {
+                "type": "string"
+            }
+        }
+    },
+    "tasks": {
+        "id": "tasks",
+        "properties": {
+            "billable": {
+                "type": "boolean",
+                "x-samplevalue": true
+            },
+            "description": {
+                "type": "string",
+                "x-samplevalue": "This is taks description"
+            },
+            "id": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 159361
+            },
+            "name": {
+                "type": "string",
+                "x-samplevalue": "Piloting"
+            },
+            "rate": {
+                "type": "rate"
+            },
+            "taskid": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 159361
+            },
+            "tdesc": {
+                "type": "string",
+                "x-samplevalue": ""
+            },
+            "tname": {
+                "type": "string",
+                "x-samplevalue": "Piloting"
+            },
+            "updated": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2017-07-24 09:39:21"
+            },
+            "vis_state": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            }
+        },
+        "x-has-customfields": false,
+        "x-primary-key": [
+            "id"
+        ],
+        "x-vendor-objectname": "tasks"
+    }
+}
+
+PATCH
+RBS
+
+{
+    "updateTask": {
+        "id": "updateTask",
+        "properties": {
+            "billable": {
+                "type": "boolean",
+                "x-samplevalue": true
+            },
+            "description": {
+                "type": "string",
+                "x-samplevalue": "This is taks description"
+            },
+            "id": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 159361
+            },
+            "name": {
+                "type": "string",
+                "x-samplevalue": "Piloting"
+            },
+            "rate": {
+                "type": "rate"
+            },
+            "taskid": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 159361
+            },
+            "tdesc": {
+                "type": "string",
+                "x-samplevalue": ""
+            },
+            "tname": {
+                "type": "string",
+                "x-samplevalue": "Piloting"
+            },
+            "updated": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2017-07-24 09:39:21"
+            },
+            "vis_state": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            }
+        },
+        "x-has-customfields": false,
+        "x-primary-key": [
+            "id"
+        ],
+        "x-vendor-objectname": "tasks"
+    }
+}
+
+SWAGGER
+
+{
+    "rate": {
+        "id": "rate",
+        "properties": {
+            "amount": {
+                "type": "string"
+            },
+            "code": {
+                "type": "string"
+            }
+        }
+    },
+    "tasks": {
+        "id": "tasks",
+        "properties": {
+            "billable": {
+                "type": "boolean",
+                "x-samplevalue": true
+            },
+            "description": {
+                "type": "string",
+                "x-samplevalue": "This is taks description"
+            },
+            "id": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 159361
+            },
+            "name": {
+                "type": "string",
+                "x-samplevalue": "Piloting"
+            },
+            "rate": {
+                "type": "rate"
+            },
+            "taskid": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 159361
+            },
+            "tdesc": {
+                "type": "string",
+                "x-samplevalue": ""
+            },
+            "tname": {
+                "type": "string",
+                "x-samplevalue": "Piloting"
+            },
+            "updated": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2017-07-24 09:39:21"
+            },
+            "vis_state": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            }
+        },
+        "x-has-customfields": false,
+        "x-primary-key": [
+            "id"
+        ],
+        "x-vendor-objectname": "tasks"
+    }
+}

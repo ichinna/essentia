@@ -1,0 +1,402 @@
+{
+  "concur_vendor": {
+    "id": 13,
+    "level": "organization",
+    "objectName": "concur_vendor",
+    "vendorName": "vendors",
+    "startDate": "2018-11-14 10:30:01.551043",
+    "fields": [
+      {
+        "type": "string",
+        "path": "AccountNumber",
+        "level": "organization",
+        "vendorPath": "bank_account_details.account_number"
+      },
+      {
+        "type": "string",
+        "path": "CompanyName",
+        "level": "organization",
+        "vendorPath": "name"
+      },
+      {
+        "type": "string",
+        "path": "Currency",
+        "level": "organization",
+        "vendorPath": "currency.id"
+      },
+      {
+        "type": "string",
+        "path": "Email",
+        "level": "organization",
+        "vendorPath": "email"
+      },
+      {
+        "type": "string",
+        "path": "FirstName",
+        "level": "organization",
+        "vendorPath": "",
+        "vendorType": "string",
+        "configuration": [
+          {
+            "type": "passThrough",
+            "properties": {
+              "toVendor": false,
+              "fromVendor": true
+            }
+          }
+        ]
+      },
+      {
+        "type": "boolean",
+        "path": "IsActive",
+        "level": "organization",
+        "vendorPath": "IsActive",
+        "vendorType": "string",
+        "configuration": [
+          {
+            "type": "passThrough",
+            "properties": {
+              "toVendor": false,
+              "fromVendor": true
+            }
+          },
+          {
+            "type": "defaultValue",
+            "properties": {
+              "fromVendor": null
+            }
+          }
+        ]
+      },
+      {
+        "type": "string",
+        "path": "LastName",
+        "level": "organization",
+        "vendorPath": "",
+        "vendorType": "string",
+        "configuration": [
+          {
+            "type": "passThrough",
+            "properties": {
+              "toVendor": false,
+              "fromVendor": true
+            }
+          }
+        ]
+      },
+      {
+        "type": "string",
+        "path": "ListID",
+        "level": "organization",
+        "vendorPath": "id"
+      },
+      {
+        "type": "string",
+        "path": "Name",
+        "level": "organization",
+        "vendorPath": "name"
+      },
+      {
+        "type": "string",
+        "path": "PaymentTerms",
+        "level": "organization",
+        "vendorPath": "",
+        "vendorType": "string",
+        "configuration": [
+          {
+            "type": "passThrough",
+            "properties": {
+              "toVendor": false,
+              "fromVendor": true
+            }
+          }
+        ]
+      },
+      {
+        "type": "string",
+        "path": "Phone",
+        "level": "organization",
+        "vendorPath": "main_contact_person.telephone"
+      },
+      {
+        "type": "string",
+        "path": "TimeCreated",
+        "level": "organization",
+        "vendorPath": "created_at"
+      },
+      {
+        "type": "string",
+        "path": "TimeModified",
+        "level": "organization",
+        "vendorPath": "updated_at"
+      },
+      {
+        "type": "string",
+        "path": "VendorAddress.Addr1",
+        "level": "organization",
+        "vendorPath": "main_address.address_line_1"
+      },
+      {
+        "type": "string",
+        "path": "VendorAddress.Addr2",
+        "level": "organization",
+        "vendorPath": "main_address.address_line_2"
+      },
+      {
+        "type": "string",
+        "path": "VendorAddress.City",
+        "level": "organization",
+        "vendorPath": "main_address.city"
+      },
+      {
+        "type": "string",
+        "path": "VendorAddress.Country",
+        "level": "organization",
+        "vendorPath": "main_address.country.displayed_as"
+      },
+      {
+        "type": "string",
+        "path": "VendorAddress.ListID",
+        "level": "organization",
+        "vendorPath": "main_address.id"
+      },
+      {
+        "type": "string",
+        "path": "VendorAddress.PostalCode",
+        "level": "organization",
+        "vendorPath": "main_address.postal_code"
+      },
+      {
+        "type": "string",
+        "path": "VendorAddress.State",
+        "level": "organization",
+        "vendorPath": "main_address.region"
+      },
+      {
+        "type": "string",
+        "path": "credit_days",
+        "level": "organization",
+        "vendorPath": "credit_days"
+      }
+    ],
+    "configuration": [
+      {
+        "type": "addToDocumentation"
+      },
+      {
+        "type": "passThrough",
+        "properties": {
+          "fromVendor": false,
+          "toVendor": false
+        }
+      },
+      {
+        "type": "inherit"
+      }
+    ],
+    "script": {
+      "body": "if(fromVendor){\ntransformedObject.IsActive=true\n}\n      done(transformedObject);\n  \n\n",
+      "mimeType": "application/javascript",
+      "filterEmptyResponse": false
+    },
+    "isLegacy": false
+  },
+  "concur_customer": {
+    "id": 12,
+    "level": "organization",
+    "objectName": "concur_customer",
+    "vendorName": "customers",
+    "startDate": "2018-11-14 10:29:19.892639",
+    "fields": [
+      {
+        "type": "string",
+        "path": "code",
+        "level": "organization",
+        "vendorPath": "id"
+      },
+      {
+        "type": "boolean",
+        "path": "isActive",
+        "level": "organization",
+        "vendorPath": "isActive",
+        "vendorType": "string",
+        "configuration": [
+          {
+            "type": "passThrough",
+            "properties": {
+              "toVendor": false,
+              "fromVendor": true
+            }
+          }
+        ]
+      },
+      {
+        "type": "string",
+        "path": "parentId",
+        "level": "organization",
+        "vendorPath": "parentId",
+        "vendorType": "string",
+        "configuration": [
+          {
+            "type": "passThrough",
+            "properties": {
+              "toVendor": false,
+              "fromVendor": true
+            }
+          }
+        ]
+      },
+      {
+        "type": "string",
+        "path": "subsidiary[*]",
+        "level": "organization",
+        "vendorPath": "subsidiary[*]"
+      },
+      {
+        "type": "string",
+        "path": "value",
+        "level": "organization",
+        "vendorPath": "name"
+      }
+    ],
+    "configuration": [
+      {
+        "type": "passThrough",
+        "properties": {
+          "fromVendor": false,
+          "toVendor": false
+        }
+      },
+      {
+        "type": "inherit"
+      }
+    ],
+    "script": {
+      "body": "if(fromVendor){\n  transformedObject.isActive=true;\n}\ndone(transformedObject);",
+      "mimeType": "application/javascript",
+      "filterEmptyResponse": false
+    },
+    "isLegacy": false
+  },
+  "concur_creditcard_credit": {
+    "id": 11,
+    "level": "organization",
+    "objectName": "concur_creditcard_credit",
+    "vendorName": "otherPayments",
+    "startDate": "2018-11-14 10:28:50.477566",
+    "fields": [
+      {
+        "type": "string",
+        "path": "accountRef.value",
+        "level": "organization",
+        "vendorPath": "bank_account_id"
+      },
+      {
+        "type": "string",
+        "path": "docNumber",
+        "level": "organization",
+        "vendorPath": "reference"
+      },
+      {
+        "type": "string",
+        "path": "entityRef.value",
+        "level": "organization",
+        "vendorPath": "contact_id"
+      },
+      {
+        "type": "string",
+        "path": "line[*].accountBasedExpenseLineDetail.accountRef.value",
+        "level": "organization",
+        "vendorPath": "payment_lines[*].ledger_account_id"
+      },
+      {
+        "type": "string",
+        "path": "line[*].amount",
+        "level": "organization",
+        "vendorPath": "payment_lines[*].total_amount"
+      },
+      {
+        "type": "string",
+        "path": "line[*].description",
+        "level": "organization",
+        "vendorPath": "payment_lines[*].details"
+      },
+      {
+        "type": "string",
+        "path": "line[*].itemBasedExpenseLineDetail.accountRef.value",
+        "level": "organization",
+        "vendorPath": "payment_lines[*].ledger_account_id"
+      },
+      {
+        "type": "string",
+        "path": "totalAmt",
+        "level": "organization",
+        "vendorPath": "total_amount",
+        "configuration": [
+          {
+            "type": "passThrough",
+            "properties": {
+              "fromVendor": true,
+              "toVendor": true
+            }
+          },
+          {
+            "type": "defaultValue",
+            "properties": {
+              "fromVendor": "",
+              "toVendor": ""
+            }
+          }
+        ]
+      },
+      {
+        "type": "string",
+        "path": "txnDate",
+        "level": "organization",
+        "vendorPath": "date"
+      },
+      {
+        "type": "string",
+        "path": "vendorRef.value",
+        "level": "organization",
+        "vendorPath": "contact_id",
+        "vendorType": "string",
+        "configuration": [
+          {
+            "type": "passThrough",
+            "properties": {
+              "fromVendor": true,
+              "toVendor": true
+            }
+          },
+          {
+            "type": "defaultValue",
+            "properties": {
+              "fromVendor": "",
+              "toVendor": ""
+            }
+          }
+        ]
+      }
+    ],
+    "configuration": [
+      {
+        "type": "inherit"
+      },
+      {
+        "type": "passThrough",
+        "properties": {
+          "fromVendor": false,
+          "toVendor": false
+        }
+      }
+    ],
+    "script": {
+      "body": "if (!fromVendor) {\ntransformedObject.transaction_type_id = \"OTHER_PAYMENT\";\n} else {\nif (originalObject.bank_account) {\ntransformedObject.accountRef = {};\ntransformedObject.accountRef.value = originalObject.bank_account.id;\n}\n\nif (originalObject.contact) {\ntransformedObject.entityRef = {};\ntransformedObject.entityRef.value = originalObject.contact.id;\n\ntransformedObject.vendorRef = {};\ntransformedObject.vendorRef.value = originalObject.contact.id;\n}\n\nif (originalObject.payment_lines && Array.isArray(originalObject.payment_lines) && originalObject.payment_lines.length > 0) {\noriginalObject.payment_lines.forEach(function(paymentLine, index) {\nif (paymentLine && paymentLine.ledger_account) {\nif (!transformedObject.line[index].accountBasedExpenseLineDetail) {\ntransformedObject.line[index].accountBasedExpenseLineDetail = {};\ntransformedObject.line[index].accountBasedExpenseLineDetail.accountRef = {};\ntransformedObject.line[index].accountBasedExpenseLineDetail.accountRef.value = paymentLine.ledger_account.id;\n} else if (!transformedObject.line[index].accountBasedExpenseLineDetail.accountRef) {\ntransformedObject.line[index].accountBasedExpenseLineDetail.accountRef = {};\ntransformedObject.line[index].accountBasedExpenseLineDetail.accountRef.value = paymentLine.ledger_account.id;\n} else {\ntransformedObject.line[index].accountBasedExpenseLineDetail.accountRef.value = paymentLine.ledger_account.id;\n}\n\nif (!transformedObject.line[index].itemBasedExpenseLineDetail) {\ntransformedObject.line[index].itemBasedExpenseLineDetail = {};\ntransformedObject.line[index].itemBasedExpenseLineDetail.accountRef = {};\ntransformedObject.line[index].itemBasedExpenseLineDetail.accountRef.value = paymentLine.ledger_account.id;\n} else if (!transformedObject.line[index].itemBasedExpenseLineDetail.accountRef) {\ntransformedObject.line[index].itemBasedExpenseLineDetail.accountRef = {};\ntransformedObject.line[index].itemBasedExpenseLineDetail.accountRef.value = paymentLine.ledger_account.id;\n} else {\ntransformedObject.line[index].itemBasedExpenseLineDetail.accountRef.value = paymentLine.ledger_account.id;\n}\n}\n});\n}\n}\n\ndone(transformedObject);",
+      "mimeType": "application/javascript",
+      "filterEmptyResponse": false,
+      "level": "organization"
+    },
+    "isLegacy": false
+  }
+}

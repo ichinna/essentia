@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CameraPhoto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CameraPhoto.xsd">
+  <ProductType>
+    <FilmCamera>
+      <CameraType>point-and-shoot</CameraType>
+      <Durability>Durability</Durability>
+      <Features>Features</Features>
+      <FilmFormat>aps</FilmFormat>
+      <FilmManagementFeatures>auto_film_advance</FilmManagementFeatures>
+      <FixedFocalLength unitOfMeasure="MM">0.0</FixedFocalLength>
+      <FocusType>auto-focus</FocusType>
+      <LensThread unitOfMeasure="MM">0.0</LensThread>
+      <LensType>fixed</LensType>
+      <OpticalZoomRange unitOfMeasure="MM">0.0</OpticalZoomRange>
+      <MacroFocus unitOfMeasure="MM">0.0</MacroFocus>
+      <MinFocalLength unitOfMeasure="MM">0.0</MinFocalLength>
+      <MaxFocalLength unitOfMeasure="MM">0.0</MaxFocalLength>
+      <MinAperture unitOfMeasure="f">0.0</MinAperture>
+      <MaxAperture unitOfMeasure="f">0.0</MaxAperture>
+      <MinShutterSpeed>0.0</MinShutterSpeed>
+      <MaxShutterSpeed>0.0</MaxShutterSpeed>
+      <MeteringMethods>MeteringMethods</MeteringMethods>
+      <ISORange>ISORange</ISORange>
+      <FlashType>automatic</FlashType>
+      <FlashModes>FlashModes</FlashModes>
+      <HotShoe>true</HotShoe>
+      <FlashSynchronization>true</FlashSynchronization>
+      <Red-EyeReduction>true</Red-EyeReduction>
+      <DiopterAdjustment>true</DiopterAdjustment>
+      <Viewfinder>Viewfinder</Viewfinder>
+      <LCD>true</LCD>
+      <DateImprint>true</DateImprint>
+      <MidrollChange>true</MidrollChange>
+      <MidrollRewind>true</MidrollRewind>
+      <AutoRewind>true</AutoRewind>
+      <AutoFilmAdvance>true</AutoFilmAdvance>
+      <AutoFilmLoad>true</AutoFilmLoad>
+      <SelfTimer unitOfMeasure="sec">0.0</SelfTimer>
+      <RemoteIncluded>true</RemoteIncluded>
+      <ContinuousShooting unitOfMeasure="frames">1</ContinuousShooting>
+      <BatteryType>BatteryType</BatteryType>
+      <BatteryIncluded>true</BatteryIncluded>
+      <ExposureControl>manual</ExposureControl>
+      <Size>compact</Size>
+      <PackageType>body-only</PackageType>
+      <Remote>Remote</Remote>
+      <WaterResistanceDepth unitOfMeasure="MM">0.0</WaterResistanceDepth>
+      <WaterResistanceLevel>not_water_resistant</WaterResistanceLevel>
+      <WeightLimit unitOfMeasure="GR">0.0</WeightLimit>
+      <ImageStabilization>ImageStabilization</ImageStabilization>
+      <WirelessTechnology>WirelessTechnology</WirelessTechnology>
+      <IncludedFeatures>IncludedFeatures</IncludedFeatures>
+    </FilmCamera>
+  </ProductType>
+  <Battery>
+    <AreBatteriesIncluded>true</AreBatteriesIncluded>
+    <AreBatteriesRequired>true</AreBatteriesRequired>
+    <BatterySubgroup>
+      <BatteryType>battery_type_2/3A</BatteryType>
+      <NumberOfBatteries>1</NumberOfBatteries>
+    </BatterySubgroup>
+  </Battery>
+  <BatteryCellType>NiCAD</BatteryCellType>
+  <CountryOfOrigin>CountryOfOrigin</CountryOfOrigin>
+  <Manufacturer>Manufacturer</Manufacturer>
+  <ModelName>ModelName</ModelName>
+  <ModelNumber>ModelNumber</ModelNumber>
+  <MfrPartNumber>MfrPartNumber</MfrPartNumber>
+  <CustomerPackageType>CustomerPackageType</CustomerPackageType>
+  <CanShipInOriginalContainer>true</CanShipInOriginalContainer>
+  <IdentityPackageType>bulk</IdentityPackageType>
+  <Color>Color</Color>
+  <Rebate>
+    <RebateStartDate>2001-12-31T12:00:00</RebateStartDate>
+    <RebateEndDate>2001-12-31T12:00:00</RebateEndDate>
+    <RebateMessage>RebateMessage</RebateMessage>
+  </Rebate>
+  <ColorMap>ColorMap</ColorMap>
+  <ItemsIncluded>ItemsIncluded</ItemsIncluded>
+  <Keywords>Keywords</Keywords>
+  <PlatinumKeywords>PlatinumKeywords</PlatinumKeywords>
+  <AudioInput>AudioInput</AudioInput>
+  <AutoFocusTechnology>AutoFocusTechnology</AutoFocusTechnology>
+  <BatteryTypeLithiumIon>1</BatteryTypeLithiumIon>
+  <BatteryTypeLithiumMetal>1</BatteryTypeLithiumMetal>
+  <CompatibleDevices>CompatibleDevices</CompatibleDevices>
+  <CompatibleMountings>CompatibleMountings</CompatibleMountings>
+  <DeviceType>DeviceType</DeviceType>
+  <DisplayTechnology>DisplayTechnology</DisplayTechnology>
+  <DisplayType>DisplayType</DisplayType>
+  <FilmSpeedRange>FilmSpeedRange</FilmSpeedRange>
+  <Finderscope>Finderscope</Finderscope>
+  <FormFactor>FormFactor</FormFactor>
+  <GuideNumber>GuideNumber</GuideNumber>
+  <HardwarePlatform>HardwarePlatform</HardwarePlatform>
+  <HasImageStabilizer>true</HasImageStabilizer>
+  <ImageArea>ImageArea</ImageArea>
+  <ItemDisplayDiameter unitOfMeasure="MM">0.0</ItemDisplayDiameter>
+  <ItemDisplayDepth unitOfMeasure="MM">0.0</ItemDisplayDepth>
+  <ItemDisplayHeight unitOfMeasure="MM">0.0</ItemDisplayHeight>
+  <ItemDisplayLength unitOfMeasure="MM">0.0</ItemDisplayLength>
+  <ItemDisplayWeight unitOfMeasure="GR">0.0</ItemDisplayWeight>
+  <ItemDisplayWidth unitOfMeasure="MM">0.0</ItemDisplayWidth>
+  <ItemThickness unitOfMeasure="MM">0.0</ItemThickness>
+  <LensCoverage>LensCoverage</LensCoverage>
+  <LensSystemSpecialFunctions>LensSystemSpecialFunctions</LensSystemSpecialFunctions>
+  <LightSensitivity>LightSensitivity</LightSensitivity>
+  <LithiumBatteryEnergyContent>0.0</LithiumBatteryEnergyContent>
+  <LithiumBatteryPackaging>batteries_contained_in_equipment</LithiumBatteryPackaging>
+  <LithiumBatteryVoltage>0.0</LithiumBatteryVoltage>
+  <LithiumBatteryWeight>0.0</LithiumBatteryWeight>
+  <ManufacturerWarrantyDescription>ManufacturerWarrantyDescription</ManufacturerWarrantyDescription>
+  <ManufacturerWarrantyType>ManufacturerWarrantyType</ManufacturerWarrantyType>
+  <MaximumApertureRange>MaximumApertureRange</MaximumApertureRange>
+  <MaximumHeight unitOfMeasure="MM">0.0</MaximumHeight>
+  <MaximumLifetimeCharges>1</MaximumLifetimeCharges>
+  <MaximumManufacturerWeightRecommended unitOfMeasure="GR">1</MaximumManufacturerWeightRecommended>
+  <MediaType>MediaType</MediaType>
+  <MemoryStorageCapacity unitOfMeasure="TB">0.0</MemoryStorageCapacity>
+  <MemoryTechnology>MemoryTechnology</MemoryTechnology>
+  <MfrWarrantyDescriptionLabor>MfrWarrantyDescriptionLabor</MfrWarrantyDescriptionLabor>
+  <MfrWarrantyDescriptionParts>MfrWarrantyDescriptionParts</MfrWarrantyDescriptionParts>
+  <MicrophoneOperationMode>MicrophoneOperationMode</MicrophoneOperationMode>
+  <MinFocalRange unitOfMeasure="MM">0.0</MinFocalRange>
+  <MinimumHeight unitOfMeasure="MM">0.0</MinimumHeight>
+  <MountingType>MountingType</MountingType>
+  <NumberOfLithiumIonCells>1</NumberOfLithiumIonCells>
+  <NumberOfLithiumMetalCells>1</NumberOfLithiumMetalCells>
+  <OpticalSensorResolution unitOfMeasure="pixels">0.0</OpticalSensorResolution>
+  <OpticalSensorSize>OpticalSensorSize</OpticalSensorSize>
+  <OpticalSensorTechnology>OpticalSensorTechnology</OpticalSensorTechnology>
+  <Parentage>parent</Parentage>
+  <VariationTheme>CustomerPackageType</VariationTheme>
+  <RangefinderType>RangefinderType</RangefinderType>
+  <RechargeableBatteryIncluded>true</RechargeableBatteryIncluded>
+  <RemoteControlDescription>RemoteControlDescription</RemoteControlDescription>
+  <RemovableStorageInterface>RemovableStorageInterface</RemovableStorageInterface>
+  <RollQuantity>RollQuantity</RollQuantity>
+  <SellerWarrantyDescription>SellerWarrantyDescription</SellerWarrantyDescription>
+  <SizeName>SizeName</SizeName>
+  <ShootingModes>ShootingModes</ShootingModes>
+  <SupportedImageType>jpeg</SupportedImageType>
+  <StyleName>StyleName</StyleName>
+  <VideoInput>VideoInput</VideoInput>
+  <VideoInputFormat>VideoInputFormat</VideoInputFormat>
+  <VideoInputSpecialEffects>VideoInputSpecialEffects</VideoInputSpecialEffects>
+</CameraPhoto>

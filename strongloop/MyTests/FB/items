@@ -1,0 +1,513 @@
+GET
+{
+    "itemsListObject": {
+        "id": "itemsListObject",
+        "properties": {
+            "accounting_systemid": {
+                "type": "string",
+                "x-samplevalue": "zDmNq"
+            },
+            "description": {
+                "type": "string",
+                "x-samplevalue": "monkey descriptor"
+            },
+            "id": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 201225
+            },
+            "inventory": {
+                "type": "string",
+                "x-samplevalue": "decimal-string count of inventorynull"
+            },
+            "itemid": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 201225
+            },
+            "name": {
+                "type": "string",
+                "x-samplevalue": "Monkeys"
+            },
+            "qty": {
+                "type": "string",
+                "x-samplevalue": "21"
+            },
+            "tax1": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 58730
+            },
+            "tax2": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 58729
+            },
+            "unit_cost": {
+                "type": "unit_cost"
+            },
+            "updated": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-samplevalue": "2016-07-20 15:36:09"
+            },
+            "vis_state": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            }
+        },
+        "x-has-customfields": false,
+        "x-primary-key": [
+            "id"
+        ],
+        "x-vendor-objectname": "items"
+    },
+    "itemsList": {
+        "id": "itemsList",
+        "items": {
+            "$ref": "itemsListObject"
+        },
+        "type": "array"
+    },
+    "unit_cost": {
+        "properties": {
+            "amount": {
+                "type": "string",
+                "x-samplevalue": "1234.00"
+            },
+            "code": {
+                "type": "string",
+                "x-samplevalue": "USD"
+            }
+        },
+        "title": "unit_cost",
+        "type": "object",
+        "x-has-customfields": false
+    }
+}
+
+GET/id
+
+{
+    "unit_cost": {
+        "id": "unit_cost",
+        "properties": {
+            "amount": {
+                "type": "string"
+            },
+            "code": {
+                "type": "string"
+            }
+        }
+    },
+    "items": {
+        "id": "items",
+        "properties": {
+            "accounting_systemid": {
+                "type": "string",
+                "x-samplevalue": "zDmNq"
+            },
+            "description": {
+                "type": "string",
+                "x-samplevalue": "monkey descriptor"
+            },
+            "id": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 201225
+            },
+            "inventory": {
+                "type": "string",
+                "x-samplevalue": "decimal-string count of inventorynull"
+            },
+            "itemid": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 201225
+            },
+            "name": {
+                "type": "string",
+                "x-samplevalue": "Monkeys"
+            },
+            "qty": {
+                "type": "string",
+                "x-samplevalue": "21"
+            },
+            "tax1": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 58730
+            },
+            "tax2": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 58729
+            },
+            "unit_cost": {
+                "type": "unit_cost"
+            },
+            "updated": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2016-07-20 15:36:09"
+            },
+            "vis_state": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            }
+        },
+        "x-has-customfields": false,
+        "x-primary-key": [
+            "id"
+        ],
+        "x-vendor-objectname": "items"
+    }
+}
+
+POST
+RBS
+
+{
+    "createItem": {
+        "id": "createItem",
+        "properties": {
+            "accounting_systemid": {
+                "type": "string",
+                "x-samplevalue": "zDmNq"
+            },
+            "description": {
+                "type": "string",
+                "x-samplevalue": "monkey descriptor"
+            },
+            "id": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 201225
+            },
+            "inventory": {
+                "type": "string",
+                "x-samplevalue": "decimal-string count of inventorynull"
+            },
+            "itemid": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 201225
+            },
+            "name": {
+                "type": "string",
+                "x-samplevalue": "Monkeys"
+            },
+            "qty": {
+                "type": "string",
+                "x-samplevalue": "21"
+            },
+            "tax1": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 58730
+            },
+            "tax2": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 58729
+            },
+            "unit_cost": {
+                "type": "unit_cost"
+            },
+            "updated": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2016-07-20 15:36:09"
+            },
+            "vis_state": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            }
+        },
+        "required": [
+            "name"
+        ],
+        "x-has-customfields": false,
+        "x-primary-key": [
+            "id"
+        ],
+        "x-vendor-objectname": "items"
+    },
+    "unit_cost": {
+        "id": "unit_cost",
+        "properties": {
+            "amount": {
+                "type": "string"
+            },
+            "code": {
+                "type": "string"
+            }
+        }
+    }
+}
+
+SWAGGER
+
+{
+    "unit_cost": {
+        "id": "unit_cost",
+        "properties": {
+            "amount": {
+                "type": "string"
+            },
+            "code": {
+                "type": "string"
+            }
+        }
+    },
+    "items": {
+        "id": "items",
+        "properties": {
+            "accounting_systemid": {
+                "type": "string",
+                "x-samplevalue": "zDmNq"
+            },
+            "description": {
+                "type": "string",
+                "x-samplevalue": "monkey descriptor"
+            },
+            "id": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 201225
+            },
+            "inventory": {
+                "type": "string",
+                "x-samplevalue": "decimal-string count of inventorynull"
+            },
+            "itemid": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 201225
+            },
+            "name": {
+                "type": "string",
+                "x-samplevalue": "Monkeys"
+            },
+            "qty": {
+                "type": "string",
+                "x-samplevalue": "21"
+            },
+            "tax1": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 58730
+            },
+            "tax2": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 58729
+            },
+            "unit_cost": {
+                "type": "unit_cost"
+            },
+            "updated": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2016-07-20 15:36:09"
+            },
+            "vis_state": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            }
+        },
+        "x-has-customfields": false,
+        "x-primary-key": [
+            "id"
+        ],
+        "x-vendor-objectname": "items"
+    }
+}
+
+PATCH
+RBS
+
+{
+    "unit_cost": {
+        "id": "unit_cost",
+        "properties": {
+            "amount": {
+                "type": "string"
+            },
+            "code": {
+                "type": "string"
+            }
+        }
+    },
+    "updateItem": {
+        "id": "updateItem",
+        "properties": {
+            "accounting_systemid": {
+                "type": "string",
+                "x-samplevalue": "zDmNq"
+            },
+            "description": {
+                "type": "string",
+                "x-samplevalue": "monkey descriptor"
+            },
+            "id": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 201225
+            },
+            "inventory": {
+                "type": "string",
+                "x-samplevalue": "decimal-string count of inventorynull"
+            },
+            "itemid": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 201225
+            },
+            "name": {
+                "type": "string",
+                "x-samplevalue": "Monkeys"
+            },
+            "qty": {
+                "type": "string",
+                "x-samplevalue": "21"
+            },
+            "tax1": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 58730
+            },
+            "tax2": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 58729
+            },
+            "unit_cost": {
+                "type": "unit_cost"
+            },
+            "updated": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2016-07-20 15:36:09"
+            },
+            "vis_state": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            }
+        },
+        "required": [
+            "name"
+        ],
+        "x-has-customfields": false,
+        "x-primary-key": [
+            "id"
+        ],
+        "x-vendor-objectname": "items"
+    }
+}
+
+SWAGGER
+
+{
+    "unit_cost": {
+        "id": "unit_cost",
+        "properties": {
+            "amount": {
+                "type": "string"
+            },
+            "code": {
+                "type": "string"
+            }
+        }
+    },
+    "items": {
+        "id": "items",
+        "properties": {
+            "accounting_systemid": {
+                "type": "string",
+                "x-samplevalue": "zDmNq"
+            },
+            "description": {
+                "type": "string",
+                "x-samplevalue": "monkey descriptor"
+            },
+            "id": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 201225
+            },
+            "inventory": {
+                "type": "string",
+                "x-samplevalue": "decimal-string count of inventorynull"
+            },
+            "itemid": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 201225
+            },
+            "name": {
+                "type": "string",
+                "x-samplevalue": "Monkeys"
+            },
+            "qty": {
+                "type": "string",
+                "x-samplevalue": "21"
+            },
+            "tax1": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 58730
+            },
+            "tax2": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 58729
+            },
+            "unit_cost": {
+                "type": "unit_cost"
+            },
+            "updated": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2016-07-20 15:36:09"
+            },
+            "vis_state": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            }
+        },
+        "x-has-customfields": false,
+        "x-primary-key": [
+            "id"
+        ],
+        "x-vendor-objectname": "items"
+    }
+}

@@ -1,0 +1,32 @@
+GET /customers/count 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /customers/groups/count 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /customers/{id}/addresses 
+  where not found
+GET /orders/count 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /orders/products/count 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /orders/shipments/count 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /orders/statuses 
+  where not found
+GET /orders/{id}/addresses 
+  where not found
+GET /orders/{id}/coupons 
+  where not found
+GET /orders/{id}/products 
+  where not found
+GET /orders/{id}/shipments 
+  where not found
+GET /orders/{id}/shipments/count 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /orders/{id}/taxes 
+  where not found
+GET /products/count 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /products/{id}/fields 
+  where not found
+GET /products/{id}/images 
+  where not found

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Inventory xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Inventory.xsd">
+  <SKU>SKU</SKU>
+  <FulfillmentCenterID>FulfillmentCenterID</FulfillmentCenterID>
+  <Available>true</Available>
+  <Quantity>0</Quantity>
+  <Lookup>FulfillmentNetwork</Lookup>
+  <RestockDate>2001-01-01</RestockDate>
+  <FulfillmentLatency>1</FulfillmentLatency>
+  <SwitchFulfillmentTo>MFN</SwitchFulfillmentTo>
+</Inventory>

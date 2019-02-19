@@ -1,0 +1,6 @@
+GET /attribute-sets 
+  where not found
+GET /campaigns 
+  where not found
+GET /contacts/attribute-groups 
+  pageSize not found, Neither nextPage or page found, where not found

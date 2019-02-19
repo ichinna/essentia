@@ -1,0 +1,20 @@
+GET /accounts 
+  where not found
+GET /campaigns 
+  where not found
+GET /campaigns/{campaignId}/activities 
+  pageSize not found
+GET /contacts/properties 
+  where not found
+GET /contacts/propertygroups 
+  where not found
+GET /contacts/{contactId}/activities 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /contacts/{contactId}/lists 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /contacts/{contactId}/workflows 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /lists 
+  where not found
+GET /workflows 
+  where not found

@@ -1,0 +1,6 @@
+GET /contacts/{contactId}/campaigns 
+  where not found
+GET /contacts/{contactId}/lists 
+  where not found
+GET /lists 
+  where not found

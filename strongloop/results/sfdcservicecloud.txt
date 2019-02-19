@@ -1,0 +1,4 @@
+GET /agents 
+  pageSize not found, Neither nextPage or page found
+GET /query 
+  pageSize not found, Neither nextPage or page found, where not found

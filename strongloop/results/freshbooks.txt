@@ -1,0 +1,6 @@
+GET /hooks 
+  where not found
+GET /items 
+  where not found
+GET /vendors 
+  where not found

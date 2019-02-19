@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OrderAcknowledgement xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OrderAcknowledgement.xsd">
+  <AmazonOrderID>AmazonOrderID</AmazonOrderID>
+  <MerchantOrderID>MerchantOrderID</MerchantOrderID>
+  <StatusCode>Success</StatusCode>
+  <Item>
+    <AmazonOrderItemCode>AmazonOrderItemCode</AmazonOrderItemCode>
+    <MerchantOrderItemID>MerchantOrderItemID</MerchantOrderItemID>
+    <CancelReason>NoInventory</CancelReason>
+  </Item>
+</OrderAcknowledgement>

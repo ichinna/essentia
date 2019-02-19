@@ -1,0 +1,8 @@
+GET /contacts 
+  where not found
+GET /lists 
+  where not found
+GET /optouts 
+  where not found
+GET /subscription-types 
+  pageSize not found, Neither nextPage or page found, where not found

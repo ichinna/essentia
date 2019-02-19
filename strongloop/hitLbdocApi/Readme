@@ -1,0 +1,26 @@
+CCT won't alloow you to pass the authorization header.  So, you can't fetch the lbdoc for your cloned elements.
+So, this helps you to fetch your local lbdoc of your cloned elements..... (Works for system elements also)
+Note: Make sure you have installed NodeJS already
+
+1. Unzip the package, and open /hitLbdocApi/api/controllers/util/helper.js
+   => In helper.js, there is a variable 'LOCAL_USER_ORG'.  So, change it to your SOBA's localhost authorization header
+   => If your SOBA port is other than '8080', then you have to change this on line number 28 of helper.js to your SOBA's port.  i.e.  siteAddress = 'http://localhost:{Wahtever your Local SOBA port}';
+
+2. Open the directory with your terminal and make sure you are at .../hitLbdocApi
+ 
+3. Run npm install unirest
+       npm install express --save
+
+4. And run your node server with 
+       npm run start
+
+5. Note down the port, on which your node server running.  Probably, It would be on '3000'
+
+6. Tunnel your node-server with ngrok, on the above PORT.
+
+7. Here we have an API /hitLbdoc/{element}
+   So, now you can run it with ngrok as follows  (Make sure your SOBA is running)
+
+   https://some_ngrok_tunnel.io/hitLbdoc/123
+
+   Another Note:  Don't use 'http' for CCT always use 'https'

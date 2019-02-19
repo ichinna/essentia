@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OrderAdjustment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OrderAdjustment.xsd">
+  <AmazonOrderID>AmazonOrderID</AmazonOrderID>
+  <MerchantOrderID>MerchantOrderID</MerchantOrderID>
+  <ActionType>Refund</ActionType>
+  <CODCollectionMethod>DirectPayment</CODCollectionMethod>
+  <AdjustedItem>
+    <AmazonOrderItemCode>AmazonOrderItemCode</AmazonOrderItemCode>
+    <MerchantOrderItemID>MerchantOrderItemID</MerchantOrderItemID>
+    <MerchantAdjustmentItemID>MerchantAdjustmentItemID</MerchantAdjustmentItemID>
+    <AdjustmentReason>NoInventory</AdjustmentReason>
+    <ItemPriceAdjustments>
+      <Component>
+        <Type>Principal</Type>
+        <Amount currency="USD">0.0</Amount>
+      </Component>
+    </ItemPriceAdjustments>
+    <PromotionAdjustments>
+      <PromotionClaimCode>PromotionClaimCode</PromotionClaimCode>
+      <MerchantPromotionID>MerchantPromotionID</MerchantPromotionID>
+      <Component>
+        <Type>Principal</Type>
+        <Amount currency="USD">0.0</Amount>
+      </Component>
+    </PromotionAdjustments>
+    <DirectPaymentAdjustments>
+      <Component>
+        <Type>Type</Type>
+        <Amount currency="USD">0.0</Amount>
+      </Component>
+    </DirectPaymentAdjustments>
+    <QuantityCancelled>1</QuantityCancelled>
+    <Quantity>1</Quantity>
+  </AdjustedItem>
+</OrderAdjustment>

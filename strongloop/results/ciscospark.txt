@@ -1,0 +1,10 @@
+GET /accounts 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /groups 
+  where not found
+GET /groups/{groupId}/channels 
+  where not found
+GET /groups/{groupId}/users 
+  where not found
+GET /organizations 
+  where not found

@@ -1,0 +1,85 @@
+-----------------
+---JS-PROJECTS---
+-----------------
+
+
+node getForKey.js {environment} {elementKey} {generateLBDocs} {generateSwagger} {writeToFile}
+
+-params
+
+  environment: 
+  	-s : staging
+  	-p : production
+  	-l : localhost
+  	-passthrough
+  	
+  elementKey
+  	-passthrough
+  	
+  Call LB Docs
+  	-should this do the GET /lbdocs call?
+  	
+  generateSwagger	
+  	-should this do the GET /docs call?
+  	
+  writeToFile
+  	-should this write to a file for storage
+  	-or should this log the output
+  	
+generate stripe lbdocs: 
+	node getForKey.js p stripe y n n
+	
+
+-----------------------------------
+	
+node gen-lbdocs.js {environment} {writeToFile}
+
+-params
+
+  environment: 
+  	-s : staging
+  	-p : production
+  	-l : localhost
+  	-passthrough
+  	
+  writeToFile
+  	-should this write to a file for storage
+  	-or should this log the output		
+  	
+generate staging lbdocs for elementKeys and write to file:
+	node gen-lbdocs.js s y 	
+	
+The `gen-lbdocs` script is the one that does all the retrieves. You just have to make 2 changes.
+
+1. Update the `const elementKeys` array in `gen-lbdocs.js` to add any lbdocs you want to have. Currently, it's `['bigcommerce', 'ciscospark', 'hubspot', 'hubspotcrm', 'jira', 'netsuitecrmv2', 'netsuiteerpv2', 'netsuitehcv2', 'pardot', 'stripe', 'sugarcrmv2', 'twiliov2', 'zohocrm']`
+2. Update the `LOCAL_USER_ORG` to your user/org in the `util/helper.js` (edited)
+
+
+-----------------------------------
+	
+node gen-docs-all.js {environment} {optional-key}
+
+-params
+
+  environment: 
+  	-s : staging
+  	-p : production
+  	-l : localhost
+  	-passthrough
+  	
+  optional-key
+  	-pass element key to only test a specific element
+  	-or pass nothing to test the ones included in the elementKeys array
+  	
+generate staging lbdocs for elementKeys:
+	node gen-lbdocs.js s
+	
+The `gen-lbdocs` script is the one that does all the retrieves. You just have to make 2 changes.
+
+1. Update the `const elementKeys` array in `gen-lbdocs.js` to add any lbdocs you want to have. Currently, it's `['bigcommerce', 'ciscospark', 'hubspot', 'hubspotcrm', 'jira', 'netsuitecrmv2', 'netsuiteerpv2', 'netsuitehcv2', 'pardot', 'stripe', 'sugarcrmv2', 'twiliov2', 'zohocrm']`
+2. Update the `LOCAL_USER_ORG` to your user/org in the `util/helper.js` (edited)
+
+
+
+	
+	

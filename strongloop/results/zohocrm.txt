@@ -1,0 +1,10 @@
+GET /accounts/{accountId}/notes 
+  where not found
+GET /contacts/{contactId}/notes 
+  where not found
+GET /leads/{leadId}/notes 
+  where not found
+GET /opportunities/{opportunityId}/notes 
+  where not found
+GET /users 
+  pageSize not found, Neither nextPage or page found, where not found

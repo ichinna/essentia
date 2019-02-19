@@ -1,0 +1,10 @@
+GET /files 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /files/metadata 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /files/{id}/metadata 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /folders/contents 
+  where not found
+GET /search 
+  where not found

@@ -1,0 +1,21 @@
+{
+  "name": "hitlbdocapi",
+  "version": "1.0.0",
+  "description": "api to hit lbdoc externally ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test hitlbdocapi"
+  },
+  "keywords": [
+    "HITLBDOC"
+  ],
+  "author": "chinna",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.14.12"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "unirest": "^0.5.1"
+  }
+}

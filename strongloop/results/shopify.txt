@@ -1,0 +1,40 @@
+GET /abandoned-checkouts 
+  where not found
+GET /collects-count 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /countries 
+  where not found
+GET /custom-collections-count 
+  pageSize not found, Neither nextPage or page found
+GET /customers/{customerId}/addresses 
+  where not found
+GET /customers/{id}/abandoned-checkouts 
+  where not found
+GET /customers/{id}/orders 
+  where not found
+GET /metafields-count 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /orders/{orderId}/fulfillments-count 
+  pageSize not found, Neither nextPage or page found
+GET /orders/{orderId}/fulfillments/{fulfillmentId}/fulfillment-events 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /orders/{orderId}/payments-count 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /orders/{orderId}/risks 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /price-rules/{priceRuleId}/discount-codes 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /products/{id}/variants 
+  where not found
+GET /products/{productId}/images 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /query 
+  where not found
+GET /shipping-zones 
+  where not found
+GET /shops 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /{objectName}/{id}/metafields 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /{objectName}/{id}/metafields-count 
+  pageSize not found, Neither nextPage or page found, where not found

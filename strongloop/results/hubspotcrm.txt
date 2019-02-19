@@ -1,0 +1,10 @@
+GET /accounts/{accountId}/activities 
+  where not found
+GET /contacts/{contactId}/activities 
+  where not found
+GET /pipelines 
+  where not found
+GET /timeline-event-types 
+  where not found
+GET /timeline-event-types/{id}/properties 
+  where not found

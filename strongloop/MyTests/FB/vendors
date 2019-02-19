@@ -1,0 +1,814 @@
+GET
+
+{
+    "vendorsListObject": {
+        "id": "vendorsListObject",
+        "properties": {
+      "mapped_taskid": {
+        "x-samplevalue": 146518,
+        "format": "int32",
+        "type": "integer"
+      },
+      "role": {
+        "x-samplevalue": "contractor",
+        "type": "string"
+      },
+      "vis_state": {
+        "x-samplevalue": 0,
+        "format": "int32",
+        "type": "integer"
+      },
+      "language": {
+        "x-samplevalue": "en",
+        "type": "string"
+      },
+      "accounting_systemid": {
+        "x-samplevalue": "r1awo",
+        "type": "string"
+      },
+      "userid": {
+        "x-samplevalue": 124596,
+        "format": "int32",
+        "type": "integer",
+        "x-readOnly": true
+      },
+      "mob_phone": {
+        "x-samplevalue": "1234567890",
+        "type": "string"
+      },
+      "p_country": {
+        "x-samplevalue": "india",
+        "type": "string"
+      },
+      "lname": {
+        "x-samplevalue": "xyz",
+        "type": "string"
+      },
+      "p_city": {
+        "x-samplevalue": "Hyderabad",
+        "type": "string"
+      },
+      "p_code": {
+        "x-samplevalue": "507005",
+        "type": "string"
+      },
+      "p_street2": {
+        "x-samplevalue": "Banjara Hills",
+        "type": "string"
+      },
+      "rate": {
+        "x-samplevalue": "0",
+        "type": "string"
+      },
+      "invitation_status": {
+        "x-samplevalue": "not_sent",
+        "type": "string"
+      },
+      "id": {
+        "x-samplevalue": 124596,
+        "format": "int32",
+        "type": "integer",
+        "x-readOnly": true
+      },
+      "fax": {
+        "x-samplevalue": "12345687",
+        "type": "string"
+      },
+      "email": {
+        "x-samplevalue": "fdf@y.com",
+        "type": "string"
+      },
+      "fname": {
+        "x-samplevalue": "cb",
+        "type": "string"
+      },
+      "level": {
+        "x-samplevalue": -3,
+        "format": "int32",
+        "type": "integer"
+      },
+      "display_name": {
+        "x-samplevalue": "fdf@y.com",
+        "type": "string"
+      },
+      "bus_phone": {
+        "x-samplevalue": "1234565564",
+        "type": "string"
+      },
+      "p_province": {
+        "x-samplevalue": "xxxxxxx",
+        "type": "string"
+      },
+      "organization": {
+        "x-samplevalue": "my org",
+        "type": "string"
+      },
+      "p_street": {
+        "x-samplevalue": "xxxx",
+        "type": "string"
+      },
+      "updated": {
+        "x-samplevalue": "2018-02-05 17:55:55",
+        "x-mask": "yyyy-MM-dd HH:mm:ss",
+        "format": "date-time",
+        "type": "string",
+        "x-readOnly": true
+      },
+      "num_logins": {
+        "x-samplevalue": 0,
+        "format": "int32",
+        "type": "integer"
+      },
+      "username": {
+        "x-samplevalue": "6vL4TB8uxc",
+        "type": "string"
+      }
+    },
+    "x-primary-key": [
+      "id"
+    ],
+    "x-has-customfields": false,
+    "x-vendor-objectname": "contractors"
+    },
+    "vendorsList": {
+        "id": "vendorsList",
+        "items": {
+            "$ref": "vendorsListObject"
+        },
+        "type": "array"
+    }
+}
+
+GET/id
+
+{
+    "vendors": {
+        "properties": {
+            "accounting_systemid": {
+                "type": "string",
+                "x-samplevalue": "r1awo"
+            },
+            "bus_phone": {
+                "type": "string",
+                "x-samplevalue": "1234565564"
+            },
+            "display_name": {
+                "type": "string",
+                "x-samplevalue": "fdf@y.com"
+            },
+            "email": {
+                "type": "string",
+                "x-samplevalue": "fdf@y.com"
+            },
+            "fax": {
+                "type": "string",
+                "x-samplevalue": "12345687"
+            },
+            "fname": {
+                "type": "string",
+                "x-samplevalue": "cb"
+            },
+            "id": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 124596
+            },
+            "invitation_status": {
+                "type": "string",
+                "x-samplevalue": "not_sent"
+            },
+            "language": {
+                "type": "string",
+                "x-samplevalue": "en"
+            },
+            "level": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": -3
+            },
+            "lname": {
+                "type": "string",
+                "x-samplevalue": "xyz"
+            },
+            "mapped_taskid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 146518
+            },
+            "mob_phone": {
+                "type": "string",
+                "x-samplevalue": "1234567890"
+            },
+            "num_logins": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            },
+            "organization": {
+                "type": "string",
+                "x-samplevalue": "my org"
+            },
+            "p_city": {
+                "type": "string",
+                "x-samplevalue": "Hyderabad"
+            },
+            "p_code": {
+                "type": "string",
+                "x-samplevalue": "507005"
+            },
+            "p_country": {
+                "type": "string",
+                "x-samplevalue": "india"
+            },
+            "p_province": {
+                "type": "string",
+                "x-samplevalue": "xxxxxxx"
+            },
+            "p_street": {
+                "type": "string",
+                "x-samplevalue": "xxxx"
+            },
+            "p_street2": {
+                "type": "string",
+                "x-samplevalue": "Banjara Hills"
+            },
+            "rate": {
+                "type": "string",
+                "x-samplevalue": "0"
+            },
+            "role": {
+                "type": "string",
+                "x-samplevalue": "contractor"
+            },
+            "updated": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2018-02-05 17:55:55"
+            },
+            "userid": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 124596
+            },
+            "username": {
+                "type": "string",
+                "x-samplevalue": "6vL4TB8uxc"
+            },
+            "vis_state": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            }
+        },
+        "title": "vendors",
+        "x-has-customfields": false,
+        "x-primary-key": [
+            "id"
+        ],
+        "x-vendor-objectname": "contractors"
+    }
+}
+
+POST
+RBS
+
+{
+    "createVendor": {
+        "id": "createVendor",
+        "properties": {
+            "accounting_systemid": {
+                "type": "string",
+                "x-samplevalue": "r1awo"
+            },
+            "bus_phone": {
+                "type": "string",
+                "x-samplevalue": "1234565564"
+            },
+            "display_name": {
+                "type": "string",
+                "x-samplevalue": "fdf@y.com"
+            },
+            "email": {
+                "type": "string",
+                "x-samplevalue": "fdf@y.com"
+            },
+            "fax": {
+                "type": "string",
+                "x-samplevalue": "12345687"
+            },
+            "fname": {
+                "type": "string",
+                "x-samplevalue": "cb"
+            },
+            "id": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 124596
+            },
+            "invitation_status": {
+                "type": "string",
+                "x-samplevalue": "not_sent"
+            },
+            "language": {
+                "type": "string",
+                "x-samplevalue": "en"
+            },
+            "level": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": -3
+            },
+            "lname": {
+                "type": "string",
+                "x-samplevalue": "xyz"
+            },
+            "mapped_taskid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 146518
+            },
+            "mob_phone": {
+                "type": "string",
+                "x-samplevalue": "1234567890"
+            },
+            "num_logins": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            },
+            "organization": {
+                "type": "string",
+                "x-samplevalue": "my org"
+            },
+            "p_city": {
+                "type": "string",
+                "x-samplevalue": "Hyderabad"
+            },
+            "p_code": {
+                "type": "string",
+                "x-samplevalue": "507005"
+            },
+            "p_country": {
+                "type": "string",
+                "x-samplevalue": "india"
+            },
+            "p_province": {
+                "type": "string",
+                "x-samplevalue": "xxxxxxx"
+            },
+            "p_street": {
+                "type": "string",
+                "x-samplevalue": "xxxx"
+            },
+            "p_street2": {
+                "type": "string",
+                "x-samplevalue": "Banjara Hills"
+            },
+            "rate": {
+                "type": "string",
+                "x-samplevalue": "0"
+            },
+            "role": {
+                "type": "string",
+                "x-samplevalue": "contractor"
+            },
+            "updated": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2018-02-05 17:55:55"
+            },
+            "userid": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 124596
+            },
+            "username": {
+                "type": "string",
+                "x-samplevalue": "6vL4TB8uxc"
+            },
+            "vis_state": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            }
+        },
+        "x-primary-key": [
+            "id"
+        ],
+        "required": ["email", "mapped_taskid"],
+         "x-has-customfields": false,
+        "x-vendor-objectname": "contractors"
+    }
+}
+
+SWAGGER
+
+{
+    "vendors": {
+        "properties": {
+            "accounting_systemid": {
+                "type": "string",
+                "x-samplevalue": "r1awo"
+            },
+            "bus_phone": {
+                "type": "string",
+                "x-samplevalue": "1234565564"
+            },
+            "display_name": {
+                "type": "string",
+                "x-samplevalue": "fdf@y.com"
+            },
+            "email": {
+                "type": "string",
+                "x-samplevalue": "fdf@y.com"
+            },
+            "fax": {
+                "type": "string",
+                "x-samplevalue": "12345687"
+            },
+            "fname": {
+                "type": "string",
+                "x-samplevalue": "cb"
+            },
+            "id": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 124596
+            },
+            "invitation_status": {
+                "type": "string",
+                "x-samplevalue": "not_sent"
+            },
+            "language": {
+                "type": "string",
+                "x-samplevalue": "en"
+            },
+            "level": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": -3
+            },
+            "lname": {
+                "type": "string",
+                "x-samplevalue": "xyz"
+            },
+            "mapped_taskid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 146518
+            },
+            "mob_phone": {
+                "type": "string",
+                "x-samplevalue": "1234567890"
+            },
+            "num_logins": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            },
+            "organization": {
+                "type": "string",
+                "x-samplevalue": "my org"
+            },
+            "p_city": {
+                "type": "string",
+                "x-samplevalue": "Hyderabad"
+            },
+            "p_code": {
+                "type": "string",
+                "x-samplevalue": "507005"
+            },
+            "p_country": {
+                "type": "string",
+                "x-samplevalue": "india"
+            },
+            "p_province": {
+                "type": "string",
+                "x-samplevalue": "xxxxxxx"
+            },
+            "p_street": {
+                "type": "string",
+                "x-samplevalue": "xxxx"
+            },
+            "p_street2": {
+                "type": "string",
+                "x-samplevalue": "Banjara Hills"
+            },
+            "rate": {
+                "type": "string",
+                "x-samplevalue": "0"
+            },
+            "role": {
+                "type": "string",
+                "x-samplevalue": "contractor"
+            },
+            "updated": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2018-02-05 17:55:55"
+            },
+            "userid": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 124596
+            },
+            "username": {
+                "type": "string",
+                "x-samplevalue": "6vL4TB8uxc"
+            },
+            "vis_state": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            }
+        },
+        "title": "vendors",
+        "x-has-customfields": false,
+        "x-primary-key": [
+            "id"
+        ],
+        "x-vendor-objectname": "contractors"
+    }
+}
+
+
+PATCH
+RBS
+
+{
+    "updateVendor": {
+        "id": "updateVendor",
+        "properties": {
+            "accounting_systemid": {
+                "type": "string",
+                "x-samplevalue": "r1awo"
+            },
+            "bus_phone": {
+                "type": "string",
+                "x-samplevalue": "1234565564"
+            },
+            "display_name": {
+                "type": "string",
+                "x-samplevalue": "fdf@y.com"
+            },
+            "email": {
+                "type": "string",
+                "x-samplevalue": "fdf@y.com"
+            },
+            "fax": {
+                "type": "string",
+                "x-samplevalue": "12345687"
+            },
+            "fname": {
+                "type": "string",
+                "x-samplevalue": "cb"
+            },
+            "id": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 124596
+            },
+            "invitation_status": {
+                "type": "string",
+                "x-samplevalue": "not_sent"
+            },
+            "language": {
+                "type": "string",
+                "x-samplevalue": "en"
+            },
+            "level": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": -3
+            },
+            "lname": {
+                "type": "string",
+                "x-samplevalue": "xyz"
+            },
+            "mapped_taskid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 146518
+            },
+            "mob_phone": {
+                "type": "string",
+                "x-samplevalue": "1234567890"
+            },
+            "num_logins": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            },
+            "organization": {
+                "type": "string",
+                "x-samplevalue": "my org"
+            },
+            "p_city": {
+                "type": "string",
+                "x-samplevalue": "Hyderabad"
+            },
+            "p_code": {
+                "type": "string",
+                "x-samplevalue": "507005"
+            },
+            "p_country": {
+                "type": "string",
+                "x-samplevalue": "india"
+            },
+            "p_province": {
+                "type": "string",
+                "x-samplevalue": "xxxxxxx"
+            },
+            "p_street": {
+                "type": "string",
+                "x-samplevalue": "xxxx"
+            },
+            "p_street2": {
+                "type": "string",
+                "x-samplevalue": "Banjara Hills"
+            },
+            "rate": {
+                "type": "string",
+                "x-samplevalue": "0"
+            },
+            "role": {
+                "type": "string",
+                "x-samplevalue": "contractor"
+            },
+            "updated": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2018-02-05 17:55:55"
+            },
+            "userid": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 124596
+            },
+            "username": {
+                "type": "string",
+                "x-samplevalue": "6vL4TB8uxc"
+            },
+            "vis_state": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            }
+        },
+        "x-has-customfields": false,
+        "x-primary-key": [
+            "id"
+        ],
+        "x-vendor-objectname": "contractors"
+    }
+}
+
+SWAGGER
+
+{
+    "vendors": {
+        "properties": {
+            "accounting_systemid": {
+                "type": "string",
+                "x-samplevalue": "r1awo"
+            },
+            "bus_phone": {
+                "type": "string",
+                "x-samplevalue": "1234565564"
+            },
+            "display_name": {
+                "type": "string",
+                "x-samplevalue": "fdf@y.com"
+            },
+            "email": {
+                "type": "string",
+                "x-samplevalue": "fdf@y.com"
+            },
+            "fax": {
+                "type": "string",
+                "x-samplevalue": "12345687"
+            },
+            "fname": {
+                "type": "string",
+                "x-samplevalue": "cb"
+            },
+            "id": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 124596
+            },
+            "invitation_status": {
+                "type": "string",
+                "x-samplevalue": "not_sent"
+            },
+            "language": {
+                "type": "string",
+                "x-samplevalue": "en"
+            },
+            "level": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": -3
+            },
+            "lname": {
+                "type": "string",
+                "x-samplevalue": "xyz"
+            },
+            "mapped_taskid": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 146518
+            },
+            "mob_phone": {
+                "type": "string",
+                "x-samplevalue": "1234567890"
+            },
+            "num_logins": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            },
+            "organization": {
+                "type": "string",
+                "x-samplevalue": "my org"
+            },
+            "p_city": {
+                "type": "string",
+                "x-samplevalue": "Hyderabad"
+            },
+            "p_code": {
+                "type": "string",
+                "x-samplevalue": "507005"
+            },
+            "p_country": {
+                "type": "string",
+                "x-samplevalue": "india"
+            },
+            "p_province": {
+                "type": "string",
+                "x-samplevalue": "xxxxxxx"
+            },
+            "p_street": {
+                "type": "string",
+                "x-samplevalue": "xxxx"
+            },
+            "p_street2": {
+                "type": "string",
+                "x-samplevalue": "Banjara Hills"
+            },
+            "rate": {
+                "type": "string",
+                "x-samplevalue": "0"
+            },
+            "role": {
+                "type": "string",
+                "x-samplevalue": "contractor"
+            },
+            "updated": {
+                "format": "date-time",
+                "type": "string",
+                "x-mask": "yyyy-MM-dd HH:mm:ss",
+                "x-readOnly": true,
+                "x-samplevalue": "2018-02-05 17:55:55"
+            },
+            "userid": {
+                "format": "int32",
+                "type": "integer",
+                "x-readOnly": true,
+                "x-samplevalue": 124596
+            },
+            "username": {
+                "type": "string",
+                "x-samplevalue": "6vL4TB8uxc"
+            },
+            "vis_state": {
+                "format": "int32",
+                "type": "integer",
+                "x-samplevalue": 0
+            }
+        },
+        "title": "vendors",
+        "x-has-customfields": false,
+        "x-primary-key": [
+            "id"
+        ],
+        "x-vendor-objectname": "contractors"
+    }
+}

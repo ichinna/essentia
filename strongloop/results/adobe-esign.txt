@@ -1,0 +1,42 @@
+GET /agreements 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /agreements/{id}/documents 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /agreements/{id}/signed-documents 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /envelopes 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /envelopes/{id}/documents 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /envelopes/{id}/signed-documents 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /groups 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /groups/{groupId}/users 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /library-documents 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /library-documents/{id}/audits 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /library-documents/{id}/combined-documents 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /library-documents/{id}/documents 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /uris 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /users 
+  pageSize not found, Neither nextPage or page found
+GET /widgets 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /widgets/{widgetId}/agreements 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /widgets/{widgetId}/audits 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /widgets/{widgetId}/combined-documents 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /widgets/{widgetId}/data 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /widgets/{widgetId}/documents 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /workflows 
+  pageSize not found, Neither nextPage or page found, where not found

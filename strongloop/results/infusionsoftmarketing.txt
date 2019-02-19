@@ -1,0 +1,6 @@
+GET /contacts 
+  pageSize not found, Neither nextPage or page found
+GET /custom-fields 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /notes 
+  pageSize not found, Neither nextPage or page found

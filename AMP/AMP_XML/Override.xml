@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Override xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Override.xsd">
+  <SKU>SKU</SKU>
+  <ShippingOverride>
+    <ShipOption>ShipOption</ShipOption>
+    <IsShippingRestricted>true</IsShippingRestricted>
+    <Type>Additive</Type>
+    <ShipAmount currency="USD">0.0</ShipAmount>
+  </ShippingOverride>
+</Override>

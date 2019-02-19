@@ -1,0 +1,6 @@
+GET /payment-methods 
+  Neither nextPage or page found
+GET /report-types 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /reports 
+  pageSize not found, Neither nextPage or page found

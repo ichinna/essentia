@@ -1,0 +1,10 @@
+GET /envelopes 
+  pageSize not found, Neither nextPage or page found
+GET /envelopes/{id}/custom_fields 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /envelopes/{id}/documents 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /envelopes/{id}/documents/certificates 
+  pageSize not found, Neither nextPage or page found, where not found
+GET /templates 
+  pageSize not found, Neither nextPage or page found, where not found

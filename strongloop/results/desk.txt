@@ -1,0 +1,2 @@
+GET /incidents/{id}/comments 
+  where not found
