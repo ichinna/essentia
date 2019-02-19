@@ -3,40 +3,33 @@ const R = require('Ramda');
 
 let priceJSON = require(`./assets/price.json`);
 let productJson = require(`./assets/product.json`);
-let overrideJson = {};
-let imageJson = {};
-let relationShipJson = {};
-let inventoryJson = {};
-let orderAdjustment = {};
-let ordersAcknowledge = {};
+let overrideJson = require(`./assets/override.json`);
+let imageJson = require(`./assets/image.json`);
+let relationShipJson = require(`./assets/relationship.json`);
+let inventoryJson = require(`./assets/inventory.json`);
+let orderAdjustment = require(`./assets/orderAdjustment.json`);
+let ordersAcknowledge = require(`./assets/orderAcknowledge.json`);
 
 const getNestedKeys = items => _.filter(items, item => !_.startsWith(item, '-'));
-
 const getXmlAttributes = items => _.filter(items, item => _.startsWith(item, '-'));
-
 const getAttributeString = (attributes, prefix) => _.reduce(attributes, function (result, value, n) {
     return (result && typeof result === 'string') ? result + `${value.substring(1)}="{${prefix && prefix !== "" ? `${prefix}.${value.substring(1)}` : value.substring(1)}}" ` :
         (`${value.substring(1)}="{${prefix && prefix !== "" ? `${prefix}.${value.substring(1)}` : value.substring(1)}}" `);
 }, {});
 
 const getXmlSchema = (json, currentKey, prefix) => {
-
     var xmlSchmea = '';
     let keys = Object.keys(json);
-
 
     keys.forEach(key => {
 
         if (json[key] === null) return;
 
         if (json[key] instanceof Object) {
-
             if (json[key] instanceof Array) {
                 xmlSchmea += `<${key}>[${prefix && prefix !== "" ? `${prefix}.${key}` : `${key}`}]</${key}>`
-            }
-            else {
+            } else {
                 var objectKeys = Object.keys(json[key]);
-
                 var attributes = getXmlAttributes(objectKeys);
 
                 if (attributes.length) {
@@ -65,13 +58,11 @@ const getXmlSchema = (json, currentKey, prefix) => {
                     xmlSchmea += `</${key}>`;
                 }
             }
-
         } else {
             xmlSchmea += `<${key}>{${prefix ? `${prefix}.${key}` : `${key}`}}</${key}>`;
         }
     });
     return xmlSchmea;
 }
-
 
 console.log(getXmlSchema(priceJSON, '', ''))
