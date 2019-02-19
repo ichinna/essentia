@@ -1,0 +1,10 @@
+{
+    "SKU": "SKU",
+    "FulfillmentCenterID": "FulfillmentCenterID",
+    "Available": "true",
+    "Quantity": "0",
+    "Lookup": "FulfillmentNetwork",
+    "RestockDate": "2001-01-01",
+    "FulfillmentLatency": "1",
+    "SwitchFulfillmentTo": "MFN"
+}

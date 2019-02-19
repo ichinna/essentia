@@ -1,0 +1,12 @@
+{
+    "SKU": "SKU",
+    "ShippingOverride": {
+        "ShipOption": "ShipOption",
+        "IsShippingRestricted": "true",
+        "Type": "Additive",
+        "ShipAmount": {
+            "-currency": "USD",
+            "#text": "0.0"
+        }
+    }
+}

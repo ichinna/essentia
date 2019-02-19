@@ -1,0 +1,10 @@
+{
+    "AmazonOrderID": "AmazonOrderID",
+    "MerchantOrderID": "MerchantOrderID",
+    "StatusCode": "Success",
+    "Item": {
+      "AmazonOrderItemCode": "AmazonOrderItemCode",
+      "MerchantOrderItemID": "MerchantOrderItemID",
+      "CancelReason": "NoInventory"
+    }
+  }

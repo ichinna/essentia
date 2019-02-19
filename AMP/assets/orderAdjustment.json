@@ -1,0 +1,43 @@
+{
+    "AmazonOrderID": "AmazonOrderID",
+    "MerchantOrderID": "MerchantOrderID",
+    "ActionType": "Refund",
+    "CODCollectionMethod": "DirectPayment",
+    "AdjustedItem": {
+      "AmazonOrderItemCode": "AmazonOrderItemCode",
+      "MerchantOrderItemID": "MerchantOrderItemID",
+      "MerchantAdjustmentItemID": "MerchantAdjustmentItemID",
+      "AdjustmentReason": "NoInventory",
+      "ItemPriceAdjustments": {
+        "Component": {
+          "Type": "Principal",
+          "Amount": {
+            "-currency": "USD",
+            "#text": "0.0"
+          }
+        }
+      },
+      "PromotionAdjustments": {
+        "PromotionClaimCode": "PromotionClaimCode",
+        "MerchantPromotionID": "MerchantPromotionID",
+        "Component": {
+          "Type": "Principal",
+          "Amount": {
+            "-currency": "USD",
+            "#text": "0.0"
+          }
+        }
+      },
+      "DirectPaymentAdjustments": {
+        "Component": {
+          "Type": "Type",
+          "Amount": {
+            "-currency": "USD",
+            "#text": "0.0"
+          }
+        }
+      },
+      "QuantityCancelled": "1",
+      "Quantity": "1"
+    }
+  }

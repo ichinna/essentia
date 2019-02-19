@@ -1,0 +1,11 @@
+{
+    "ParentSKU": "ParentSKU",
+    "Relation": {
+      "SKU": "SKU",
+      "SortHeuristic": "1",
+      "Quantity": "1",
+      "ComponentNumber": "1",
+      "ChildDetailPageDisplay": "independently_displayable",
+      "Type": "Variation"
+    }
+  }
