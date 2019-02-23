@@ -18,7 +18,7 @@ const getAttributeString = (attributes, prefix) => _.reduce(attributes, function
 }, {});
 
 const getXmlSchema = (json, currentKey, prefix) => {
-    var xmlSchmea = '';
+    var xmlSchema = '';
     let keys = Object.keys(json);
 
     keys.forEach(key => {
@@ -27,7 +27,7 @@ const getXmlSchema = (json, currentKey, prefix) => {
 
         if (json[key] instanceof Object) {
             if (json[key] instanceof Array) {
-                xmlSchmea += `<${key}>[${prefix && prefix !== "" ? `${prefix}.${key}` : `${key}`}]</${key}>`
+                xmlSchema += `<${key}>[${prefix && prefix !== "" ? `${prefix}.${key}` : `${key}`}]</${key}>`
             } else {
                 var objectKeys = Object.keys(json[key]);
                 var attributes = getXmlAttributes(objectKeys);
@@ -35,34 +35,34 @@ const getXmlSchema = (json, currentKey, prefix) => {
                 if (attributes.length) {
                     let attrtibuteString = getAttributeString(attributes, (prefix && prefix !== "" ? `${prefix}.${key}` : key));
                     if (R.contains("#text", objectKeys)) {
-                        xmlSchmea += `<${key} ${attrtibuteString}>{${prefix && prefix !== "" ? `${prefix}.${key}` : key}.text}</${key}>`;
+                        xmlSchema += `<${key} ${attrtibuteString}>{${prefix && prefix !== "" ? `${prefix}.${key}` : key}.text}</${key}>`;
                     } else {
-                        xmlSchmea += `<${key} ${attrtibuteString}>`;
+                        xmlSchema += `<${key} ${attrtibuteString}>`;
                         var nestedKeys = getNestedKeys(objectKeys);
                         nestedKeys.forEach(nK => {
                             let currentObj = json[key];
 
                             if (currentObj[key] instanceof Object) {
-                                xmlSchmea += getXmlSchema(currentObj[nK], nK, (prefix ? `${prefix}.${key}` : key));
+                                xmlSchema += getXmlSchema(currentObj[nK], nK, (prefix ? `${prefix}.${key}` : key));
                             } else {
-                                xmlSchmea += `<${nK}>{${prefix && prefix !== "" ? `${prefix}.${nK}` : `${nK}`}}</${nK}>`;
+                                xmlSchema += `<${nK}>{${prefix && prefix !== "" ? `${prefix}.${nK}` : `${nK}`}}</${nK}>`;
                             }
                         })
-                        xmlSchmea += `</${key}>`;
+                        xmlSchema += `</${key}>`;
                     }
                 } else if (objectKeys.includes("#text") && objectKeys.length == 1) {
-                    xmlSchmea += `<${key}>{${prefix ? `${prefix}.${key}` : `${key}`}}</${key}>`;
+                    xmlSchema += `<${key}>{${prefix ? `${prefix}.${key}` : `${key}`}}</${key}>`;
                 } else {
-                    xmlSchmea += `<${key}>`;
-                    xmlSchmea += getXmlSchema(json[key], key, (prefix && prefix !== "" ? `${prefix}.${key}` : key));
-                    xmlSchmea += `</${key}>`;
+                    xmlSchema += `<${key}>`;
+                    xmlSchema += getXmlSchema(json[key], key, (prefix && prefix !== "" ? `${prefix}.${key}` : key));
+                    xmlSchema += `</${key}>`;
                 }
             }
         } else {
-            xmlSchmea += `<${key}>{${prefix ? `${prefix}.${key}` : `${key}`}}</${key}>`;
+            xmlSchema += `<${key}>{${prefix ? `${prefix}.${key}` : `${key}`}}</${key}>`;
         }
     });
-    return xmlSchmea;
+    return xmlSchema;
 }
 
 console.log(getXmlSchema(priceJSON, '', ''))
