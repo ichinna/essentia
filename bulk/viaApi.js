@@ -14,7 +14,7 @@ if (!(args && args.c)) {
 
 var creds = JSON.parse(args.c);
 if (!creds.hasOwnProperty("baseUrl") || !creds.hasOwnProperty('authorization') || !creds.hasOwnProperty('objectName')) {
-    console.warn('Missing one of Authorization, env, objectName');
+    console.warn('Missing one of Authorization, baseUrl, objectName');
     process.exit(-1);
 }
 
