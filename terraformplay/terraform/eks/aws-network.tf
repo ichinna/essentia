@@ -1,8 +1,3 @@
-/*
- * Copyright 2018 Cloud Elements
- *
- * Terraform data resources for Soba.
- */
 
 data "aws_iam_role" "rds_role" {
   name = "RoleHulkEks"

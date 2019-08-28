@@ -1,8 +1,4 @@
-/*
- * Copyright 2018 Cloud Elements
- *
- * Terraform data resources for Soba.
- */
+
 
 data "aws_vpc" "network" {
   tags = {

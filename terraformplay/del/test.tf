@@ -1,9 +1,3 @@
-/*
- * Copyright 2019 Cloud Elements
- *
- * AWS IAM role for RDS enhanced monitoring 
-*/
-
 data "aws_caller_identity" "current" {}
 
 

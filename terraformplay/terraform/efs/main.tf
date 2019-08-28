@@ -1,8 +1,4 @@
-/*
- * Copyright 2018 Cloud Elements
- *
- * Terraform main configuration file (with provider definitions).
- */
+
 
 variable "aws_region" {
   description = "AWS region"

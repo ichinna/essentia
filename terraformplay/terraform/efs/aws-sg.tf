@@ -1,8 +1,3 @@
-/*
- * Copyright 2018 Cloud Elements
- *
- * Terraform EFS firewall resources Hulk.
- */
 
 variable "sg_inbound_cidrs" {
   description = "List of CIDR blocks for ingress"

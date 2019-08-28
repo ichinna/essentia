@@ -1,8 +1,4 @@
-/*
- * Copyright 2018 Cloud Elements
- *
- * Terraform remote state configuration.
- */
+
 
 terraform {
   backend "s3" {

@@ -1,8 +1,3 @@
-/*
- * Copyright 2018 Cloud Elements
- *
- * Terraform EFS resources for hulk.
- */
 
 resource "aws_efs_file_system" "hulk" {
   creation_token = "${var.cluster_name}-hulk"
