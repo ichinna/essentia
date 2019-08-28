@@ -1,0 +1,26 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: xyz
+  region: us-west-2
+
+vpc:
+  id: "vpc-05eee9893e7df5eef"  # (optional, must match VPC ID used for each subnet below)
+  cidr: "10.0.0.0/26"       # (optional, must match CIDR used by the given VPC)
+  subnets:
+    # must provide 'private' and/or 'public' subnets by availibility zone as shown
+    private:
+      us-west-2a:
+        id: "subnet-0b01926a9bf9df52a"
+        cidr: "10.0.0.32/28" # (optional, must match CIDR used by the given subnet)
+
+      us-west-2b:
+        id: "subnet-04e90f2ab7372a694"
+        cidr: "10.0.0.48/28"  # (optional, must match CIDR used by the given subnet)
+
+nodeGroups:
+  - name: ng-1
+    instanceType: t2.micro
+    desiredCapacity: 2
+    privateNetworking: true # if only 'Private' subnets are given, this must be enabled
