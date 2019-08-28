@@ -25,19 +25,19 @@ POLICY
 # Attach the AWS managed AmazonEKSWorkerNodePolicy to our worker node role
 resource "aws_iam_role_policy_attachment" "node-AmazonEKSWorkerNodePolicy" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"
-  role       = "${aws_iam_role.node.name}"
+  role = "${aws_iam_role.node.name}"
 }
 
 # Attach the AWS managed AmazonEKS_CNI_Policy to our worker node role
 resource "aws_iam_role_policy_attachment" "node-AmazonEKS_CNI_Policy" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
-  role       = "${aws_iam_role.node.name}"
+  role = "${aws_iam_role.node.name}"
 }
 
 # Attach the AWS managed AmazonEC2ContainerRegistryReadOnly policy to our worker node role
 resource "aws_iam_role_policy_attachment" "node-AmazonEC2ContainerRegistryReadOnly" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"
-  role       = "${aws_iam_role.node.name}"
+  role = "${aws_iam_role.node.name}"
 }
 
 # Create an instance profile with our worker node role attached
@@ -48,19 +48,19 @@ resource "aws_iam_instance_profile" "node" {
 
 # Create a security group for worker nodes
 resource "aws_security_group" "node" {
-  name        = "hulk-eks-${var.cluster_name}-node"
+  name = "hulk-eks-${var.cluster_name}-node"
   description = "Security group for all nodes in the cluster"
-  vpc_id      = "${data.aws_vpc.network.id}"
+  vpc_id = "${data.aws_vpc.network.id}"
 
   egress {
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
+    from_port = 0
+    to_port = 0
+    protocol = "-1"
     cidr_blocks = ["0.0.0.0/0"]
   }
 
   tags = {
-      "Name" = "eks-worker-nodes-sg"
+    "Name" = "eks-worker-nodes-sg"
   }
 }
 
@@ -68,37 +68,37 @@ resource "aws_security_group" "node" {
 
 # Allow worker nodes to communicate with each other
 resource "aws_security_group_rule" "node-ingress-self" {
-  description              = "Allow node to communicate with each other"
-  from_port                = 0
-  protocol                 = "-1"
-  security_group_id        = "${aws_security_group.node.id}"
+  description = "Allow node to communicate with each other"
+  from_port = 0
+  protocol = "-1"
+  security_group_id = "${aws_security_group.node.id}"
   source_security_group_id = "${aws_security_group.node.id}"
-  to_port                  = 65535
-  type                     = "ingress"
+  to_port = 65535
+  type = "ingress"
 }
 
 # Allow worker Kubelets and pods to receive communication from the cluster control plane
 resource "aws_security_group_rule" "node-ingress-cluster" {
-  description              = "Allow worker Kubelets and pods to receive communication from the cluster control plane"
-  from_port                = 1025
-  protocol                 = "tcp"
-  security_group_id        = "${aws_security_group.node.id}"
+  description = "Allow worker Kubelets and pods to receive communication from the cluster control plane"
+  from_port = 1025
+  protocol = "tcp"
+  security_group_id = "${aws_security_group.node.id}"
   source_security_group_id = "${aws_security_group.hulk_eks_sg.id}"
-  to_port                  = 65535
-  type                     = "ingress"
+  to_port = 65535
+  type = "ingress"
 }
 
 # Find the latest Amazon-provided EKS worker node machine image
 
 data "aws_ami" "eks-worker" {
   filter {
-    name   = "name"
+    name = "name"
     values = ["eks-worker-*"]
   }
 
   most_recent = true
-  owners      = ["602401143452"]       # Amazon
-  tags        = {
+  owners = ["602401143452"] # Amazon
+  tags = {
     "Name" = "aws-ami-hulk"
   }
 }

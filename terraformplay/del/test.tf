@@ -42,7 +42,7 @@ data "aws_ami" "eks-worker" {
 
   most_recent = true
   owners      = ["602401143452"]
-  tags        = {
+  tags = {
     "Name" = "shit"
   }
 }
