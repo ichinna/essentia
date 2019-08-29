@@ -1,4 +1,4 @@
-How to create EKS cluster with?
+How to create EKS cluster?
 
 eksctl create cluster --name hulk-snp0 --region us-west-2 --version 1.13 --vpc-cidr 10.0.0.0/6 --vpc-private-subnets subnet-0be89bb05ae99b086,subnet-0b505729afe0127a6 --kubeconfig /Users/chinnababusadam/.kube/coobz/hulk_snp
 
