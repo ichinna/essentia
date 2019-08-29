@@ -19,10 +19,9 @@ resource "aws_security_group" "hulk_eks_sg" {
 
   tags = {
     "Name"                      = "${var.cluster_name}-hulk-eks"
-    "cloudelements/environment" = "${var.environment}"
-    "cloudelements/repo"        = "github.com/cloud-elements/hulk"
-    "cloudelements/role"        = "firewall"
-    "cloudelements/app"         = "hulk"
+    "environment" = "${var.environment}"
+    "role"        = "firewall"
+    "app"         = "hulk"
     "terraform.io"              = "managed"
   }
 }

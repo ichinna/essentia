@@ -5,10 +5,9 @@ resource "aws_efs_file_system" "hulk" {
 
   tags = {
     "Name"                      = "${var.cluster_name}-hulk"
-    "cloudelements/environment" = "${var.environment}"
-    "cloudelements/repo"        = "github.com/cloud-elements/hulk"
-    "cloudelements/role"        = "storage"
-    "cloudelements/app"         = "hulk"
+    "environment" = "${var.environment}"
+    "role"        = "storage"
+    "app"         = "hulk"
     "terraform.io"              = "managed"
   }
 }

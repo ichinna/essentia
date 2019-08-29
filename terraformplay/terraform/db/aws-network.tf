@@ -9,7 +9,7 @@ data "aws_subnet_ids" "rds" {
   vpc_id = "${data.aws_vpc.network.id}"
 
   tags = {
-    "cloudelements/consumer" = "rds"
+    "consumer" = "rds"
   }
 }
 

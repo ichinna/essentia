@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "b" {
-  bucket = "hulktfstates"
+  bucket = "hulktf"
   acl    = "private"
 
   versioning {
@@ -8,7 +8,7 @@ resource "aws_s3_bucket" "b" {
 
   tags = {
     "Name"                      = "hulk"
-    "cloudelements/environment" = "${var.env}"
-    "cloudelements/role"        = "hulk-storage"
+    "environment" = "${var.env}"
+    "role"        = "hulk-storage"
   }
 }

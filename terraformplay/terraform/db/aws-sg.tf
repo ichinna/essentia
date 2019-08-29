@@ -19,9 +19,9 @@ resource "aws_security_group" "rds" {
 
   tags = {
     "Name"                      = "${var.cluster_name}-hulk-rds"
-    "cloudelements/environment" = "${var.environment}"
-    "cloudelements/role"        = "hulk"
-    "cloudelements/cluster"     = "${var.cluster_name}"
+    "environment" = "${var.environment}"
+    "role"        = "hulk"
+    "cluster"     = "${var.cluster_name}"
   }
 }
 

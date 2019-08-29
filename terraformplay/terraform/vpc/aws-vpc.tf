@@ -13,7 +13,7 @@ resource "aws_subnet" "sn_a" {
   availability_zone = "us-west-2a"
 
   tags = {
-    "cloudelements/type" = "data"
+    "type" = "data"
   }
 }
 
@@ -24,7 +24,7 @@ resource "aws_subnet" "sn_b" {
   availability_zone = "us-west-2b"
 
   tags = {
-    "cloudelements/type" = "data"
+    "type" = "data"
   }
 }
 
@@ -34,7 +34,7 @@ resource "aws_subnet" "sn_c" {
   availability_zone = "us-west-2a"
 
   tags = {
-    "cloudelements/type" = "private"
+    "type" = "private"
   }
 }
 
@@ -45,7 +45,7 @@ resource "aws_subnet" "sn_d" {
   availability_zone = "us-west-2b"
 
   tags = {
-    "cloudelements/type" = "private"
+    "type" = "private"
   }
 }
 

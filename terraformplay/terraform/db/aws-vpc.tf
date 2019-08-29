@@ -4,9 +4,9 @@ resource "aws_vpc" "network" {
 
   tags = {
     "Name"                      = "${var.name}.${var.environment}.${var.region}"
-    "cloudelements/environment" = "${var.environment}"
-    "cloudelements/role"        = "hulk"
-    "cloudelements/cluster"     = "${var.cluster_name}"
+    "environment" = "${var.environment}"
+    "role"        = "hulk"
+    "cluster"     = "${var.cluster_name}"
   }
 }
 
@@ -17,9 +17,9 @@ resource "aws_subnet" "hulk_sn_a" {
 
   tags = {
     "Name"                      = "${var.name}.${var.environment}.${var.region}-sna"
-    "cloudelements/environment" = "${var.environment}"
-    "cloudelements/role"        = "hulk"
-    "cloudelements/consumer"    = "kubernetes"
+    "environment" = "${var.environment}"
+    "role"        = "hulk"
+    "consumer"    = "kubernetes"
   }
 }
 
@@ -30,9 +30,9 @@ resource "aws_subnet" "hulk_sn_b" {
 
   tags = {
     "Name"                      = "${var.name}.${var.environment}.${var.region}-snb"
-    "cloudelements/environment" = "${var.environment}"
-    "cloudelements/role"        = "hulk"
-    "cloudelements/consumer"    = "kubernetes"
+    "environment" = "${var.environment}"
+    "role"        = "hulk"
+    "consumer"    = "kubernetes"
   }
 }
 
@@ -43,9 +43,9 @@ resource "aws_subnet" "hulk_sn_c" {
 
   tags = {
     "Name"                      = "${var.name}.${var.environment}.${var.region}-snc"
-    "cloudelements/environment" = "${var.environment}"
-    "cloudelements/role"        = "hulk"
-    "cloudelements/consumer"    = "rds"
+    "environment" = "${var.environment}"
+    "role"        = "hulk"
+    "consumer"    = "rds"
   }
 }
 
@@ -56,9 +56,9 @@ resource "aws_subnet" "hulk_sn_d" {
 
   tags = {
     "Name"                      = "${var.name}.${var.environment}.${var.region}-snd"
-    "cloudelements/environment" = "${var.environment}"
-    "cloudelements/role"        = "hulk"
-    "cloudelements/consumer"    = "rds"
+    "environment" = "${var.environment}"
+    "role"        = "hulk"
+    "consumer"    = "rds"
   }
 }
 
@@ -69,7 +69,7 @@ resource "aws_db_subnet_group" "hulk_sn_group" {
 
   tags = {
     "Name"                      = "${var.name}.${var.environment}.${var.region}-sng"
-    "cloudelements/environment" = "${var.environment}"
-    "cloudelements/role"        = "hulk"
+    "environment" = "${var.environment}"
+    "role"        = "hulk"
   }
 }

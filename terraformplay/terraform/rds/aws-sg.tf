@@ -11,22 +11,23 @@ variable "sg_inbound_sg_ids" {
   default     = []
 }
 
-resource "aws_security_group" "hulk_efs_sg" {
-  name        = "${var.cluster_name}-hulk-efs"
-  description = "Hulk EFS access. Managed by Terraform."
+resource "aws_security_group" "rds" {
+  name        = "${var.cluster_name}-hulk-rds"
+  description = "Hulk RDS access. Managed by Terraform."
   vpc_id      = "${data.aws_vpc.network.id}"
 
   tags = {
-    "Name"                      = "${var.cluster_name}-hulk-efs"
+    "Name"                      = "${var.cluster_name}-hulk-rds"
     "environment" = "${var.environment}"
+    
     "role"        = "firewall"
     "app"         = "hulk"
     "terraform.io"              = "managed"
   }
 }
 
-resource "aws_security_group_rule" "efs_cidr_ingress_tcp_2029" {
-  security_group_id = "${aws_security_group.hulk_efs_sg.id}"
+resource "aws_security_group_rule" "rds_cidr_ingress" {
+  security_group_id = "${aws_security_group.rds.id}"
   type              = "ingress"
   from_port         = "8084"
   to_port           = "8084"
@@ -34,9 +35,9 @@ resource "aws_security_group_rule" "efs_cidr_ingress_tcp_2029" {
   cidr_blocks       = "${data.aws_subnet.private.*.cidr_block}"
 }
 
-resource "aws_security_group_rule" "efs_custom_cidr_ingress_tcp_2029" {
+resource "aws_security_group_rule" "rds_custom_cidr_ingress" {
   count             = "${length(var.sg_inbound_cidrs) > 0 ? 1 : 0}"
-  security_group_id = "${aws_security_group.hulk_efs_sg.id}"
+  security_group_id = "${aws_security_group.rds.id}"
   type              = "ingress"
   from_port         = "8084"
   to_port           = "8084"
@@ -44,9 +45,9 @@ resource "aws_security_group_rule" "efs_custom_cidr_ingress_tcp_2029" {
   cidr_blocks       = "${var.sg_inbound_cidrs}"
 }
 
-resource "aws_security_group_rule" "efs_custom_sg_ingress_tcp_2029" {
+resource "aws_security_group_rule" "rds_custom_sg_ingress" {
   count                    = "${length(var.sg_inbound_sg_ids)}"
-  security_group_id        = "${aws_security_group.hulk_efs_sg.id}"
+  security_group_id        = "${aws_security_group.rds.id}"
   type                     = "ingress"
   from_port                = "8084"
   to_port                  = "8084"
@@ -54,9 +55,10 @@ resource "aws_security_group_rule" "efs_custom_sg_ingress_tcp_2029" {
   source_security_group_id = "${element(var.sg_inbound_sg_ids, count.index)}"
 }
 
-/* description = "EFS security group ID."
+/* description = "RDS security group ID."
  * type        = "string"
  */
-output "sg_id" {
-  value = "${aws_security_group.hulk_efs_sg.id}"
+
+data "aws_security_group" "rds" {
+  id = "${aws_security_group.rds.id}"
 }
