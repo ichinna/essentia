@@ -4,9 +4,9 @@
 
 
 terraform {
-    backend "s3" {
-        bucket      =   "hulktf"
-        key         =   "hulk/test/terraform.tfstate"
-        region      =   "us-west-2"
-    }
+  backend "s3" {
+    bucket = "hulktf"
+    key    = "hulk/test/terraform.tfstate"
+    region = "us-west-2"
+  }
 }
