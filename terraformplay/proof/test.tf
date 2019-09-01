@@ -11,7 +11,7 @@ data "aws_subnet_ids" "private" {
   vpc_id = "${data.aws_vpc.network.id}"
 
   tags = {
-    "cloudelements/type" = "private"
+    "type" = "private"
   }
 }
 
