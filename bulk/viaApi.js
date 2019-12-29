@@ -33,6 +33,7 @@ const buildOptions = nextPage => {
     return {
         uri: `${url}/${objectName}`,
         qs: {
+            pageSize: 400,
             nextPage
         },
         headers: {
@@ -58,7 +59,7 @@ const run = async () => {
             console.log(nextPage, Buffer.from(nextPage, 'base64').toString('binary'), recordSize);
             r.body.forEach(obj => writer.write(JSON.stringify(obj) + '\n'));
 
-            if (recordSize === 200) {
+            if (recordSize === 400) {
                 run();
             } else {
                 console.log('Time taken to finish bulk via API calls: ', (new Date().getTime() - start));
