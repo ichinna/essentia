@@ -4,6 +4,7 @@
  * node viaApi.js -c '{"baseUrl":"http://localhost:8080/elements/api-v2","authorization":"User XXXXXX, Organization XXXXXX, Element XXXXXXXX=","objectName":"sfdcAccounts"}'
 
  */
+const sleep = require('sleep');
 const rp = require('request-promise');
 var fs = require('fs')
 const args = require('minimist')(process.argv.slice(2));
@@ -29,12 +30,17 @@ var writer = fs.createWriteStream(`./data/${objectName}.txt`, {
 
 var nextPage = null;
 
+const safeSleep = secs => {
+    sleep.sleep(secs);
+  }
+//where: "incremental='true' and start_time='1389743940'",
 const buildOptions = nextPage => {
     return {
         uri: `${url}/${objectName}`,
         qs: {
-            pageSize: 400,
-            nextPage
+            where: "incremental='true' and start_time='1276280816'",
+            nextPage,
+            pageSize: 1000
         },
         headers: {
             'Content-Type': 'application/json',
@@ -50,6 +56,7 @@ var start = null;
  * Runs untill last page and writes each page into the specified file...
  */
 const run = async () => {
+    safeSleep(10);
     await rp(buildOptions(nextPage))
         .then((r) => {
             if (r.headers && r.headers['elements-next-page-token']) {
@@ -59,7 +66,7 @@ const run = async () => {
             console.log(nextPage, Buffer.from(nextPage, 'base64').toString('binary'), recordSize);
             r.body.forEach(obj => writer.write(JSON.stringify(obj) + '\n'));
 
-            if (recordSize === 400) {
+            if (recordSize > 0) {
                 run();
             } else {
                 console.log('Time taken to finish bulk via API calls: ', (new Date().getTime() - start));
