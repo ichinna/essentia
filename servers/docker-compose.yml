@@ -1,13 +1,32 @@
 version: '3.7'
 services:
-  es01:
-    image: elasticsearch:7.11.1
-    container_name: es01
+  localstack:
+    container_name: localstack
+    image: localstack/localstack:0.12.2
+    ports:
+        - "4566-4599:4566-4599"
+        - "${PORT_WEB_UI-8087}:${PORT_WEB_UI-8087}"
     environment:
-      - node.name=es01
+        - SERVICES=*
+        - DEBUG=1
+        - LOCALSTACK_HOSTNAME=localstack
+        - DATA_DIR=${DATA_DIR- }
+        - PORT_WEB_UI=${PORT_WEB_UI- }
+        - DOCKER_HOST=unix:///var/run/docker.sock
+        - DEFAULT_REGION=us-east-1
+        - HOSTNAME_EXTERNAL=localstack
+    volumes:
+        - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+        - test
+  es:
+    image: elasticsearch:7.11.1
+    container_name: es
+    environment:
+      - node.name=es
       - cluster.name=es-docker-cluster
-      - discovery.seed_hosts=es01
-      - cluster.initial_master_nodes=es01
+      - discovery.seed_hosts=es
+      - cluster.initial_master_nodes=es
       - bootstrap.memory_lock=true
       - "ES_JAVA_OPTS=-Xms250m -Xmx250m"
     ulimits:
@@ -19,18 +38,41 @@ services:
     ports:
       - 9200:9200
     networks:
-      - elastic
+      - test
 
-  kib01:
+  kibana:
     image: kibana:7.11.1
-    container_name: kib01
+    container_name: kibana
     ports:
       - 5601:5601
     environment:
-      ELASTICSEARCH_URL: http://es01:9200
-      ELASTICSEARCH_HOSTS: '["http://es01:9200"]'
+      ELASTICSEARCH_URL: http://es:9200
+      ELASTICSEARCH_HOSTS: '["http://es:9200"]'
     networks:
-      - elastic
+      - test
+
+  zookeeper:
+      image: wurstmeister/zookeeper
+      networks:
+      - test
+      ports:
+      - 2181:2181
+  kafka:
+      image: wurstmeister/kafka:2.11-0.9.0.1
+      networks:
+      - test
+      environment:
+        KAFKA_BROKER_ID: "0"
+        KAFKA_LISTENERS: PLAINTEXT://:9092
+        KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+        KAFKA_ZOOKEEPER_CONNECT: "zookeeper:2181"
+        KAFKA_GROUP_MAX_SESSION_TIMEOUT_MS: "60000"
+      links:
+      - "zookeeper"
+      depends_on:
+      - zookeeper
+      ports:
+      - 9092:9092
 
 volumes:
   data01:
@@ -39,5 +81,5 @@ volumes:
     driver: local
 
 networks:
-  elastic:
+  test:
     driver: bridge
