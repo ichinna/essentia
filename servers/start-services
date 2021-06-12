@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+set -x
+
+export AWS_API_KEY=test
+export AWS_API_SECRET=test
+export AWS_REGION=us-east-1
+export BODENSTEIN_AWS_REGION=us-east-1
+export BODENSTEIN_SQS_REGION=us-east-1
+
+export CE_WORKSPCAE=/Users/chinna/MyWorkspace
+export RICKSHAW_HOME=$CE_WORKSPCAE/rickshaw/app
+export GROVER_HOME=$CE_WORKSPCAE/grover/app
+
+# Create local persistent volumes for necessary services
+mkdir -p /tmp/localstack/data
+mkdir -p /tmp/elasticsearch/data
+
+docker-compose up --build -d
+
+echo test
+# set +o pipefail 
+# npm install && SLS_DEBUG=* node_modules/.bin/serverless deploy --region us-east-1 --stage test --config $CE_WORKSPCAE/bodensten/app/serverless-test.yml --servicetest true || true
+# set -o pipefail

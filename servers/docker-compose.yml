@@ -7,7 +7,7 @@ services:
         - "4566-4599:4566-4599"
         - "${PORT_WEB_UI-8087}:${PORT_WEB_UI-8087}"
     environment:
-        - SERVICES=*
+        - SERVICES=s3,dynamodb,cloudformation,sts
         - DEBUG=1
         - LOCALSTACK_HOSTNAME=localstack
         - DATA_DIR=${DATA_DIR- }
@@ -15,13 +15,14 @@ services:
         - DOCKER_HOST=unix:///var/run/docker.sock
         - DEFAULT_REGION=us-east-1
         - HOSTNAME_EXTERNAL=localstack
+        - DATA_DIR=/tmp/localstack/data
     volumes:
-        - /var/run/docker.sock:/var/run/docker.sock
+        - "localstack-vol:/tmp/localstack"
     networks:
-        - test
-  es:
+        - platform
+  elasticsearch:
     image: elasticsearch:7.11.1
-    container_name: es
+    container_name: elasticsearch
     environment:
       - node.name=es
       - cluster.name=es-docker-cluster
@@ -34,11 +35,11 @@ services:
         soft: -1
         hard: -1
     volumes:
-      - data01:/usr/share/elasticsearch/data
+      - es-vol:/tmp/elasticsearch/data
     ports:
       - 9200:9200
     networks:
-      - test
+      - platform
 
   kibana:
     image: kibana:7.11.1
@@ -49,18 +50,18 @@ services:
       ELASTICSEARCH_URL: http://es:9200
       ELASTICSEARCH_HOSTS: '["http://es:9200"]'
     networks:
-      - test
+      - platform
 
   zookeeper:
       image: wurstmeister/zookeeper
       networks:
-      - test
+      - platform
       ports:
       - 2181:2181
   kafka:
       image: wurstmeister/kafka:2.11-0.9.0.1
       networks:
-      - test
+      - platform
       environment:
         KAFKA_BROKER_ID: "0"
         KAFKA_LISTENERS: PLAINTEXT://:9092
@@ -73,13 +74,51 @@ services:
       - zookeeper
       ports:
       - 9092:9092
+  redis:
+    image: redis:6.2
+    networks:
+      - platform
+    ports:
+      - 6379:6379
+    container_name: redis
+  rickshaw:
+    build:
+      context: ${RICKSHAW_HOME}
+    networks:
+      - platform
+    container_name: rickshaw
+    environment:
+      - LISTEN_PORT=3000
+      - KAFKA_CONN=kafka:9092
+      - ZK_CONN=zookeeper:2181
+      - REDIS_HOST=redis
+      - ENABLE_S3_STORAGE=true
+    command: ["bash", "-c", "sleep 5 && node --max-old-space-size=256 src/app/app.js"]
+    ports:
+      - "3000:3000"
+    depends_on:
+      - kafka
+      - redis
+      - localstack
+  grover:
+    build:
+      context: ${GROVER_HOME}
+      args:
+        NPM_TOKEN: "${NPM_TOKEN}"
+    ports:
+      - "1337:1337"
+    networks:
+      - platform
+
 
 volumes:
-  data01:
+  localstack-vol:
     driver: local
-  data02:
+  es-vol:
     driver: local
+  
 
 networks:
-  test:
+  platform:
     driver: bridge
+    external: true

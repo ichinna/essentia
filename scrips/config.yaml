@@ -1,0 +1,38 @@
+apiVersion: v1
+data:
+  application.yml: |-
+    management.endpoint.metrics.enabled: "true"
+    management.metrics.export.prometheus.descriptions: "true"
+    management.endpoints.web.exposure.include: "*"
+    management.endpoint.prometheus.enabled: "true"
+    management.metrics.export.prometheus.enabled: "true"
+    management.endpoints.web.base-path: "/info"
+    management.endpoint.health.show-details: "always"
+    aws.secrets.type: itf
+    base.url: https://snapshot.cloud-elements.com
+    soba.base.url: https://snapshot.cloud-elements.com/elements/api-v2
+    aws.dynamodb.region: us-west-2
+    aws.s3.region: us-west-2
+    system.owner.account.id: 1
+    periodic.elements.bucket: periodic-elements-snap0
+    periodic.elements.table: periodic-elements-snap0
+    periodic.deployed.element.version.table: periodic-deployed-element-version-snap0
+    periodic.github.username: cecircleci
+    periodic.github.password: 27100ba9d9f9e7a4c8783eb7bc76e3b8a169a7bb
+    app.version: "@project.version@"
+kind: ConfigMap
+metadata:
+  annotations:
+    meta.helm.sh/release-name: snap0-periodic
+    meta.helm.sh/release-namespace: cloudelements
+  creationTimestamp: "2021-04-29T21:08:13Z"
+  labels:
+    app.kubernetes.io/instance: snap0-periodic
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/name: periodic-application-properties
+    helm.sh/chart: periodic-1.12.0
+  name: snap0-periodic-application-properties
+  namespace: cloudelements
+  resourceVersion: "56057804"
+  selfLink: /api/v1/namespaces/cloudelements/configmaps/snap0-periodic-application-properties
+  uid: 72e847d5-830d-4972-94d7-194e799d4b1f

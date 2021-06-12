@@ -99,7 +99,26 @@ const countUnique = async () => {
     console.log(JSON.stringify(googleTodo));
 };
 
-countUnique();
+const getTopicWise = async () => {
+    const google = JSON.parse(read('./data/download/company/google.json'));
+    const google6Months = getByTimeline('6M', google.data.companyTag.questions);
+    
+    let topicWise = {};
+    google6Months.forEach(q => {
+        q.topicTags.forEach(t => {
+            let list = topicWise[t.slug] || [];
+            list.push(q.title);
+            topicWise[t.slug] = list;
+        });
+    });
+
+    console.log(JSON.stringify(topicWise));
+};
+
+// countUnique();
+getTopicWise();
+
+
 
 
 
