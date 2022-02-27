@@ -1,0 +1,115 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  annotations:
+    meta.helm.sh/release-name: snap0-elinstadapter
+    meta.helm.sh/release-namespace: cloudelements
+  creationTimestamp: "2021-04-14T18:39:17Z"
+  generation: 6
+  labels:
+    app.kubernetes.io/instance: snap0-elinstadapter
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/name: elinstadapter
+    helm.sh/chart: elinstadapter-0.1.0
+  name: snap0-elinstadapter
+  namespace: cloudelements
+  resourceVersion: "55035008"
+  selfLink: /apis/networking.istio.io/v1beta1/namespaces/cloudelements/virtualservices/snap0-elinstadapter
+  uid: 9e2e5fdf-835a-4917-9a02-46528f05283c
+spec:
+  gateways:
+  - mesh
+  - istio-ingressgateway.istio-system.svc.cluster.local
+  - ce-ingressgateway.istio-system.svc.cluster.local
+  hosts:
+  - snap0-elinstadapter.cloudelements.svc.cluster.local
+  - istio-ingressgateway.istio-system.svc.cluster.local
+  - '*.cloud-elements.com'
+  - '*.cloud-elements.co.uk'
+  - '*.cloudelements.app'
+  - '*.cloudelements.io'
+  - '*.ondemand.com'
+  - '*.sugarapps.com'
+  http:
+  - corsPolicy:
+      allowCredentials: true
+      allowHeaders:
+      - origin
+      - authorization
+      - accept
+      - content-type
+      - elements-partner-app
+      - elements-user-newpassword
+      - elements-user-password
+      - elements-schedule-request
+      - elements-async-callback-url
+      - elements-session
+      - elements-formula-instance-id
+      - elements-as-team-member
+      - elements-vendor-headers
+      - email
+      - Subsite
+      - community-import-element
+      - Elements-Version
+      - x-amz-server-side-encryption
+      - x-amz-server-side-encryption-aws-kms-key-id
+      - x-amz-server-side-encryption-customer-key
+      - x-amz-server-side-encryption-context
+      - x-amz-server-side-encryption-source-customer-key
+      - source
+      allowMethods:
+      - GET
+      - PUT
+      - POST
+      - DELETE
+      - PATCH
+      allowOrigin:
+      - '*'
+      maxAge: 3600s
+    match:
+    - uri:
+        regex: /v3/element/instances/\d+/elements.*
+    route:
+    - destination:
+        host: snap0-argonath-proxy.cloudelements.svc.cluster.local
+  - corsPolicy:
+      allowCredentials: true
+      allowHeaders:
+      - origin
+      - authorization
+      - accept
+      - content-type
+      - elements-partner-app
+      - elements-user-newpassword
+      - elements-user-password
+      - elements-schedule-request
+      - elements-async-callback-url
+      - elements-session
+      - elements-formula-instance-id
+      - elements-as-team-member
+      - elements-vendor-headers
+      - email
+      - Subsite
+      - community-import-element
+      - Elements-Version
+      - x-amz-server-side-encryption
+      - x-amz-server-side-encryption-aws-kms-key-id
+      - x-amz-server-side-encryption-customer-key
+      - x-amz-server-side-encryption-context
+      - x-amz-server-side-encryption-source-customer-key
+      - source
+      allowMethods:
+      - GET
+      - PUT
+      - POST
+      - DELETE
+      - PATCH
+      allowOrigin:
+      - '*'
+      maxAge: 3600s
+    match:
+    - uri:
+        prefix: /v3/element/instances/
+    route:
+    - destination:
+        host: snap0-elinstadapter.cloudelements.svc.cluster.local
