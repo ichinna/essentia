@@ -1,0 +1,19 @@
+{
+  "name": "validatetypes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "chinna",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^8.10.0",
+    "ramda": "^0.28.0",
+    "fluture-sanctuary-types": "^7.1.0",
+    "hm-def": "^1.0.2",
+    "sanctuary-def": "^0.14.0",
+    "sanctuary-type-classes": "^13.0.0"
+  }
+}
